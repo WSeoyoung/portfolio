@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/************ 모바일 *********************************************/
+html {
+  font-family: "pretendard", AppleSDGothicNeo-Light, Malgun Gothic, dotum,
+    sans-serif;
+  font-size: 14px;
+  color: #01172d;
+  text-transform: capitalize;
+}
+a {
+  color: inherit;
+}
+body h2,
+body h3,
+body h4 {
+  font-weight: bold;
+}
+
+/*********** header ***********/
+header {
+  width: 100%;
+  height: 600px;
+  background: url(../images/m_main_final.png) no-repeat 50% / cover;
+}
+
+/******** nav ********/
+header nav {
+  display: flex;
+  border-bottom: 1px solid #606060;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header nav h1 {
+  width: 189px;
+  height: 63px;
+
+  margin: 1vw;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+header nav #toggle_menu {
+  display: block;
+  text-indent: -999px;
+  background: url(../icons/menu.svg) no-repeat 50% / contain;
+  width: 32px;
+  height: 32px;
+  margin: 4vw;
+
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+header nav #gnb,
+header nav #registry {
+  /* nav 메뉴 */
+  display: none;
+}
+
+/* img slide */
+header #slide_txt {
+  height: 560px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+header #slide_txt h1 {
+  width: 380px;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+header #slide_txt p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 15px 0 40px;
+}
+header #slide_txt .btn {
+  width: 120px;
+  height: 45px;
+  background-color: #ffcb00;
+  text-align: center;
+  line-height: 45px;
+
+  margin: 0 auto;
+}
+
+/********* main *********/
+main .title {
+  font-weight: bold;
+  font-size: 2.3rem;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+main .sub_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/*********** main benefit ***********/
+main #main_benefit {
+  text-align: center;
+  padding-bottom: 60px;
+
+  border-bottom: 1px solid #ffcb00;
+}
+main #main_benefit h3 {
+  padding-bottom: 46px;
+}
+main #main_benefit .benefit_icon {
+  display: flex;
+}
+main #main_benefit .benefit_icon h3 {
+  font-size: 1.2rem;
+}
+main #main_benefit img {
+  width: 50%;
+}
+main #main_benefit .present img {
+  width: 40%;
+}
+main #main_benefit .present h3 {
+  margin-top: 15px;
+}
+main #main_benefit span {
+  display: block;
+}
+main #main_benefit p {
+  display: none;
+}
+
+/*********** main limited ***********/
+main #main_limited {
+  height: 845px;
+}
+main #main_limited h2,
+main #main_limited h3 {
+  margin-left: 20px;
+}
+main #main_limited .limited_img {
+  height: 100vw;
+  background: url(../images/limited_bg.png) no-repeat 50% / cover;
+}
+main #main_limited .limited_img .lmt_1 {
+  display: flex;
+}
+main #main_limited .limited_img .lmt_1 img {
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 95px;
+}
+main #main_limited .limited_img .lmt_1_txt {
+  padding-top: 190px;
+  margin-left: 10px;
+}
+main #main_limited .limited_img .lmt_1_txt h4 {
+  width: 60%;
+  line-height: 20px;
+}
+main #main_limited .limited_img .lmt_1_txt .price {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-top: 30px;
+}
+main #main_limited .limited_img .lmt_1_txt .btn {
+  width: 120px;
+  height: 45px;
+  background-color: #ffcb00;
+  text-align: center;
+  line-height: 45px;
+
+  margin-top: 30px;
+}
+
+main #main_limited .limited_img .lmt_2,
+main #main_limited .limited_img .lmt_3 {
+  display: none;
+}
+
+main #main_limited .limited_txt .carousel {
+  width: 20px;
+}
+main #main_limited .limited_txt h4 {
+  font-size: 18px;
+}
+main #main_limited .limited_txt span {
+  padding-right: 10px;
+}
+
+/*********** main best ***********/
+/*********** main gift ***********/
+/*********** main info ***********/
+/*********** footer ***********/
