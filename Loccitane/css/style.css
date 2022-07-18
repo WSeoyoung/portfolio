@@ -27,7 +27,7 @@ header {
 /******** nav ********/
 header nav {
   display: flex;
-  border-bottom: 1px solid #606060;
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
 
   position: sticky;
   top: 0;
@@ -96,10 +96,14 @@ main .title {
   font-size: 2.3rem;
   padding-top: 80px;
   padding-bottom: 10px;
+
+  margin-left: 20px;
 }
 main .sub_title {
   font-weight: bold;
   font-size: 1.5rem;
+
+  margin-left: 20px;
 }
 
 /*********** main benefit ***********/
@@ -136,11 +140,7 @@ main #main_benefit p {
 
 /*********** main limited ***********/
 main #main_limited {
-  height: 845px;
-}
-main #main_limited h2,
-main #main_limited h3 {
-  margin-left: 20px;
+  height: 50%;
 }
 main #main_limited .limited_img {
   height: 100vw;
@@ -182,18 +182,184 @@ main #main_limited .limited_img .lmt_2,
 main #main_limited .limited_img .lmt_3 {
   display: none;
 }
-
+/* ************************************************************ */
+main #main_limited .limited_txt {
+  padding: 20px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+}
 main #main_limited .limited_txt .carousel {
   width: 20px;
+  background: url(../icons/line-angle-down.svg) no-repeat 50% / contain;
+  cursor: pointer;
 }
-main #main_limited .limited_txt h4 {
+main #main_limited .limited_txt .lmt_txt .lmt_txt_title .carousel:active {
+  /* ???????? */
+  background: url(../icons/line-angle-up.svg) no-repeat 50% / contain;
+}
+main #main_limited .limited_txt .lmt_txt .lmt_txt_title {
   font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
+main #main_limited .limited_txt .lmt_txt:first-child .lmt_txt_title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #01172d;
+}
+main #main_limited .limited_txt .lmt_txt {
+  padding-bottom: 40px;
+}
+
 main #main_limited .limited_txt span {
   padding-right: 10px;
 }
+main #main_limited .limited_txt p {
+  padding: 20px;
+  line-height: 30px;
+}
+
+main #main_limited .limited_txt .lmt_txt:nth-child(2) p,
+main #main_limited .limited_txt .lmt_txt:nth-child(3) p {
+  display: none;
+}
 
 /*********** main best ***********/
+main #main_best .best {
+  padding: 20px;
+  padding-bottom: 100px;
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+}
+main #main_best .best p {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+main #main_best .best .btn2 {
+  border: 1px solid #01172d;
+  width: 115px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+main #main_best .best_2,
+main #main_best .best_3,
+main #main_best .best_4 {
+  display: none;
+}
+
+/*********** main video ***********/
+main #main_video {
+  height: 150vw;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+main #main_video h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+main #main_video p {
+  margin: 20px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+
+  padding-bottom: 80px;
+}
+main #main_video .btn {
+  display: none;
+}
+
 /*********** main gift ***********/
+main #main_gift {
+  height: 460vh;
+  background: url(../images/m_gift_bg.png) no-repeat 50% / cover;
+}
+main #main_gift h2,
+main #main_gift h3 {
+  text-align: center;
+}
+main #main_gift h3 {
+  padding-bottom: 50px;
+}
+/* ************************************************************ */
+main #main_gift .set_container {
+  height: 430vh;
+  display: grid;
+  grid-template: repeat(9, 1fr) / repeat(1, 1fr);
+}
+main #main_gift .set_container .set {
+  background: no-repeat 50% / cover;
+  overflow: hidden;
+  margin: 10px 20px;
+}
+main #main_gift .set_container .set1 {
+  background-image: url(../images/gift_1.png);
+}
+main #main_gift .set_container .set2 {
+  background-image: url(../images/gift_2.png);
+}
+main #main_gift .set_container .set3 {
+  background-image: url(../images/gift_3.png);
+}
+main #main_gift .set_container .set4 {
+  background-image: url(../images/gift_4.png);
+}
+main #main_gift .set_container .set5 {
+  background-image: url(../images/gift_5.png);
+}
+main #main_gift .set_container .set6 {
+  background-image: url(../images/gift_6.png);
+}
+main #main_gift .set_container .set7 {
+  background-image: url(../images/gift_7.png);
+}
+main #main_gift .set_container .set8 {
+  background-image: url(../images/gift_8.png);
+}
+main #main_gift .set_container .set9 {
+  background-image: url(../images/gift_9.png);
+}
+
+main #main_gift .set_container .set_txt {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+
+  font-size: 1.7rem;
+  font-weight: bold;
+  /* line-height: 40vh; */
+  padding-top: 15vh;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+main #main_gift .set_container .set_txt:hover {
+  opacity: 1;
+  background-color: rgba(255, 203, 0, 0.7);
+}
+main #main_gift .set_container .set_txt h4 {
+  padding-bottom: 50px;
+}
+
 /*********** main info ***********/
+main #main_info .search {
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+}
+main #main_info .search h3 {
+  margin-left: 20px;
+  margin-top: 30px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 35px;
+}
+
 /*********** footer ***********/
