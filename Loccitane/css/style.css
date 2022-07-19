@@ -7,6 +7,7 @@ html {
   font-size: 14px;
   color: #01172d;
   text-transform: capitalize;
+  min-width: 460px;
 }
 a {
   color: inherit;
@@ -68,9 +69,10 @@ header #slide_txt {
   bottom: 0;
   left: 10%;
 }
-header #slide_txt h1 {
+header #slide_txt h2 {
   width: 380px;
   font-size: 3rem;
+  font-weight: normal;
   margin: 0 auto;
 }
 header #slide_txt p {
@@ -202,7 +204,7 @@ main #main_limited .limited_txt .lmt_txt .lmt_txt_title {
   display: flex;
   justify-content: space-between;
 }
-main #main_limited .limited_txt .lmt_txt:first-child .lmt_txt_title {
+main #main_limited .limited_txt .lmt_txt:active .lmt_txt_title {
   padding-bottom: 15px;
   border-bottom: 1px solid #01172d;
 }
@@ -218,9 +220,11 @@ main #main_limited .limited_txt p {
   line-height: 30px;
 }
 
-main #main_limited .limited_txt .lmt_txt:nth-child(2) p,
-main #main_limited .limited_txt .lmt_txt:nth-child(3) p {
+main #main_limited .limited_txt .lmt_txt p {
   display: none;
+}
+main #main_limited .limited_txt .lmt_txt:active p {
+  display: block;
 }
 
 /*********** main best ***********/
@@ -331,9 +335,9 @@ main #main_gift .set_container .set_txt {
   margin-top: 20px;
   text-align: center;
 
-  font-size: 1.7rem;
-  font-weight: bold;
-  /* line-height: 40vh; */
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 30px;
   padding-top: 15vh;
 
   opacity: 0;
@@ -344,13 +348,17 @@ main #main_gift .set_container .set_txt:hover {
   background-color: rgba(255, 203, 0, 0.7);
 }
 main #main_gift .set_container .set_txt h4 {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  /* font-weight: normal; */
 }
 
 /*********** main info ***********/
+main #main_info {
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+}
 main #main_info .search {
   width: 100%;
-  height: 500px;
+  height: 450px;
   border-bottom: 2px solid rgba(96, 96, 96, 0.3);
 }
 main #main_info .search h3 {
@@ -361,5 +369,103 @@ main #main_info .search h3 {
   font-weight: 500;
   line-height: 35px;
 }
+/***********************************************/
+main #main_info .search form {
+  margin: 0 auto;
+  margin-top: 50px;
+
+  background-color: #fff;
+  width: 380px;
+
+  border: 1px solid #ffcb00;
+
+  display: flex;
+}
+main #main_info .search form input[type="text"] {
+  outline: none;
+  border: 1px solid transparent;
+  width: 350px;
+  padding: 15px;
+}
+main #main_info .search form input[type="submit"] {
+  background-color: #ffcb00;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+/***********************************************/
+main #main_info .info {
+  text-align: center;
+  height: 80%;
+  width: 85%;
+  line-height: 30px;
+  margin: 0 auto;
+}
+main #main_info .membership {
+  border-bottom: 1px solid #ffcb00;
+  padding-bottom: 60px;
+}
+main #main_info .mini_title {
+  font-size: 1.4rem;
+  margin: 60px 0 30px;
+}
+main #main_info .membership p {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+main #main_info .membership .mini {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+main #main_info .membership .btn {
+  border: #01172d 1px solid;
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+
+  margin: 0 auto;
+}
+main #main_info .inipay {
+  padding-bottom: 60px;
+}
 
 /*********** footer ***********/
+footer {
+  background-color: #efefef;
+  height: 500px;
+  text-align: center;
+
+  text-transform: none;
+}
+footer .footer_info .info1 {
+  line-height: 30px;
+  padding-top: 30px;
+}
+footer .footer_info a img {
+  width: 160px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+footer .footer_info .info2 {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(96, 96, 96, 0.3);
+}
+footer .info3 p,
+footer .info3 a {
+  padding: 30px;
+}
+footer .btn3 {
+  font-size: 20px;
+  border: 1px solid #606060;
+  width: 350px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+}

@@ -1,3 +1,38 @@
 @charset "utf-8";
 
-/************ 태블릿 *********************************************/
+/*********** header ***********/
+header {
+  width: 100%;
+  height: 878px;
+  background: url(../images/t_main_final.png) no-repeat 50% / cover;
+}
+
+/******** nav ********/
+header nav {
+  display: flex;
+  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header nav h1 {
+  width: 189px;
+  height: 63px;
+
+  margin: 1vw;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+header nav #toggle_menu {
+  display: block;
+  text-indent: -9999px;
+  background: url(../icons/menu.svg) no-repeat 50% / contain;
+  width: 32px;
+  height: 32px;
+  margin: 4vw;
+
+  position: absolute;
+  right: 15px;
+  bottom: 50px;
+}

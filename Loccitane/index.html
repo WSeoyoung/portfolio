@@ -1,384 +1,431 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>L'OCCITANE</title>
-   <!-- minireset -->
-  <link rel="stylesheet" href="../common/minireset.css">
-  <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png"/>
-  <!-- fonts 외부문서로 연결 -->
-  <link rel="stylesheet" href="./css/font.css"/> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>L'OCCITANE</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="../common/minireset.css" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <!-- fonts 외부문서로 연결 -->
+    <link rel="stylesheet" href="./css/font.css" />
 
-   <!-- 내가 작성한 style / min-width 작성시 작은값 먼저 작성 -->
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" media="(min-width:768px)" href="./css/tablet.css" />
-   <link rel="stylesheet" media="(min-width:1280px)" href="./css/pc.css"/>
-</head>
+    <!-- 내가 작성한 style / min-width 작성시 작은값 먼저 작성 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="(min-width:768px)" href="./css/tablet.css" />
+    <link rel="stylesheet" media="(min-width:1280px)" href="./css/pc.css" />
+  </head>
 
-<!-- jQuery cdn -> 이거 먼저 작성
+  <!-- jQuery cdn -> 이거 먼저 작성
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
  vide js 제이쿼리 기반의 플러그으로 반드시 먼저 제이쿼리 파일이 연결되어 있어야 함 
 <script src="../common/jquery.vide.min.js"></script> -->
 
-<body>
-   <!-- header -->
-   <header>
-    <!-- nav -->
-    <nav>
-      <h1>
-        <a href="index.html"><img src="./icons/logo.png" alt="록시땅로고" /></a>
-      </h1>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <nav>
+        <h1>
+          <a href="index.html"
+            ><img src="./icons/logo.png" alt="록시땅로고"
+          /></a>
+        </h1>
 
-      <ul id="gnb">
-        <li>
-          <a href="#">ABOUT US</a>
-          <ul class="sub_menu">
-            <li><a href="">록시땅의 약속</a></li>
-            <li><a href="">록시땅의 뷰티 TIP</a></li>
-            <li><a href="">록시땅의 원료</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">라인별 제품</a>
-          <ul class="sub_menu">
-            <li><a href="">시어 버터</a></li>
-            <li><a href="">버베나</a></li>
-            <li><a href="">아로마콜로지</a></li>
-            <li><a href="">이모르뗄 디바인</a></li>
-            <li><a href="">이모르뗄 프레셔스</a></li>
-            <li><a href="">아몬드</a></li>
-            <li><a href="">로즈</a></li>
-            <li><a href="">체리 블라썸</a></li>
-            <li><a href="">피브완</a></li>
-            <li><a href="">렌느 블랑쉬</a></li>
-            <li><a href="">라벤더</a></li>
-            <li><a href="">아를레 지엔느</a></li>
-            <li><a href="">꺄드</a></li>
-            <li><a href="">오드 쎄드라</a></li>
-            <li><a href="">캡 쎄드라</a></li>
-            <li><a href="">떼르 드 루미에르 로</a></li>
-            <li><a href="">아쿠아 레오티에</a></li>
-            <li><a href="">이모르뗄 리셋</a></li>
-            <li><a href="">에르베</a></li>
-            <li><a href="">클렌징 인퓨전</a></li>
-            <li><a href="">아트 드 비브레 홈 컬렉션</a></li>
-            <li><a href="">프루티 립 틴트밤</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">케어 제품</a>
-          <ul class="sub_menu">
-            <li><a href="">스킨 & 립</a></li>
-            <li><a href="">바디 & 핸드</a></li>
-            <li><a href="">헤어</a></li>
-            <li><a href="">맨즈</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">향수 제품</a>
-          <ul class="sub_menu">
-            <li><a href="">여성용 향수</a></li>
-            <li><a href="">남성용 향수</a></li>
-            <li><a href="">홈 컬렉션</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">선물 추천</a>
-          <ul class="sub_menu">
-            <li><a href="">그녀를 위한 선물</a></li>
-            <li><a href="">그를 위한 선물</a></li>
-            <li><a href="">아이를 위한 선물</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">프로모션</a>
-        </li>
-      </ul>
+        <ul id="gnb">
+          <li>
+            <a href="#">ABOUT US</a>
+            <ul class="sub_menu">
+              <li><a href="">록시땅의 약속</a></li>
+              <li><a href="">록시땅의 뷰티 TIP</a></li>
+              <li><a href="">록시땅의 원료</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">라인별 제품</a>
+            <ul class="sub_menu">
+              <li><a href="">시어 버터</a></li>
+              <li><a href="">버베나</a></li>
+              <li><a href="">아로마콜로지</a></li>
+              <li><a href="">이모르뗄 디바인</a></li>
+              <li><a href="">이모르뗄 프레셔스</a></li>
+              <li><a href="">아몬드</a></li>
+              <li><a href="">로즈</a></li>
+              <li><a href="">체리 블라썸</a></li>
+              <li><a href="">피브완</a></li>
+              <li><a href="">렌느 블랑쉬</a></li>
+              <li><a href="">라벤더</a></li>
+              <li><a href="">아를레 지엔느</a></li>
+              <li><a href="">꺄드</a></li>
+              <li><a href="">오드 쎄드라</a></li>
+              <li><a href="">캡 쎄드라</a></li>
+              <li><a href="">떼르 드 루미에르 로</a></li>
+              <li><a href="">아쿠아 레오티에</a></li>
+              <li><a href="">이모르뗄 리셋</a></li>
+              <li><a href="">에르베</a></li>
+              <li><a href="">클렌징 인퓨전</a></li>
+              <li><a href="">아트 드 비브레 홈 컬렉션</a></li>
+              <li><a href="">프루티 립 틴트밤</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">케어 제품</a>
+            <ul class="sub_menu">
+              <li><a href="">스킨 & 립</a></li>
+              <li><a href="">바디 & 핸드</a></li>
+              <li><a href="">헤어</a></li>
+              <li><a href="">맨즈</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">향수 제품</a>
+            <ul class="sub_menu">
+              <li><a href="">여성용 향수</a></li>
+              <li><a href="">남성용 향수</a></li>
+              <li><a href="">홈 컬렉션</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">선물 추천</a>
+            <ul class="sub_menu">
+              <li><a href="">그녀를 위한 선물</a></li>
+              <li><a href="">그를 위한 선물</a></li>
+              <li><a href="">아이를 위한 선물</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">프로모션</a>
+          </li>
+        </ul>
 
-      <ul id="registry">
-        <li><a href="#">search</a></li>
-        <li><a href="#">login</a></li>
-        <li><a href="#">shopping bag</a></li>
-      </ul>
+        <ul id="registry">
+          <li><a href="#">search</a></li>
+          <li><a href="#">login</a></li>
+          <li><a href="#">shopping bag</a></li>
+        </ul>
 
-       <!-- 모바일 메뉴 버튼 -->
-       <a href="#" id="toggle_menu">menu</a>
-    </nav>
+        <!-- 모바일 메뉴 버튼 -->
+        <a href="#" id="toggle_menu">menu</a>
+      </nav>
 
-    <!-- header : carousel -->
-    <div id="slide_txt">
-      <h1>2022 버베나 리미티드</h1>
-      <p>썸머 파라다이스에서 즐기는 리프레시 버베나 향기</p>
-      <div class="btn"><a href="#">자세히 보기</a></div>
-
-    </div>
-  </header>
-
-  <!-- main contents -->
-  <main>
-    <!-- main benefit -->
-    <article id="main_benefit">
-      <h2 class="title">공식몰 단독 혜택</h2>
-      <h3 class="sub_title">EXCLUSICE BENEFIT</h3>
-
-      <div class="benefit_icon">
-        <div class="delivery border-right">
-          <img src="./icons/benefit_1.png" alt="무료배송" />
-          <h3>전구매 <span>무료 배송</span></h3>
-          <p>록시땅 공식몰에서 구매시 무료배송 입니다</p>
-        </div>
-
-        <div class="discount border-right">
-          <img src="./icons/benefit_2.png" alt="할인" />
-          <h3>록시땅 공식몰 <span>회원 5% 할인</span></h3>
-          <p>
-            록시땅 코리아 공식몰에 가입하여 구매하시면 5% 할인을 받으실 수
-            있습니다
-          </p>
-        </div>
-
-        <div class="present">
-          <img src="./icons/benefit_3.png" alt="증정" />
-          <h3>미니 샘플 <span>증정</span></h3>
-          <p>전 구매 고객에게 베스트셀러 샘플 3종을 증정하고있습니다</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- main limited -->
-    <article id="main_limited">
-      <h2 class="title">2022 리미티드 에디션</h2>
-      <h3 class="sub_title">2022 LIMITED EDITION</h3>
-
-      <ul class="limited_img">
-        <li class="lmt_1">
-          <img src="./images/limited_1-1.png" alt="제품01">
-          <div class="lmt_1_txt">
-            <h4>2022 버베나 아웃도어 바디 스프레이 100ml</h4>
-            <p class="price">\29,000</p>
-            <div class="btn"><a href="#">구매하기</a></div>
-          </div>
-        </li>
-
-        <li class="lmt_2">
-          <img src="./images/limited_2-1.png" alt="제품02">
-          <div class="lmt_2_txt">
-            <h4>버베나 핸드 클린 젤 280ml</h4>
-            <p class="price">\28,000</p>
-            <div class="btn"><a href="#">구매하기</a></div>
-          </div>
-        </li>
-
-        <li class="lmt_3">
-          <img src="./images/limited_3-1.png" alt="제품03">
-          <div class="lmt_3_txt">
-            <h4>2022 오렌지 블라썸 프래그런스 솔리데리티 밤 20g</h4>
-            <p class="price">\9,000</p>
-            <div class="btn"><a href="#">구매하기</a></div>
-          </div>
-        </li>
-      </ul>
-
-      <ul class="limited_txt">
-        <li class="lmt_txt">
-          <div class="lmt_txt_title">
-            <h4><span>01</span> 버베나 아웃도어 바디 스프레이</h4>
-            <div class="carousel"><a href="#"></a></div>
-          </div>
-          <p>프로방스 산 버베나 성분이 들어가 피부와 헤어에 즉각적으로 상쾌하고 신선한 여름 향기를 선사하는 바디 스프레이. 야외활동이 많아지는 6월 아웃도어 필수템인 멀티 바디 스프레이 입니다.</p>
-        </li>
-        
-        <li class="lmt_txt">
-          <div class="lmt_txt_title">
-            <h4><span>02</span> 버베나 클린 핸드 케어</h4>
-            <div class="carousel"><a href="#"></a></div>
-          </div>
-          <p>NO.1 핸드 케어 브랜드 록시땅이 선보이는 프리미엄 핸드 클린젤. 최적의 알코올 햠량으로 *99.9%의 유해세균 살균 효과가 있으며, 비누나 물 없이 언제 어디서나 편리하게 손 세척이 가능합니다. </p>
-        </li>
-
-        <li class="lmt_txt">
-          <div class="lmt_txt_title">
-            <h4><span>03</span> 2022 오렌지 블라썸 프래그런스 솔리데리티 밤</h4>
-            <div class="carousel"><a href="#"></a></div>
-          </div>
-          <p>록시땅은 매년 리미티드 에디션 솔리데리티 제품을 출시하며, 그 수익금 100%를 지구와 환경, 여성의 자립을 돕는 다양한 활동에 기부하는 CSR을 전개했습니다. 2022년에는 5월 22일 세계 생물 다양성의 날을 기념하여, 생물 다양성을 보호하기 위해 리미티드 에디션 솔리데리티 밤을 출시합니다.</p>
-        </li>
-      </ul>
-    </article>
-
-    <!-- main best -->
-    <article id="main_best">
-      <h2 class="title">베스트 셀러</h2>
-      <h3 class="sub_title">BEST SELLER</h3>
-
-      <div class=" best best_1">
-        <img src="./images/best_1.jpg" alt="베스트1">
-        <p>2022 시어 버터 드라이 스킨 <br>핸드 크림 150ml</p>
-        <div class="btn2"><a href="#">제품 보기</a></div>
-      </div>
-
-      <div class="best best_2">
-        <img src="./images/best_2.jpg" alt="베스트1">
-        <p>아몬드 모이스쳐라이징 <br>샤워 오일 250ml</p>
-        <div class="btn2"><a href="#">제품 보기</a></div>
-      </div>
-
-      <div class="best best_3">
-        <img src="./images/best_3.jpg" alt="베스트1">
-        <p>시어 버터 울트라 리치 <br>바디 로션 250ml</p>
-        <div class="btn2"><a href="#">제품 보기</a></div>
-      </div>
-
-      <div class="best best_4">
-        <img src="./images/best_4.jpg" alt="베스트1">
-        <p>시어 버터 립 밤 스틱 4.5g</p>
-        <div class="btn2"><a href="#">제품 보기</a></div>
-      </div>
-    </article>
-
-    <!-- main video -->
-    <article id="main_video">
-      <h3 class="sub_title">록시땅의 친환경<br>ECO MERCI 박스</h3>
-      <p>록시땅 공식몰에서 주문하신 제품은 플라스틱 테이프와 완충제를 사용하지 않아 박스부터 포장지까지 100% 재활용이 가능한 포장박스로 배송됩니다.</p>
-      <div class="btn"><a href="#">자세히 보기</a></div>
-
-      <video src="./ECO.mp4" muted autoplay loop></video>
-      <!-- <div id="eco_video" data-vide-bg="./록시땅영상" data-vide-options="autoplay:true, muted:true, loop:true"></div> -->
-
-    </article>
-
-    <!-- main gift -->
-    <article id="main_gift">
-      <h2 class="title">베스트 기프트 세트</h2>
-      <h3 class="sub_title">BEST GIFT SET</h3>
-
-      <div class="set_container">
-        <div class="set set1">
-          <div class="set_txt">
-            <h4>홈 퓨리파잉 미스트 세트<br>(홈 타블렛 증정)</h4>
-            <p class="price">\30,000</p>
-          </div>
-        </div>
-
-        <div class="set set2">
-          <div class="set_txt">
-            <h4>시어 핸드 & 스틱 립밤 듀오</h4>
-            <p class="price">\29,000</p>
-          </div>
-        </div>
-        
-        <div class="set set3">
-          <div class="set_txt">
-            <h4>클린핸드 시어 버베나<br>핸드 앤 바디 듀오 세트</h4>
-            <p class="price">\67,000</p>
-          </div>
-        </div>
-
-        <div class="set set4">
-          <div class="set_txt">
-            <h4>클린핸드 시어<br>핸드 앤 바디 듀오 세트</h4>
-            <p class="price">\67,000</p>
-          </div>
-        </div>
-
-        <div class="set set5">
-          <div class="set_txt">
-            <h4>코쿤 드 세레니테 릴렉싱 롤 온 10ml</h4>
-            <p class="price">\30,000</p>
-          </div>
-        </div>
-
-        <div class="set set6">
-          <div class="set_txt">
-            <h4>버베나 클린 핸드 겔 <br>& 핸드 크림 듀오</h4>
-            <p class="price">\26,000</p>
-          </div>
-        </div>
-
-        <div class="set set7">
-          <div class="set_txt">
-            <h4>시어 핸드 & 스틱 립밤 듀오</h4>
-            <p class="price">\29,000</p>
-          </div>
-        </div>
-
-        <div class="set set8">
-          <div class="set_txt">
-            <h4>2022 버베나 바디 듀오</h4>
-            <p class="price">\68,000</p>
-          </div>
-        </div>
-
-        <div class="set set9">
-          <div class="set_txt">
-            <h4>2022 버베나 EDT 세트</h4>
-            <p class="price">\75,000</p>
-          </div>
-        </div>
-    </div>
-    </article>
-
-    <!-- main info -->
-    <article id="main_info">
-      <div class="search">
-        <h2  class="title">매장 찾기</h2>
-        <h3>가장 가까운 록시땅 매장에서<br>프로방스의 아름다움을 경험해 보세요.</h3>
-
-        <form action="#">
-          
-        </form>
-      </div>
-
-      <div class="membership">
-        <h4 class="mini_title">마이 프로방스 멤버십 프로그램</h4>
-        <p>록시땅의 마이 프로방스 멤버십을 지금 만나보세요. <br> *공식몰에서 화원가입을 하신 경우, 오프라인 매장에서는 영업일 기준 하루 후에 확인하실 수 있습니다.</p>
+      <!-- header : carousel -->
+      <div id="slide_txt">
+        <h2>2022 버베나 리미티드</h2>
+        <p>썸머 파라다이스에서 즐기는 리프레시 버베나 향기</p>
         <div class="btn"><a href="#">자세히 보기</a></div>
       </div>
+    </header>
 
-      <div class="inipay">
-        <h4 class="mini_title">INIPAY 에스크로 가입 확인</h4>
-        <p>록시땅 공식몰(kr.loccitane.com)은 귀하의 결제 정보 보안을 최상의 상태로 유지하기 위하여,<br> 결제 시, (주)이니시스의 결제대금 예치서비스인 에스크로 서비스를 제공하고 있습니다.
-          <br> - <br>
-          결제대금예치업 등록번호 : 02-006-00013 <br>
-          통신판매번호 :  2008-서울강남-0844</p>
+    <!-- main contents -->
+    <main>
+      <!-- main benefit -->
+      <article id="main_benefit">
+        <h2 class="title">공식몰 단독 혜택</h2>
+        <h3 class="sub_title">EXCLUSICE BENEFIT</h3>
 
+        <div class="benefit_icon">
+          <div class="delivery border-right">
+            <img src="./icons/benefit_1.png" alt="무료배송" />
+            <h3>전구매 <span>무료 배송</span></h3>
+            <p>록시땅 공식몰에서 구매시 무료배송 입니다</p>
+          </div>
+
+          <div class="discount border-right">
+            <img src="./icons/benefit_2.png" alt="할인" />
+            <h3>록시땅 공식몰 <span>회원 5% 할인</span></h3>
+            <p>
+              록시땅 코리아 공식몰에 가입하여 구매하시면 5% 할인을 받으실 수
+              있습니다
+            </p>
+          </div>
+
+          <div class="present">
+            <img src="./icons/benefit_3.png" alt="증정" />
+            <h3>미니 샘플 <span>증정</span></h3>
+            <p>전 구매 고객에게 베스트셀러 샘플 3종을 증정하고있습니다</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- main limited -->
+      <article id="main_limited">
+        <h2 class="title">2022 리미티드 에디션</h2>
+        <h3 class="sub_title">2022 LIMITED EDITION</h3>
+
+        <ul class="limited_img">
+          <li class="lmt_1">
+            <img src="./images/limited_1-1.png" alt="제품01" />
+            <div class="lmt_1_txt">
+              <h4>2022 버베나 아웃도어 바디 스프레이 100ml</h4>
+              <p class="price">\29,000</p>
+              <div class="btn"><a href="#">구매하기</a></div>
+            </div>
+          </li>
+
+          <li class="lmt_2">
+            <img src="./images/limited_2-1.png" alt="제품02" />
+            <div class="lmt_2_txt">
+              <h4>버베나 핸드 클린 젤 280ml</h4>
+              <p class="price">\28,000</p>
+              <div class="btn"><a href="#">구매하기</a></div>
+            </div>
+          </li>
+
+          <li class="lmt_3">
+            <img src="./images/limited_3-1.png" alt="제품03" />
+            <div class="lmt_3_txt">
+              <h4>2022 오렌지 블라썸 프래그런스 솔리데리티 밤 20g</h4>
+              <p class="price">\9,000</p>
+              <div class="btn"><a href="#">구매하기</a></div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="limited_txt">
+          <li class="lmt_txt">
+            <div class="lmt_txt_title">
+              <h4><span>01</span> 버베나 아웃도어 바디 스프레이</h4>
+              <div class="carousel"><a href="#"></a></div>
+            </div>
+            <p>
+              프로방스 산 버베나 성분이 들어가 피부와 헤어에 즉각적으로 상쾌하고
+              신선한 여름 향기를 선사하는 바디 스프레이. 야외활동이 많아지는 6월
+              아웃도어 필수템인 멀티 바디 스프레이 입니다.
+            </p>
+          </li>
+
+          <li class="lmt_txt">
+            <div class="lmt_txt_title">
+              <h4><span>02</span> 버베나 클린 핸드 케어</h4>
+              <div class="carousel"><a href="#"></a></div>
+            </div>
+            <p>
+              NO.1 핸드 케어 브랜드 록시땅이 선보이는 프리미엄 핸드 클린젤.
+              최적의 알코올 햠량으로 *99.9%의 유해세균 살균 효과가 있으며,
+              비누나 물 없이 언제 어디서나 편리하게 손 세척이 가능합니다.
+            </p>
+          </li>
+
+          <li class="lmt_txt">
+            <div class="lmt_txt_title">
+              <h4>
+                <span>03</span> 2022 오렌지 블라썸 프래그런스 솔리데리티 밤
+              </h4>
+              <div class="carousel"><a href="#"></a></div>
+            </div>
+            <p>
+              록시땅은 매년 리미티드 에디션 솔리데리티 제품을 출시하며, 그
+              수익금 100%를 지구와 환경, 여성의 자립을 돕는 다양한 활동에
+              기부하는 CSR을 전개했습니다. 2022년에는 5월 22일 세계 생물
+              다양성의 날을 기념하여, 생물 다양성을 보호하기 위해 리미티드
+              에디션 솔리데리티 밤을 출시합니다.
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- main best -->
+      <article id="main_best">
+        <h2 class="title">베스트 셀러</h2>
+        <h3 class="sub_title">BEST SELLER</h3>
+
+        <div class="best best_1">
+          <img src="./images/best_1.jpg" alt="베스트1" />
+          <p>2022 시어 버터 드라이 스킨 <br />핸드 크림 150ml</p>
+          <div class="btn2"><a href="#">제품 보기</a></div>
+        </div>
+
+        <div class="best best_2">
+          <img src="./images/best_2.jpg" alt="베스트1" />
+          <p>아몬드 모이스쳐라이징 <br />샤워 오일 250ml</p>
+          <div class="btn2"><a href="#">제품 보기</a></div>
+        </div>
+
+        <div class="best best_3">
+          <img src="./images/best_3.jpg" alt="베스트1" />
+          <p>시어 버터 울트라 리치 <br />바디 로션 250ml</p>
+          <div class="btn2"><a href="#">제품 보기</a></div>
+        </div>
+
+        <div class="best best_4">
+          <img src="./images/best_4.jpg" alt="베스트1" />
+          <p>시어 버터 립 밤 스틱 4.5g</p>
+          <div class="btn2"><a href="#">제품 보기</a></div>
+        </div>
+      </article>
+
+      <!-- main video -->
+      <article id="main_video">
+        <h3 class="sub_title">록시땅의 친환경<br />ECO MERCI 박스</h3>
+        <p>
+          록시땅 공식몰에서 주문하신 제품은 플라스틱 테이프와 완충제를 사용하지
+          않아 박스부터 포장지까지 100% 재활용이 가능한 포장박스로 배송됩니다.
+        </p>
+        <div class="btn"><a href="#">자세히 보기</a></div>
+
+        <video src="./ECO.mp4" muted autoplay loop></video>
+        <!-- <div id="eco_video" data-vide-bg="./록시땅영상" data-vide-options="autoplay:true, muted:true, loop:true"></div> -->
+      </article>
+
+      <!-- main gift -->
+      <article id="main_gift">
+        <h2 class="title">베스트 기프트 세트</h2>
+        <h3 class="sub_title">BEST GIFT SET</h3>
+
+        <div class="set_container">
+          <div class="set set1">
+            <div class="set_txt">
+              <h4>홈 퓨리파잉 미스트 세트<br />(홈 타블렛 증정)</h4>
+              <p class="price">\30,000</p>
+            </div>
+          </div>
+
+          <div class="set set2">
+            <div class="set_txt">
+              <h4>시어 핸드 & 스틱 립밤 듀오</h4>
+              <p class="price">\29,000</p>
+            </div>
+          </div>
+
+          <div class="set set3">
+            <div class="set_txt">
+              <h4>클린핸드 시어 버베나<br />핸드 앤 바디 듀오 세트</h4>
+              <p class="price">\67,000</p>
+            </div>
+          </div>
+
+          <div class="set set4">
+            <div class="set_txt">
+              <h4>클린핸드 시어<br />핸드 앤 바디 듀오 세트</h4>
+              <p class="price">\67,000</p>
+            </div>
+          </div>
+
+          <div class="set set5">
+            <div class="set_txt">
+              <h4>코쿤 드 세레니테 릴렉싱 롤 온 10ml</h4>
+              <p class="price">\30,000</p>
+            </div>
+          </div>
+
+          <div class="set set6">
+            <div class="set_txt">
+              <h4>버베나 클린 핸드 겔 <br />& 핸드 크림 듀오</h4>
+              <p class="price">\26,000</p>
+            </div>
+          </div>
+
+          <div class="set set7">
+            <div class="set_txt">
+              <h4>시어 핸드 & 스틱 립밤 듀오</h4>
+              <p class="price">\29,000</p>
+            </div>
+          </div>
+
+          <div class="set set8">
+            <div class="set_txt">
+              <h4>2022 버베나 바디 듀오</h4>
+              <p class="price">\68,000</p>
+            </div>
+          </div>
+
+          <div class="set set9">
+            <div class="set_txt">
+              <h4>2022 버베나 EDT 세트</h4>
+              <p class="price">\75,000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- main info -->
+      <article id="main_info">
+        <div class="search">
+          <h2 class="title">매장 찾기</h2>
+          <h3>
+            가장 가까운 록시땅 매장에서<br />프로방스의 아름다움을 경험해
+            보세요.
+          </h3>
+
+          <form action="#" method="get">
+            <input
+              type="text"
+              id="search_store"
+              name="search_store"
+              size="22"
+              placeholder="매장명을 입력하세요. ex) 압구정"
+            />
+            <input type="submit" value="찾기" />
+          </form>
+        </div>
+
+        <div class="info">
+          <div class="membership">
+            <h4 class="mini_title">마이 프로방스 멤버십 프로그램</h4>
+            <p>록시땅의 마이 프로방스 멤버십을 지금 만나보세요.</p>
+            <p class="mini">
+              * 공식몰에서 화원가입을 하신 경우,<br />
+              오프라인 매장에서는 영업일 기준 하루 후에 확인하실 수 있습니다.
+            </p>
+            <div class="btn"><a href="#">자세히 보기</a></div>
+          </div>
+
+          <div class="inipay">
+            <h4 class="mini_title">INIPAY 에스크로 가입 확인</h4>
+            <p>
+              록시땅 공식몰(kr.loccitane.com)은 귀하의 결제 정보 보안을 최상의
+              상태로 유지하기 위하여,<br />
+              결제 시, (주)이니시스의 결제대금 예치서비스인 에스크로 서비스를
+              제공하고 있습니다. <br />
+              - <br />
+              결제대금예치업 등록번호 : 02-006-00013 <br />
+              통신판매번호 : 2008-서울강남-0844
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer_info">
+        <div class="info1">
+          업무 시간: 평일 오전 10시~오후 5시, 공휴일 제외<br />
+          결제 문의 : 1588-4954<br />
+          (02) 2054-0500 | loccitane@loccitane.co.kr <br />록시땅 플러스친구 :
+          @록시땅
+        </div>
+
+        <a href="index.html">
+          <img src="./icons/logo_G.png" alt="록시땅로고" />
+        </a>
+
+        <ul class="info2">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">온라인 문의</a></li>
+          <li><a href="#">배송조회</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">자주하는 질문</a></li>
+        </ul>
       </div>
 
-    </article>
-
-  </main>
-  <!-- footer -->
-  <footer>
-    <div class="footer_info">
-      <h1>
-        <a href="/"><img src="./icons/logo_G.png" alt="록시땅로고" /></a>
-      </h1>
-
-      <div class="info1">
-        업무 시간: 평일 오전 10시~오후 5시, 공휴일 제외<br>
-        결제 문의 : 1588-4954<br>
-        (02) 2054-0500   |   loccitane@loccitane.co.kr   |   록시땅 플러스친구 : @록시땅
+      <div class="info3">
+        <p>E-MAIL : 3daking@naver.com</p>
+        <a href="https://github.com/WSeoyoung" target="_blank">
+          https://github.com/WSeoyoung
+        </a>
       </div>
 
-      <ul class="info2">
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">온라인 문의</a></li>
-        <li><a href="#">배송조회</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">자주하는 질문</a></li>
-      </div>
-
-    </div>
-
-    <div class="footer_my">
-      <p>E-MAIL : 3daking@naver.com</p>
-      <a href="https://github.com/WSeoyoung" target="_blank">https://github.com/WSeoyoung</a>
-    </div>
-
-    <div class="btn3"><a href="#">내 포트폴리오 바로가기</a></div>
-  </footer>
-</body>
+      <div class="btn3"><a href="#">내 포트폴리오 바로가기</a></div>
+    </footer>
+  </body>
 </html>
