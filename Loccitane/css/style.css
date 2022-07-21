@@ -275,7 +275,7 @@ main #main_best .best_4 {
 
 /*********** main video ***********/
 main #main_video {
-  height: 150vw;
+  height: 120vw;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -302,7 +302,7 @@ main #main_video .btn {
 
 /*********** main gift ***********/
 main #main_gift {
-  height: 460vh;
+  height: 420vh;
   background: url(../images/m_gift_bg.png) no-repeat 50% / cover;
 }
 main #main_gift h2,
@@ -314,9 +314,10 @@ main #main_gift h3 {
 }
 /* ************************************************************ */
 main #main_gift .set_container {
-  height: 430vh;
   display: grid;
-  grid-template: repeat(9, 1fr) / repeat(1, 1fr);
+  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
 }
 main #main_gift .set_container .set {
   background: no-repeat 50% / cover;
