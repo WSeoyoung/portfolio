@@ -56,25 +56,6 @@ header nav #toggle_menu {
   right: 40px;
   top: 22px;
 }
-/* header nav #gnb {
-  position: fixed;
-  width: 90%;
-  height: 100%;
-  top: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 99;
-
-  transition: 1ms;
-  @if ($position == right) {
-    right: 0;
-  } @else if ($position == left) {
-    left: 0;
-  }
-} */
-
 header nav #gnb,
 header nav #registry {
   /* nav 메뉴 */
@@ -163,10 +144,10 @@ main #main_benefit p {
 /*********** main limited ***********/
 main #main_limited {
   height: 50%;
+  background: url(../images/limited_bg.png) no-repeat top / contain;
 }
 main #main_limited .limited_img {
   height: 100vw;
-  background: url(../images/limited_bg.png) no-repeat 50% / cover;
 }
 main #main_limited .limited_img .lmt_1 {
   display: flex;
@@ -465,6 +446,9 @@ footer {
 footer .footer_info .info1 {
   line-height: 30px;
   padding-top: 30px;
+}
+footer .footer_info .info1 span {
+  display: block;
 }
 footer .footer_info a img {
   width: 160px;
