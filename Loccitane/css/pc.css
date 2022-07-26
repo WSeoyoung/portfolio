@@ -7,20 +7,20 @@ header {
 }
 
 /******** nav ********/
-header nav h1 {
+header #mob_nav h1 {
   width: 220px;
   height: 70px;
   margin: 0;
   padding-top: 0;
 }
-header nav h1 a img {
+header #mob_nav h1 a img {
   padding-top: 15px;
   margin-left: 35px;
 }
-header nav #toggle_menu {
+header #mob_nav #toggle_menu {
   display: none;
 }
-header nav #gnb {
+header #pc_nav #gnb {
   display: block;
 
   width: 650px;
@@ -33,10 +33,10 @@ header nav #gnb {
   left: 32%;
   top: 40%;
 }
-header nav #gnb > li {
+header #pc_nav #gnb > li {
   position: relative;
 }
-header nav #gnb .sub_menu {
+header #pc_nav #gnb .sub_menu {
   background-color: #fff;
   width: 250px;
   box-sizing: border-box;
@@ -51,16 +51,16 @@ header nav #gnb .sub_menu {
   opacity: 0;
   pointer-events: none;
 }
-header nav #gnb > li:hover .sub_menu {
+header #pc_nav #gnb > li:hover .sub_menu {
   transform: translateY(0);
   opacity: 1;
   pointer-events: all;
 }
-nav #gnb .sub_menu li {
+#pc_nav #gnb .sub_menu li {
   height: 35px;
   padding: 10px;
 }
-header nav #registry {
+header #mob_nav #registry {
   display: block;
   font-weight: 500;
   font-size: 1.1rem;
@@ -78,7 +78,7 @@ header nav #registry {
   align-items: center;
   cursor: pointer;
 }
-header nav #registry li:last-child {
+header #mob_nav #registry li:last-child {
   text-indent: -9999px;
   background: url(../icons/shopping_bag.svg) no-repeat 50% / contain;
   width: 32px;
@@ -87,7 +87,7 @@ header nav #registry li:last-child {
 
   margin-left: 30px;
 }
-header nav #registry li:first-child {
+header #mob_nav #registry li:first-child {
   display: block;
 
   text-indent: 70px;
@@ -97,7 +97,7 @@ header nav #registry li:first-child {
   background: url(../icons/search.svg) no-repeat 50% / 36px;
   margin-right: 100px;
 }
-header nav #registry li:first-child a::after {
+header #mob_nav #registry li:first-child a::after {
   content: "검색";
 }
 
@@ -151,27 +151,29 @@ main #main_benefit .discount {
 /*********** main limited ***********/
 main #main_limited {
   border-bottom: 2px solid rgba(96, 96, 96, 0.3);
-  background: url(../images/limited_bg.png) no-repeat bottom right / contain;
+  background: url(../images/limited_bg.png) no-repeat bottom right / 55%;
 }
 main #main_limited h2 {
   margin-top: 100px;
+  padding-left: 100px;
   width: 83%;
   margin: 0 auto;
 }
 main #main_limited h3 {
+  padding-left: 100px;
   width: 83%;
   margin: 0 auto;
 }
 main #main_limited .limited_wrap {
   width: 85%;
   display: grid;
-  grid-template-columns: repeat(2, 600px);
+  grid-template-columns: 800px 400px;
   grid-auto-rows: 800px;
   /* margin-left: 230px; */
   margin: 0 auto;
 }
 main #main_limited .limited_img {
-  width: 800px;
+  width: 1100px;
   grid-column: 2/3;
 }
 main #main_limited .limited_txt {
@@ -180,33 +182,37 @@ main #main_limited .limited_txt {
 
   border-bottom: none;
   margin-top: 200px;
+  padding-left: 120px;
 }
-/*
-main #main_limited .limited_wrap .limited_txt {
+main #main_limited .limited_img .lmt_1 img {
   position: absolute;
-  left: 0;
-  top: 0;
-} */
-/*********** main limited ***********??????????????????/
-main #main_limited {
-  padding: 150px 200px;
-  border-bottom: 2px solid rgba(96, 96, 96, 0.3);
+  left: 5%;
+  top: -16%;
 }
-
-main #main_limited .limited_txt {
-  border-bottom: none;
+main #main_limited .limited_img .lmt_1_txt {
+  position: absolute;
+  left: 42%;
+  top: 1%;
 }
+main #main_limited .limited_img .lmt_1_txt h4 {
+  font-weight: normal;
+  width: 350px;
 
+  font-size: 1.3rem;
+}
 /*********** main best ***********/
 main #main_best .best img {
-  width: 85%;
+  width: 90%;
 }
 main #main_best h2 {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-left: 150px;
+  padding-left: 100px;
 }
 main #main_best h3 {
   margin-left: 150px;
+  padding-left: 100px;
+  margin-bottom: 100px;
 }
 main #main_best .best p,
 main #main_best .best .btn2 {
@@ -215,8 +221,8 @@ main #main_best .best .btn2 {
 main #main_best .best .bt1 {
   margin-left: 80px;
 }
-main #main_best .best .bt2 {
-  margin-top: 40px;
+main #main_best .best_4 {
+  margin-top: 38px;
 }
 
 main #main_best .best_2,

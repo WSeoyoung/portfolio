@@ -25,12 +25,12 @@ header {
   background: url(../images/m_main_final.png) no-repeat 50% / cover;
 }
 
-/******** nav ********/
-header nav {
+/******** mobile nav ********/
+header #mob_nav {
   display: flex;
   border-bottom: 2px solid rgba(96, 96, 96, 0.3);
-
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -42,8 +42,7 @@ header nav h1 {
   padding-top: 15px;
   padding-left: 30px;
 }
-
-header nav #toggle_menu {
+header #mob_nav #toggle_menu {
   border: 0;
   display: block;
   text-indent: -9999px;
@@ -52,14 +51,73 @@ header nav #toggle_menu {
   height: 32px;
   cursor: pointer;
 
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 22px;
 }
-header nav #gnb,
-header nav #registry {
+header #mob_nav #registry {
   /* nav 메뉴 */
   display: none;
+}
+
+/******** pc nav ********/
+header #pc_nav {
+  background-color: #fff;
+  border-left: 2px solid #efefef;
+  width: 300px;
+  height: 100%;
+
+  position: fixed;
+  right: 0;
+  transition: 0.3s;
+  transform: translateX(300px);
+  z-index: 1;
+}
+/*********** X 표시 **********/
+#pc_nav #toggle_btn {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 14px;
+  width: 35px;
+  height: 30px;
+}
+#pc_nav #toggle_btn span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #01172d;
+}
+#pc_nav #toggle_btn .bar1 {
+  transform: rotate(45deg);
+}
+#pc_nav #toggle_btn .bar2 {
+  transform: rotate(-45deg);
+}
+
+/*********************************/
+
+header #pc_nav #gnb {
+  margin-top: 150px;
+}
+header #pc_nav #gnb > li {
+  padding: 30px;
+  margin: 30px;
+}
+header #pc_nav #gnb .sub_menu {
+  margin-top: 10px;
+  display: none;
+  transition: 0.3s;
+}
+header #pc_nav #gnb > li > a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+header #pc_nav #gnb li {
+  padding: 10px;
 }
 
 /******** img slide ********/
@@ -144,7 +202,7 @@ main #main_benefit p {
 /*********** main limited ***********/
 main #main_limited {
   height: 50%;
-  background: url(../images/limited_bg.png) no-repeat top / contain;
+  background: url(../images/limited_bg.png) no-repeat 0 100px / contain;
 }
 main #main_limited .limited_img {
   height: 100vw;

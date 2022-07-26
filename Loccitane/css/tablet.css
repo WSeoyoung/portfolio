@@ -8,11 +8,11 @@ header {
 
 /******** nav ********/
 
-header nav #toggle_menu {
+header #mob_nav #toggle_menu {
   right: 150px;
   top: 25px;
 }
-header nav #registry {
+header #mob_nav #registry {
   display: block;
   font-weight: bold;
   font-size: 1.1rem;
@@ -25,7 +25,7 @@ header nav #registry {
   justify-content: space-between;
   align-items: center;
 }
-header nav #registry li:last-child {
+header #mob_nav #registry li:last-child {
   text-indent: -9999px;
   background: url(../icons/shopping_bag.svg) no-repeat 50% / contain;
   width: 32px;
@@ -33,7 +33,7 @@ header nav #registry li:last-child {
   margin-left: 20px;
   cursor: pointer;
 }
-header nav #registry li:first-child {
+header #mob_nav #registry li:first-child {
   display: none;
 }
 
