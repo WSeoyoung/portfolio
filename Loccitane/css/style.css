@@ -254,21 +254,24 @@ main #main_limited .limited_txt .carousel {
   background: url(../icons/line-angle-down.svg) no-repeat 50% / contain;
   cursor: pointer;
 }
-main #main_limited .limited_txt .lmt_txt .lmt_txt_title .carousel:active {
-  /* ???????? */
+/* main #main_limited .limited_txt .lmt_txt .lmt_txt_title .carousel.active {
+  /* ???????? *
   background: url(../icons/line-angle-up.svg) no-repeat 50% / contain;
-}
+} */
 main #main_limited .limited_txt .lmt_txt .lmt_txt_title {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
 }
-main #main_limited .limited_txt .lmt_txt:active .lmt_txt_title {
+main #main_limited .limited_txt .lmt_txt.active .lmt_txt_title {
   padding-bottom: 15px;
   border-bottom: 1px solid #01172d;
 }
 main #main_limited .limited_txt .lmt_txt {
-  padding-bottom: 40px;
+  /* 여기 */
+  padding-bottom: 50px;
+  height: 0;
+  overflow: hidden;
 }
 
 main #main_limited .limited_txt span {
@@ -278,13 +281,13 @@ main #main_limited .limited_txt p {
   padding: 20px;
   line-height: 30px;
 }
-
+/*
 main #main_limited .limited_txt .lmt_txt p {
-  display: none;
+   display: none; 
 }
-main #main_limited .limited_txt .lmt_txt:active p {
+/* main #main_limited .limited_txt .lmt_txt:active p {
   display: block;
-}
+} */
 
 /*********** main best ***********/
 main #main_best .best {

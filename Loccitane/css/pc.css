@@ -7,6 +7,9 @@ header {
 }
 
 /******** nav ********/
+header #mob_nav {
+  z-index: 1;
+}
 header #mob_nav h1 {
   width: 220px;
   height: 70px;
@@ -116,6 +119,16 @@ header #slide_txt p {
 }
 header #slide_txt .btn {
   margin: 40px auto;
+
+  width: 150px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 16px;
+}
+header #slide_txt .btn:hover {
+  background-color: #fff;
+  border: 1px solid #01172d;
+  font-weight: bold;
 }
 
 /********* main *********/
@@ -173,7 +186,7 @@ main #main_limited .limited_wrap {
   margin: 0 auto;
 }
 main #main_limited .limited_img {
-  width: 1100px;
+  width: 800px;
   grid-column: 2/3;
 }
 main #main_limited .limited_txt {
@@ -186,19 +199,25 @@ main #main_limited .limited_txt {
 }
 main #main_limited .limited_img .lmt_1 img {
   position: absolute;
-  left: 5%;
-  top: -16%;
+  left: 8%;
+  top: -10%;
 }
 main #main_limited .limited_img .lmt_1_txt {
   position: absolute;
-  left: 42%;
-  top: 1%;
+  left: 55%;
+  top: 20px;
 }
 main #main_limited .limited_img .lmt_1_txt h4 {
   font-weight: normal;
   width: 350px;
 
   font-size: 1.3rem;
+}
+
+main #main_limited .limited_img .lmt_1_txt .btn:hover {
+  background-color: #fff;
+  border: 1px solid #01172d;
+  font-weight: bold;
 }
 /*********** main best ***********/
 main #main_best .best img {
@@ -230,7 +249,10 @@ main #main_best .best_3,
 main #main_best .best_4 {
   display: block;
 }
-
+main #main_best .best .btn2:hover {
+  background-color: #ffcb00;
+  border: none;
+}
 /*********** main video ***********/
 main #main_video {
   height: 1230px;
@@ -240,16 +262,22 @@ main #main_video p {
 }
 main #main_video .btn {
   margin-bottom: 150px;
+  font-size: 1.2rem;
 }
 
 main #main_video video {
   display: block;
   margin: 0 auto;
 }
+main #main_video .btn:hover {
+  background-color: #fff;
+  border: 1px solid #01172d;
+  font-weight: bold;
+}
 
 /*********** main gift ***********/
 main #main_gift {
-  height: 180vh;
+  height: 105vw;
 }
 main #main_gift .set_container {
   justify-content: center;
@@ -305,6 +333,10 @@ main #main_info .membership p {
 }
 main #main_info .membership .mini {
   font-weight: 500;
+}
+main #main_info .membership .btn:hover {
+  background-color: #ffcb00;
+  border: none;
 }
 main #main_info .inipay {
   font-weight: 500;
@@ -379,4 +411,9 @@ footer .btn3 {
   position: absolute;
   right: 5%;
   bottom: 90px;
+}
+footer .btn3:hover {
+  background-color: #afafaf;
+  color: #fff;
+  border: none;
 }

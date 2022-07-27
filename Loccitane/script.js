@@ -16,6 +16,65 @@ toggleBtn.addEventListener("click", (e) => {
   pcNav.classList.toggle("on");
 });
 
+///////////////////////////////////////////////////////////////
+
+// 리미티드 txt
+
+const lmtTitles = document.querySelectorAll(".lmt_txt_title");
+const lmtBtns = document.querySelectorAll(".carousel");
+const lmtNum = document.querySelectorAll(".lmtnum");
+let num = 1;
+
+lmtTitles.forEach((lmtTitles) => {
+  lmtTitles.addEventListener("click", (e) => {
+    if (num) {
+      e.currentTarget.style.borderBottom = "2px solid #ffcb00";
+      e.currentTarget.style.paddingBottom = "10px";
+      num = 0;
+    } else {
+      e.currentTarget.style.borderBottom = "none";
+      e.currentTarget.style.paddingBottom = "10px";
+      num = 1;
+    }
+  });
+});
+
+lmtBtns.forEach((lmtBtns) => {
+  lmtBtns.addEventListener("click", (e) => {
+    if (num) {
+      e.currentTarget.style.transform = "rotate(180deg)";
+      e.currentTarget.classList.toggle("on");
+      num = 0;
+    } else {
+      e.currentTarget.style.transform = "rotate(-180deg)";
+      e.currentTarget.classList.toggle("off");
+      num = 1;
+    }
+  });
+});
+
+lmtBtns.forEach((lmtBtns) => {
+  lmtBtns.addEventListener("click", (e) => {
+    e.currentTarget.style.transform = "rotate(180deg)";
+    lmtBtns.classList.toggle("on");
+  });
+});
+
+/*
+let num = 1;
+
+
+*/
+
+// const btnEvent = (e) => {
+//   const current = e.currentTarget;
+
+//   lmtBtns.forEach((lmtBtns) => lmtBtns.classList.remove("active"));
+//   current.parentNode.classList.add("active");
+// };
+
+///////////////////////////////////////////////////////////////
+
 // // 사이드 메뉴 서브메뉴
 
 // const sub1 = document.querySelector(".sub1");
