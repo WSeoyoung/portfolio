@@ -7,7 +7,7 @@ html {
   font-size: 14px;
   color: #01172d;
   text-transform: capitalize;
-  min-width: 460px;
+  /* min-width: 460px; */
 }
 a {
   color: inherit;
@@ -125,11 +125,11 @@ header #slide_txt {
   height: 560px;
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 2%;
 }
 header #slide_txt h2 {
-  width: 380px;
-  font-size: 3rem;
+  width: 370px;
+  font-size: 2.8rem;
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
