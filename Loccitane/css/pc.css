@@ -180,7 +180,7 @@ main #main_limited h3 {
 main #main_limited .limited_wrap {
   width: 85%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 700px 1fr;
   grid-auto-rows: 800px;
   /* margin-left: 230px; */
   margin: 0 auto;
