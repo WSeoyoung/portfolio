@@ -113,6 +113,7 @@ main #main_benefit .discount {
 
 main #main_limited .limited_img {
   position: relative;
+  width: 80%;
 }
 main #main_limited .limited_img .lmt_1 img {
   position: absolute;
@@ -122,8 +123,8 @@ main #main_limited .limited_img .lmt_1_txt {
   font-size: 20px;
 
   position: absolute;
-  left: 50%;
-  top: 25%;
+  left: 60%;
+  top: 20%;
 }
 main #main_limited .limited_img .lmt_1_txt h4 {
   width: 100%;

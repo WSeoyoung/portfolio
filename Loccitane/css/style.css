@@ -211,7 +211,7 @@ main #main_limited .limited_img .lmt_1 {
   display: flex;
 }
 main #main_limited .limited_img .lmt_1 img {
-  width: 30%;
+  width: 25%;
   margin-top: 50px;
   margin-left: 95px;
 }
@@ -239,10 +239,10 @@ main #main_limited .limited_img .lmt_1_txt .btn {
   margin-top: 30px;
 }
 
-main #main_limited .limited_img .lmt_2,
+/* main #main_limited .limited_img .lmt_2,
 main #main_limited .limited_img .lmt_3 {
   display: none;
-}
+} */
 /* ************************************************************ */
 main #main_limited .limited_txt {
   padding: 20px;
@@ -404,7 +404,7 @@ main #main_gift .set_container .set_txt {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 30px;
-  padding-top: 15vh;
+  padding-top: 33%;
 
   opacity: 0;
   transition: 0.3s;

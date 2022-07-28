@@ -186,7 +186,8 @@ main #main_limited .limited_wrap {
   margin: 0 auto;
 }
 main #main_limited .limited_img {
-  width: 800px;
+  width: 950px;
+  height: 40vw;
   grid-column: 2/3;
 }
 main #main_limited .limited_txt {
@@ -200,11 +201,11 @@ main #main_limited .limited_txt {
 main #main_limited .limited_img .lmt_1 img {
   position: absolute;
   left: 8%;
-  top: -10%;
+  top: -25%;
 }
 main #main_limited .limited_img .lmt_1_txt {
   position: absolute;
-  left: 55%;
+  left: 45%;
   top: 20px;
 }
 main #main_limited .limited_img .lmt_1_txt h4 {
