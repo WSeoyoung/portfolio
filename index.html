@@ -25,6 +25,8 @@
 
     <!-- jQuery 라이브러리 -->
     <script src="./common/jquery-3.6.0.min.js"></script>
+    <!-- jquery ui -->
+    <script src="./common/jquery-ui.min.js"></script>
     <!-- swiper js -->
     <script src="./common/swiper-bundle.min.js"></script>
     <!-- 내가 작성한 js -->
@@ -119,16 +121,28 @@
 
     <!-- project -->
     <section id="project">
-      <div class="swiper_container">
-        <ul class="swiper_wrapper">
-          <li class="swiper_slide">L'OCCITANE</li>
-          <li class="swiper_slide">project 2</li>
-          <li class="swiper_slide">project 3</li>
-          <li class="swiper_slide">project 4</li>
-          <li class="swiper_slide">project 5</li>
+      <!-- project menu -->
+      <div class="pjMenu">
+        <ul id="pjBtns">
+          <li>L'OCCITANE</li>
+          <li>project 2</li>
+          <li>project 3</li>
+          <li>project 4</li>
+          <li>project 5</li>
         </ul>
-        <div class="swiper_pagination"></div>
+
+        <!-- bar -->
+        <div id="underbar"></div>
       </div>
+
+      <!-- project image -->
+      <ul id="pjImg_wrap">
+        <li class="pjImg1"><a href="#">L'OCCITANE</a></li>
+        <li class="pjImg2"><a href="#">project 2</a></li>
+        <li class="pjImg3"><a href="#">project 3</a></li>
+        <li class="pjImg4"><a href="#">project 4</a></li>
+        <li class="pjImg5"><a href="#">project 5</a></li>
+      </ul>
     </section>
     <!-- <section id="project">
       <div class="swiper mySwiper">
@@ -169,10 +183,10 @@
           <h3>01</h3>
           <h4>HTML5 &amp; CSS3</h4>
           <ul class="skill_txt">
-            <li>○ 웹 사이트 구축 및 디자인</li>
-            <li>○ 웹 표준 &amp; 웹 접근성을 고려한 시맨틱 마크업</li>
-            <li>○ flex, grid, position을 사용한 다양한 레이아웃</li>
-            <li>○ 미디어쿼리를 이용한 반응형 웹 제작</li>
+            <li>웹 사이트 구축 및 디자인</li>
+            <li>웹 표준 &amp; 웹 접근성을 고려한 시맨틱 마크업</li>
+            <li>flex, grid, position을 사용한 다양한 레이아웃</li>
+            <li>미디어쿼리를 이용한 반응형 웹 제작</li>
           </ul>
         </li>
 
@@ -180,10 +194,10 @@
           <h3>02</h3>
           <h4>JavaScript &amp; jQuery</h4>
           <ul class="skill_txt">
-            <li>○ 웹 사이트 구현</li>
-            <li>○ 이벤트 매서드 사용</li>
-            <li>○ PlugIn 사용</li>
-            <li>○ jQuery 라이브러리 사용</li>
+            <li>웹 사이트 구현</li>
+            <li>이벤트 매서드 사용</li>
+            <li>PlugIn 사용</li>
+            <li>jQuery 라이브러리 사용</li>
           </ul>
         </li>
 
@@ -191,9 +205,9 @@
           <h3>03</h3>
           <h4>Photoshop &amp; Illustrator</h4>
           <ul class="skill_txt">
-            <li>○ 이미지 편집 및 수정</li>
-            <li>○ UI &amp; UX 를 고려한 디자인</li>
-            <li>○ 그래픽 콘텐츠 제작</li>
+            <li>이미지 편집 및 수정</li>
+            <li>UI &amp; UX 를 고려한 디자인</li>
+            <li>그래픽 콘텐츠 제작</li>
           </ul>
         </li>
 
@@ -201,9 +215,9 @@
           <h3>04</h3>
           <h4>XD &amp; Zeplin</h4>
           <ul class="skill_txt">
-            <li>○ 프로토타입 제작</li>
-            <li>○ 작업물 공유</li>
-            <li>○ 어플리케이션 디자인</li>
+            <li>프로토타입 제작</li>
+            <li>작업물 공유</li>
+            <li>어플리케이션 디자인</li>
           </ul>
         </li>
 
@@ -211,9 +225,9 @@
           <h3>05</h3>
           <h4>Git &amp; GitHub</h4>
           <ul class="skill_txt">
-            <li>○ Git Bash 사용</li>
-            <li>○ 프로젝트 버전 관리</li>
-            <li>○ 작업물 공유 및 협업</li>
+            <li>Git Bash 사용</li>
+            <li>프로젝트 버전 관리</li>
+            <li>작업물 공유 및 협업</li>
           </ul>
         </li>
       </ul>

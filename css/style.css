@@ -10,13 +10,13 @@ html {
   scroll-behavior: smooth; /* 부드러운 스크롤 */
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 13px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #f8f3e8;
+  background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #265d49;
+  background-color: #e39d3d;
   border-radius: 10px;
 }
 
@@ -42,8 +42,8 @@ header {
   left: 140px;
 }
 
+/*----------- nav -----------*/
 #menu {
-  /* background-color: #e39d3d; */
   width: 185px;
   height: 455px;
   position: fixed;
@@ -58,8 +58,6 @@ header {
   top: 80px;
   right: 0;
   font-size: 38px;
-
-  /* background-color: #f8f3e8; */
 }
 #gnb li {
   padding: 15px;
@@ -69,10 +67,7 @@ header {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-/* #gnb li:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom right;
-} */
+
 #gnb li::before {
   content: " ";
   display: block;
@@ -95,6 +90,8 @@ header {
   color: #000;
   display: block;
 }
+
+/*----------- toggle btn -----------*/
 #menu_btn {
   z-index: 2;
   background-color: #265d49;
@@ -104,7 +101,6 @@ header {
   right: 40px;
   width: 60px;
   height: 60px;
-  /* transition: 0.5s; */
   padding: 5px;
 
   transform: translate(-50%, -50%);
@@ -114,9 +110,6 @@ header {
 #menu_btn span {
   background-color: #e39d3d;
   display: block;
-  /* padding: 1px; */
-  /* margin-left: 10px;
-  margin-bottom: 6px; */
   transition: 0.4s;
   width: 30px;
   height: 2px;
@@ -145,20 +138,25 @@ header {
   transform: rotate(-45deg) translate(4.5px, -4.5px);
 }
 
+/*----------- menu effect -----------*/
+
 /********** main contents ***********/
 h2 {
   font-size: 72px;
   font-weight: bold;
 }
-/* topUP btn */
+
+/*****------- topUp btn -------*****/
 .topUP {
   z-index: 2;
+  width: 80px;
+  height: 80px;
   position: fixed;
-  bottom: 50px;
-  right: 84px;
+  bottom: 125px;
+  right: 45px;
 }
 
-/* about */
+/*****------- about -------*****/
 #about {
   width: 100%;
   height: 1160px;
@@ -168,6 +166,8 @@ h2 {
   align-items: center;
   position: relative;
 }
+
+/*----------- move action -----------*/
 /* .move_action {
 } */
 .move {
@@ -203,6 +203,8 @@ h2 {
     transform: rotate(-360deg);
   }
 }
+
+/*----------- about contents -----------*/
 .about_line1 {
   margin-top: 235px;
   display: flex;
@@ -220,6 +222,8 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+/*-----------left txt -----------*/
 .about_txt {
   width: 925px;
   padding-left: 165px;
@@ -235,6 +239,8 @@ h2 {
   padding-top: 45px;
   padding-bottom: 62px;
 }
+
+/*----------- keywords -----------*/
 .about_kw {
   width: 450px;
   height: 118px;
@@ -264,15 +270,16 @@ h2 {
 .kw4 {
   width: 168px;
 }
-
 .about_kw .kw5 {
   width: 180px;
 }
+
+/*----------- img -----------*/
 .about_img {
   margin-right: 68px;
 }
 
-/* who am i */
+/*****------- who an I -------*****/
 #who {
   height: 545px;
   display: flex;
@@ -285,6 +292,8 @@ h2 {
   left: 18%;
   top: 125px;
 }
+
+/*----------- who txt -----------*/
 #who p {
   font-size: 20px;
   width: 720px;
@@ -302,53 +311,74 @@ h2 {
   top: 250px;
 }
 
-/* project */
+/*****------- project -------*****/
 #project {
-  position: relative;
-  width: 100%;
   height: 1095px;
-  background-color: #e39d3d;
-}
-.swiper_container {
   width: 100%;
+  background-color: #e39d3d;
+  overflow: hidden;
+}
+
+/*----------- btn -----------*/
+.pjMenu {
   height: 230px;
+  width: 100%;
   background-color: #265d49;
-}
-.swiper_wrapper {
-  margin: 0 auto;
-  width: 85%;
-  height: 230px;
-
   font-size: 36px;
-  color: #e39d3d;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.swiper-slide {
   text-align: center;
-  font-size: 36px;
+
+  position: relative;
+}
+#pjBtns {
+  width: 80%;
+  height: 180px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e39d3d;
 }
-.swiper-pagination-bullet {
-  padding: 5px 10px;
-  border-radius: 0;
-  width: auto;
-  height: 30px;
+#pjBtns li {
+  cursor: pointer;
+  color: #e39d3d;
+  width: 300px;
+}
+#underbar {
+  width: 17%;
+  height: 3px;
+  background-color: #e39d3d;
+  position: absolute;
+  top: 175px;
+  left: 10%;
+}
+
+/*----------- img -----------*/
+#pjImg_wrap {
+  height: 870px;
   text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  color: #000;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  line-height: 870px;
+
+  display: flex;
+  justify-content: left;
+  width: 500%;
+
+  font-weight: bold;
+  background: no-repeat 50% / cover;
 }
-.swiper-pagination-bullet-active {
-  color: #fff;
-  background: #007aff;
+#pjImg_wrap li {
+  width: 100%;
 }
+#pjImg_wrap .pjImg1 {
+  background-image: url(../images/project-bg1.png);
+}
+#pjImg_wrap li a {
+  display: block;
+  color: #265d49;
+  font-size: 3rem;
+}
+
 /* #project {
   height: 1095px;
   width: 100%;
@@ -415,7 +445,7 @@ h2 {
   background: url(../images/project-bg5.png), no-repeat 50% / cover;
 } */
 
-/* skill */
+/*****------- skill -------*****/
 #skill {
   width: 100%;
   height: 2648px;
@@ -429,6 +459,8 @@ h2 {
   pointer-events: none;
   color: #265d49;
 }
+
+/*----------- move -----------*/
 .title_auto1 {
   white-space: nowrap;
   animation: auto1 40s linear infinite;
@@ -454,6 +486,7 @@ h2 {
   }
 }
 
+/*----------- list -----------*/
 #skill_list {
   margin: 0 auto;
   width: 80%;
@@ -507,7 +540,7 @@ h4 {
 
 /********** footer ***********/
 footer {
-  height: 745px;
+  height: 550px;
   background-color: #265d49;
   color: #e39d3d;
   margin-top: 100px;
@@ -515,11 +548,9 @@ footer {
 
   display: flex;
 }
+/*----------- profil -----------*/
 .contact_profil {
   width: 500px;
-  /* padding-top: 212px;
-  padding-left: 188px;
-  padding-bottom: 65px; */
   position: absolute;
   left: 10%;
   top: 20%;
@@ -533,10 +564,12 @@ h5 span {
   display: block;
   font-size: 77px;
 }
+/*----------- contact -----------*/
 .contact_txt {
   width: 510px;
   padding-top: 64px;
-  line-height: 3;
+  padding-left: 18px;
+  line-height: 1.9;
 }
 .contact_info {
   position: absolute;

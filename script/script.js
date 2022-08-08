@@ -1,10 +1,12 @@
-// menu
+///////// menu
 
+// gnb
 $("#menu_btn").on("click", (e) => {
   e.preventDefault();
   $("#gnb").slideToggle();
 });
 
+// hamburger menu
 $("#menu_btn").on("click", function () {
   $(this).toggleClass("on");
 });
@@ -16,14 +18,3 @@ $("#menu_btn").on("click", function () {
 //     hide: true,
 //   },
 // });
-var menu = ["Slide 1", "Slide 2", "Slide 3"];
-var mySwiper = new Swiper(".swiper-container", {
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + menu[index] + "</span>";
-    },
-  },
-});
