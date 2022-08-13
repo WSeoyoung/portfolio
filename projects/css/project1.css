@@ -503,7 +503,12 @@ section {
   font-weight: bold;
   color: #fff;
 }
-
+.btn:hover {
+  background-color: #e39d3d;
+}
+#view_btn:hover {
+  color: #265d49;
+}
 /********** footer ***********/
 footer {
   width: 100%;
@@ -536,7 +541,7 @@ h5 span {
   width: 510px;
   padding-top: 64px;
   padding-left: 18px;
-  /* line-height: 1; */
+  line-height: 1.9;
 }
 .contact_info {
   position: absolute;
