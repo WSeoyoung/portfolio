@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>WON Seoyoung's Portfolio</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="./common/minireset.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./common/android-icon-96x96.png"
+    />
+    <!-- font css -->
+    <link rel="stylesheet" href="./css/font.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./common/swiper-bundle.min.css" />
+    <!-- 내가 작성한 css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- jQuery 라이브러리 -->
+    <script src="./common/jquery-3.6.0.min.js"></script>
+    <!-- jquery ui -->
+    <script src="./common/jquery-ui.min.js"></script>
+    <!-- swiper js -->
+    <script src="./common/swiper-bundle.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <!------------ header ------------>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./common/pf_logo.png" alt="로고" /></a>
+      </div>
+
+      <nav id="menu">
+        <a href="#" id="menu_btn">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </a>
+
+        <ul id="gnb" class="drop">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#contact">CONTACT </a></li>
+        </ul>
+      </nav>
+
+      <h1 id="title">
+        Steady &amp; Friendly<br />
+        Web Publisher & Designer<br />
+        Seoyoung&rsquo;s Portfolio<br />
+      </h1>
+    </header>
+
+    <!------------ main contents ------------>
+    <!-- topUp btn -->
+    <a href="#" class="topUP">
+      <img src="./common/topUP.png" alt="맨위로" />
+    </a>
+
+    <!-- about -->
+    <section id="about">
+      <div class="move_action">
+        <div class="move">move action</div>
+        <div class="rotate1">
+          <img src="./images/txt_rotate1.png" alt="rotate1" />
+        </div>
+        <div class="rotate2">
+          <img src="./images/txt_rotate2.png" alt="rotate2" />
+        </div>
+      </div>
+
+      <div class="about_line1">
+        <div class="about_line2">
+          <div class="about_txt">
+            <h2>About Me</h2>
+            <p>원서영</p>
+            <p>WON Seoyoung</p>
+            <p class="mention">“ Slow and Steady ”</p>
+
+            <ul class="about_kw">
+              <li class="kw1">&#35; 긍정적</li>
+              <li class="kw2">&#35; 적응력&#95;만렙</li>
+              <li class="kw3">&#35; 끈기</li>
+              <li class="kw4">&#35; 포기는&#95;없다</li>
+              <li class="kw5">&#35; 실패를&#95;이겨내자</li>
+            </ul>
+          </div>
+
+          <div class="about_img">
+            <img src="./images/임시.png" alt="이미지" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- who am i -->
+    <section id="who">
+      <h2>Who am I</h2>
+      <div class="who_txt">
+        <p class="p1">
+          뭐든 처음엔 많이 넘어져 아프기도 하겠지만 결국엔 굳은 살이 생기는
+          것처럼, <br />지지않고 버티다 보면 결국엔 잘 하게 될거라는
+          마음가짐으로 퍼블리셔에 도전하고 있습니다.
+        </p>
+        <p class="p2">
+          차곡차곡 쌓이는 경험치들을 효율적으로 잘 사용하기 위해 매일 꾸준히
+          노력하는 퍼블리셔가 되고싶습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- project -->
+    <section id="project">
+      <!-- project menu -->
+      <div class="pjMenu">
+        <ul id="pjBtns">
+          <li>L'OCCITANE</li>
+          <li>project 2</li>
+          <li>project 3</li>
+          <li>project 4</li>
+          <li>project 5</li>
+        </ul>
+
+        <!-- bar -->
+        <div id="underbar"></div>
+      </div>
+
+      <!-- project image -->
+      <ul id="pjImg_wrap">
+        <li class="pjImg1">
+          <a href="./projects/project1.html">L'OCCITANE</a>
+        </li>
+        <li class="pjImg2"><a href="#">project 2</a></li>
+        <li class="pjImg3"><a href="#">project 3</a></li>
+        <li class="pjImg4"><a href="#">project 4</a></li>
+        <li class="pjImg5"><a href="#">project 5</a></li>
+      </ul>
+    </section>
+    <!-- <section id="project">
+      <div class="swiper mySwiper">
+        <ul id="pj_menu" class="swiper-wrapper">
+          <li class="swiper-slide"><a href="#">L&rsquo;OCCITANE</a></li>
+          <li class="swiper-slide"><a href="#">project2</a></li>
+          <li class="swiper-slide"><a href="#">project3</a></li>
+          <li class="swiper-slide"><a href="#">project4</a></li>
+          <li class="swiper-slide"><a href="#">project5</a></li>
+        </ul>
+      </div>
+      <div class="swiper-scrollbar"></div>
+
+      <div class="bg_wrapper">
+        <ul id="pj_img">
+          <li class="bg1"><a href="#">L&rsquo;OCCITANE</a></li>
+          <li class="bg2"><a href="#">project2</a></li>
+          <li class="bg3"><a href="#">project3</a></li>
+          <li class="bg4"><a href="#">project4</a></li>
+          <li class="bg5"><a href="#">project5</a></li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- skill -->
+    <section id="skill">
+      <div class="skill_title">
+        <p class="title_auto1">
+          ◦ WHAT I CAN DO ◦ WHAT I CAN DO ◦ WHAT I CAN DO
+        </p>
+        <p class="title_auto2">
+          ◦ WHAT I CAN DO ◦ WHAT I CAN DO ◦ WHAT I CAN DO
+        </p>
+      </div>
+
+      <ul id="skill_list">
+        <li class="list hc">
+          <h3>01</h3>
+          <h4>HTML5 &amp; CSS3</h4>
+          <ul class="skill_txt">
+            <li>웹 사이트 구축 및 디자인</li>
+            <li>웹 표준 &amp; 웹 접근성을 고려한 시맨틱 마크업</li>
+            <li>flex, grid, position을 사용한 다양한 레이아웃</li>
+            <li>미디어쿼리를 이용한 반응형 웹 제작</li>
+          </ul>
+        </li>
+
+        <li class="list jq">
+          <h3>02</h3>
+          <h4>JavaScript &amp; jQuery</h4>
+          <ul class="skill_txt">
+            <li>웹 사이트 구현</li>
+            <li>이벤트 매서드 사용</li>
+            <li>PlugIn 사용</li>
+            <li>jQuery 라이브러리 사용</li>
+          </ul>
+        </li>
+
+        <li class="list pl">
+          <h3>03</h3>
+          <h4>Photoshop &amp; Illustrator</h4>
+          <ul class="skill_txt">
+            <li>이미지 편집 및 수정</li>
+            <li>UI &amp; UX 를 고려한 디자인</li>
+            <li>그래픽 콘텐츠 제작</li>
+          </ul>
+        </li>
+
+        <li class="list xz">
+          <h3>04</h3>
+          <h4>XD &amp; Zeplin</h4>
+          <ul class="skill_txt">
+            <li>프로토타입 제작</li>
+            <li>작업물 공유</li>
+            <li>어플리케이션 디자인</li>
+          </ul>
+        </li>
+
+        <li class="list gh">
+          <h3>05</h3>
+          <h4>Git &amp; GitHub</h4>
+          <ul class="skill_txt">
+            <li>Git Bash 사용</li>
+            <li>프로젝트 버전 관리</li>
+            <li>작업물 공유 및 협업</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!------------ contact ------------>
+    <footer id="contact">
+      <div class="contact_profil">
+        <h5><span>원서영</span>WON Seoyoung</h5>
+
+        <ul class="contact_txt">
+          <li>○ École supérieure d’Art et de Design - LeMans DNA Art 졸업</li>
+          <li>○ 2022 반응형 UI/UX 웹 퍼블리셔 전문가 양성 교육과정 이수</li>
+        </ul>
+      </div>
+
+      <div class="contact_info">
+        <h6>Contact</h6>
+        <p class="email">3daking&#64;naver.com</p>
+        <p class="git">
+          <a href="https://github.com/WSeoyoung" target="_blank"
+            >깃허브 바로가기</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
