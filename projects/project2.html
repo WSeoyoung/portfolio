@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Project 2 - Breaking News</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="../common/minireset.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../common/android-icon-96x96.png"
+    />
+    <!-- font css -->
+    <link rel="stylesheet" href="../css/font.css" />
+    <!-- 내가 작성한 css -->
+    <link rel="stylesheet" href="./css/project2.css" />
+    <!-- jQuery 라이브러리 -->
+    <script src="../common/jquery-3.6.0.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script defer src="./project_script.js"></script>
+  </head>
+  <body>
+    <!------------ header ------------>
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../common/pf_logo.png" alt="로고"
+        /></a>
+      </div>
+
+      <nav id="menu">
+        <div class="menuOverlay">
+          <a href="#" id="menu_btn">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </a>
+
+          <ul id="gnb" class="drop">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#project">PROJECT</a></li>
+            <li><a href="../index.html#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main_wrapper">
+        <div id="main_txt">
+          <div class="line">
+            <h1 id="title">Breaking News</h1>
+          </div>
+
+          <p>모바일 App</p>
+          <p>2022.07.01 ~ 2022.07.28</p>
+          <p>같이나아가조 ( 원서영, 조현비, 이윤진 )</p>
+          <ul class="tag">
+            <li>#Application</li>
+            <li>#Mobile</li>
+            <li>#XD</li>
+            <li>#Zeplin</li>
+            <li>#Team_Project</li>
+          </ul>
+        </div>
+
+        <div id="main_img">
+          <img src="./images/pj2_main1.png" alt="pc" class="img1" />
+          <img src="./images/pj2_main2.png" alt="pc" class="img2" />
+        </div>
+      </div>
+    </header>
+
+    <!------------main contents ------------>
+    <main>
+      <!-- topUp btn -->
+      <a href="#" class="topUP">
+        <img src="../common/topUP.png" alt="맨위로" />
+      </a>
+
+      <!-- overview -->
+      <section id="overview">
+        <h2>Overview</h2>
+
+        <div id="ov_container">
+          <!-- 목표 -->
+          <div id="s1_goal" class="s1">
+            <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+            <h3>프로젝트 목표</h3>
+            <h4>Beaking News 앱 리디자인</h4>
+            <p>
+              기존의 앱을 사용해봤을 때, 사용자의 입장에서 불편하게 느껴지는
+              부분들이 있었다. 그래서 사용자가 보다 편리하고 접근하기 쉬운
+              디자인으로 제작하는 것에 중점을 두고 리디자인했다.
+            </p>
+          </div>
+          <div class="wrapper_s1_23">
+            <!-- 유형 -->
+            <div id="s1_timeline" class="s1">
+              <img src="./images/ovIcon_gy.png" alt="icon2" class="icon2" />
+              <h3>프로젝트 타임라인</h3>
+              <ul class="type_list">
+                <li class="bf_circle1">앱 선정</li>
+                <li class="bf_circle1">앱 분석</li>
+                <li class="bf_circle1">경쟁사 분석</li>
+                <li class="bf_circle1">사용자 분석</li>
+                <li class="bf_circle1">UX Vision</li>
+                <li class="bf_circle1">페르소나 설정</li>
+                <li class="bf_circle1">사용자 여정지도</li>
+                <li class="bf_circle1">프로토타입</li>
+              </ul>
+            </div>
+            <!-- 기여도 -->
+            <div id="s1_did" class="s1">
+              <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+              <h3>프로젝트 기여도</h3>
+              <div class="percent">
+                <p class="percent50">50%</p>
+              </div>
+
+              <ul class="role">
+                <li class="bf_circle2">Role : 팀장</li>
+                <li>자료조사 1/3 <br />(앱 분석, 경쟁사분석, 사용자 분석)</li>
+                <li>프로토타입 제작 1/3</li>
+                <li>발표 ppt 제작 및 발표</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- problem & solution-->
+      <section id="proSol">
+        <h2>Problem & Solution</h2>
+        <!-- problem -->
+        <div id="ps_container">
+          <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+
+          <div class="s2_problem">
+            <h3>Problem</h3>
+            <ul class="prob_txt">
+              <li>
+                <h4>편리하지 못한 카테고리 구조 및 디자인 </h4>
+                <p>
+                  직관적이지 않은 카테고리로 인해 사용자들이 원하는
+                  뉴스를 빠르게 접하기 힘들다.
+                </p>
+              </li>
+
+              <li>
+                <h4>게시글 이미지 및 텍스트</h4>
+                <p>
+                  이미지가 지나치게 크고, 텍스트를 확인하기 어려운 구조로
+                  이루어져 있어, 한눈에 기사를  파악하기가 어렵다.
+                </p>
+              </li>
+
+              <li>
+                <h4>정리되지 않은 뉴스 콘텐츠</h4>
+                <p>
+                  방대한 양의 기사들을 무한한 스크롤로 제공하며, 지나친 기사의
+                  경우 다시 찾기가 힘들다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- solution -->
+          <img src="./images/ovIcon_gy.png" alt="icon2" class="icon2" />
+
+          <div class="s2_solution">
+            <h3>Solution</h3>
+            <ul class="solu_txt">
+              <li>
+                <h4>직관적인 카테고리 구성</h4>
+                <p>
+                  직관적인 구조와 디자인으로 변경하여 사용자들이 편하게
+                  이용하도록 한다.
+                </p>
+              </li>
+
+              <li>
+                <h4>메인 페이지 게시글 간소화</h4>
+                <p>
+                  이미지 크기 조정 및 텍스트 중심의 구조로 보다 파악 하기 쉽게
+                  변경한다.
+                </p>
+              </li>
+
+              <li>
+                <h4>스크롤 시에도 검색 가능</h4>
+                <p>
+                  방대한 정보들을 보다 편히 찾을 수 있도록 하단 탭바를 통하여
+                  스크롤 시에도 검색이 가능하게 한다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design -->
+      <section id="design">
+        <div class="s3_design_top">
+          <h2>Design</h2>
+          <div class="img_box">
+            <img src="./images/pj2_ds1.png" alt="img" id="img1" />
+            <img src="./images/pj2_ds2.png" alt="img" id="img2" />
+            <img src="./images/pj2_ds3.png" alt="img" id="img3" />
+          </div>
+        </div>
+
+        <div class="s3_design_info">
+          <div class="if_keyword">
+            <h5>Keyword</h5>
+            <ul class="keyword_list">
+              <li>#심플한</li>
+              <li>#명확한</li>
+            </ul>
+          </div>
+
+          <div class="if_color">
+            <h5>Color</h5>
+            <ul class="color_list">
+              <li>
+                <p class="color_circle"></p>
+                #F05153
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #606060
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #F5F6F7
+              </li>
+            </ul>
+          </div>
+
+          <div class="if_typo">
+            <h5>Typography</h5>
+            <ul class="typo_list">
+              <li>Pretendard</li>
+              <li>
+                Thin / Light / Regular <br />
+                Semi Bold / Bold
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- persona -->
+      <section id="persona">
+        <h2>Persona</h2>
+        <div class="perso_wrap">
+          <img src="./images/pj2_persona.jpg" alt="persona" />
+          <ul class="persona_txt">
+            <li>김서연 / 28세</li>
+            <li>거주지 : 서울</li>
+            <li>학력 : 대학교 졸업</li>
+            <li>직업 : IT 회사원</li>
+            <li>가족 : 부모님, 1남 1녀 중 장녀</li>
+            <li>
+              특징 : 호기심이 많고 다재다능 함. 계획적이고, 사회적 이슈에 관심이
+              많다.
+            </li>
+            <li>
+              대학 졸업 후 IT 회사에서 인턴을 마치고 정직원으로 근무하고 있다.
+              집과 회사가 멀어 매번 지하철을 기다리는 시간에 뉴스를 확인하곤
+              한다. 출근 때는 그날의 최신 이슈를, 퇴근 때는 관심있는 연예뉴스를
+              위주로 보고 있다.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section id="review">
+        <h2>Review</h2>
+
+        <div id="review_txt">
+          <div class="rv_txt1">
+            <h3>#잘 한 부분</h3>
+            <p>
+              우리 조는 소통 및 팀워크가 좋았던 것 같다. 각자 맡은 부분에
+              대해서도 성실하게 수행하면서, 의견을 제시하고 받아들이는 데에
+              모두가 협조적이고 적극적으로 진행했다. 그래서 작업 속도도 비교적
+              빠르게 진행할 수 있었고, 덕분에 작업하며 생기는 새로운 이슈들을
+              수정하고 추가하는 것도 시간 안에 해결할 수 있었다.
+            </p>
+            <p>
+              또한 우리는 기존 앱의 UX VISION을 변경하고 새로 제시하는 방향으로
+              프로젝트를 진행했다. 때문에 이 부분에 대해 설득력이 있어야 했는데,
+              다른 사람들에게 충분히 이해될 수 있도록 xd와 ppt를 준비하여
+              발표함으로써 긍정적인 반응을 얻었다.
+            </p>
+          </div>
+
+          <div class="rv_txt2">
+            <h3>#아쉬운 부분</h3>
+            <p>
+              각 진행 단계를 넘어갈 때마다 팀원이 번갈아 가면서 자료 정리를 하다
+              보니, 매번 자료 작업을 다시 했던 것이 조금 아쉽다. 처음부터 담당을
+              정해 한 사람이 일관성 있게 정리할 수 있도록 했으면 좋았을 것 같다.
+            </p>
+            <p>
+              그리고 디자인적으로도 조금 평범하게 나온 점이 아쉽다. 아무래도
+              다른 앱들 보다 텍스트가 많고 중요한 앱이었다 보니까 다른 요소들은
+              최대한 덜어내다보니, 전반적으로 평이한 디자인이 된 것 같다.
+            </p>
+          </div>
+
+          <div class="rv_txt3">
+            <h3>#총평</h3>
+            <p>
+              우리가 선택한 앱은 컨텐츠는 많지만 구성이 부족한 앱이었다. 어려운
+              프로젝트였지만 그래도 이 앱을 고른 건 내용적인 면을 건들지 않아도
+              되어서 였는데, 지금 생각해보면 뉴스라는 것에 대해 다소 만만하게
+              생각한 게 아니었나 싶다. 생각보다 더 기존 뉴스 앱들의 틀에서
+              벗어나기 쉽지 않았고, 타 경쟁사처럼 아예 기사부터 건들지 않는
+              이상, 다양한 디자인이 나오기 힘들구나 라는 것을 느꼈다.
+            </p>
+            <p>
+              그래도 리서치 할 때 다른 분야의 앱들도 찾아보면서 이 앱에 어떻게
+              적용할 수 없을까 라는 고민을 계속 하면서 진행하려고 노력했다. 100%
+              만족하는 결과는 아니지만 그래도 팀원 모두가 노력해 최선의 결과물을
+              내었다고 생각한다. 이 프로젝트를 통해 좋은 경험을 하게 된 것 같고
+              앞으로의 작업에도 도움이 될 것 같다.
+            </p>
+          </div>
+        </div>
+
+        <div class="btns">
+          <div class="pdf">
+            <a href="./images/pj2_pdf.pdf" target="_blank" id="view_pdf"
+              >View PDF</a
+            >
+          </div>
+
+          <div class="prototype">
+            <a href="#" target="_blank" id="view_proto">View Prototype</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!------------ contact ------------>
+    <footer id="contact">
+      <div class="contact_profil">
+        <h5><span>원서영</span>WON Seoyoung</h5>
+
+        <ul class="contact_txt">
+          <li>○ École supérieure d’Art et de Design - LeMans DNA Art 졸업</li>
+          <li>○ 2022 반응형 UI/UX 웹 퍼블리셔 전문가 양성 교육과정 이수</li>
+        </ul>
+      </div>
+
+      <div class="contact_info">
+        <h6>Contact</h6>
+        <p class="email">3daking&#64;naver.com</p>
+        <p class="git">
+          <a href="https://github.com/WSeoyoung" target="_blank"
+            >깃허브 바로가기</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
