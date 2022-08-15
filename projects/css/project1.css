@@ -50,19 +50,19 @@ header {
   height: 800px;
 
   position: fixed;
-  top: -210px;
+  top: -200px;
   right: -175px;
   background: #265d49;
   padding: 22px 28px;
   z-index: 1000;
   transition: 0.3s;
-  clip-path: circle(3% at 550px 270px);
-}
-.menuOverlay:hover {
   clip-path: circle(4% at 550px 270px);
 }
+.menuOverlay:hover {
+  clip-path: circle(5% at 550px 270px);
+}
 .menuOverlay.open {
-  clip-path: circle(40% at 450px 320px);
+  clip-path: circle(45% at 450px 320px);
   background: #e39d3d;
 }
 
@@ -127,7 +127,7 @@ header {
   z-index: 2;
   border-radius: 50%;
   position: fixed;
-  top: 60px;
+  top: 70px;
   right: 18px;
   width: 60px;
   height: 60px;
@@ -239,7 +239,7 @@ section {
 
 /* txt */
 #main_txt p {
-  font-size: 1rem; /* 18px */
+  font-size: 1.125rem; /* 18px */
   padding: 0.26vw;
   margin-left: 0.521vw;
 }
@@ -567,21 +567,21 @@ footer {
   top: 20%;
 }
 .contact_profil h5 {
-  font-size: 4.5vw;
+  font-size: 4.5rem;
   font-weight: bold;
   width: 41.667vw;
 }
 .contact_profil h5 span {
   display: block;
-  font-size: 3.5rem;
+  font-size: 4.813rem;
 }
 /*----------- contact -----------*/
 .contact_txt {
-  width: 30vw;
+  width: 40vw;
   padding-top: 3.333vw;
   padding-left: 0.938vw;
   line-height: 1.9;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .contact_info {
   position: absolute;
@@ -589,12 +589,12 @@ footer {
   right: 10%;
 }
 h6 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-align: right;
   margin-bottom: 3.646vw;
 }
 .contact_info p {
-  font-size: 1.2rem;
+  font-size: 1.275rem;
   text-align: right;
 }
 .email {
