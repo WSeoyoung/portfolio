@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="../css/font.css" />
     <!-- 내가 작성한 css -->
     <link rel="stylesheet" href="./css/project1.css" />
+    <!-- jQuery 라이브러리 -->
+    <script src="../common/jquery-3.6.0.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script defer src="./script/project1.js"></script>
   </head>
   <body>
     <!------------ header ------------>
@@ -31,23 +35,28 @@
       </div>
 
       <nav id="menu">
-        <a href="#" id="menu_btn">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </a>
+        <div class="menuOverlay">
+          <a href="#" id="menu_btn">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </a>
 
-        <ul id="gnb" class="drop">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="#project">PROJECT</a></li>
-          <li><a href="#skill">SKILL</a></li>
-          <li><a href="#contact">CONTACT </a></li>
-        </ul>
+          <ul id="gnb" class="drop">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#project">PROJECT</a></li>
+            <li><a href="../index.html#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT </a></li>
+          </ul>
+        </div>
       </nav>
 
       <div id="main_wrapper">
         <div id="main_txt">
-          <h1 id="title">L'OCCITANE</h1>
+          <div class="line">
+            <h1 id="title">L'OCCITANE</h1>
+          </div>
+
           <p>반응형 웹 사이트</p>
           <p>2022.07.01 ~ 2022.07.28</p>
           <p>개인 작업 (100%)</p>

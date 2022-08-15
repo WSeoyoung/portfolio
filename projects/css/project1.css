@@ -5,7 +5,8 @@ html {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  /* width: 100%; */
   /* width: 65%;
   margin: 0 auto; */
 
@@ -31,37 +32,52 @@ main {
 /********** header ***********/
 header {
   /* width: 100%; */
-  height: 600px;
+  height: 31.25vw;
   position: relative;
 }
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 3.125vw;
+  height: 3.125vw;
   position: fixed;
-  top: 40px;
-  left: 40px;
-  z-index: 1;
+  top: 2.083vw;
+  left: 2.083vw;
+  z-index: 10000;
 }
 
-/*----------- nav -----------*/
-#menu {
-  width: 185px;
-  height: 455px;
+/* menu effect */
+.menuOverlay {
+  width: 800px;
+  height: 800px;
+
   position: fixed;
-  top: 40px;
-  right: 40px;
-  z-index: 2;
+  top: -210px;
+  right: -175px;
+  background: #265d49;
+  padding: 22px 28px;
+  z-index: 1000;
+  transition: 0.3s;
+  clip-path: circle(3% at 550px 270px);
 }
+.menuOverlay:hover {
+  clip-path: circle(4% at 550px 270px);
+}
+.menuOverlay.open {
+  clip-path: circle(40% at 450px 320px);
+  background: #e39d3d;
+}
+
+/* gnb effect */
 #gnb {
+  z-index: 100;
   display: none;
 
   position: absolute;
-  top: 80px;
-  right: 0;
-  font-size: 38px;
+  top: 250px;
+  left: 250px;
+  font-size: 1.979vw;
 }
 #gnb li {
-  padding: 15px;
+  padding: 10px;
   width: 210px;
 }
 #gnb li::before {
@@ -82,24 +98,37 @@ header {
   z-index: -1;
   transition: transform 0.3s ease;
 }
-#gnb li:hover a {
-  color: #265d49;
-  font-weight: bold;
-}
-
 #gnb li a {
   color: #000;
   display: block;
+}
+/* #gnb li:hover a {
+  color: #e39d3d;
+  font-weight: bold;
+} */
+#gnb li a::after {
+  content: "";
+  height: 20px;
+  width: 0;
+  background-color: rgba(38, 93, 73, 0.5);
+  position: absolute;
+  /* bottom: 10px; */
+  left: 10px;
+  right: 0;
+  transition: 0.4s;
+}
+
+#gnb li:hover a::after {
+  width: 70%;
 }
 
 /*----------- toggle btn -----------*/
 #menu_btn {
   z-index: 2;
-  background-color: #265d49;
   border-radius: 50%;
   position: fixed;
-  top: 70px;
-  right: 40px;
+  top: 60px;
+  right: 18px;
   width: 60px;
   height: 60px;
   padding: 5px;
@@ -112,11 +141,11 @@ header {
   background-color: #e39d3d;
   display: block;
   transition: 0.4s;
-  width: 30px;
-  height: 2px;
+  width: 25px;
+  height: 1.5px;
 
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: 20px;
 
   transition: all 0.3s;
@@ -131,94 +160,102 @@ header {
 #menu_btn.on .bar1 {
   top: 50%;
   transform: rotate(45deg) translate(0, 0);
+  background-color: #265d49;
 }
 #menu_btn.on .bar2 {
   opacity: 0;
 }
 #menu_btn.on .bar3 {
   transform: rotate(-45deg) translate(4.5px, -4.5px);
+  background-color: #265d49;
 }
 
 /********** main contents ***********/
 h1 {
-  font-size: 90px;
+  font-size: 4.625rem;
   background-color: rgba(227, 157, 61, 0.5);
-  height: 70px;
-  margin-bottom: 80px;
+  height: 3.646vw;
+  margin-bottom: 4.167vw;
 }
+/* .line {
+  background-color: rgba(227, 157, 61, 0.5);
+  height: 3.646vw;
+} */
 h2 {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: bold;
   background-color: rgba(227, 157, 61, 0.5);
-  height: 30px;
-  padding-left: 5px;
+  height: 1.563vw;
+  padding-left: 0.26vw;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 1.563vw;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 h4::before {
   content: "○";
-  margin-right: 10px;
+  margin-right: 0.521vw;
 }
 h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding-bottom: 1.563vw;
 }
 
 /*****------- topUp btn -------*****/
 .topUP {
   z-index: 2;
-  width: 80px;
-  height: 80px;
+  width: 4.167vw;
+  height: 4.167vw;
   position: fixed;
-  bottom: 125px;
-  right: 45px;
+  bottom: 6.51vw;
+  right: 2.344vw;
 }
 
 section {
-  padding: 0 0 0 100px;
+  padding: 0 0 0 5.208vw;
 }
 .icon1,
 .icon2 {
-  padding-bottom: 30px;
+  padding-bottom: 1.563vw;
 }
 /*****------- main title -------*****/
 #main_wrapper {
-  width: 1300px;
-  height: 400px;
+  /* width: 100%; */
+  width: 67.708vw;
+  height: 20.833vw;
 
   display: flex;
   justify-content: space-between;
 
   position: absolute;
-  top: 280px;
+  top: 14.583vw;
 }
 
 /* txt */
 #main_txt p {
-  font-size: 18px;
-  padding: 5px;
-  margin-left: 10px;
+  font-size: 1rem; /* 18px */
+  padding: 0.26vw;
+  margin-left: 0.521vw;
 }
 #main_txt .tag {
-  width: 400px;
+  width: 25vw;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15px;
-  margin-top: 35px;
+  margin-left: 0.781vw;
+  margin-top: 1.823vw;
 }
 #main_txt .tag li {
   border: 2px solid #000;
-  padding: 7px 14px;
-  margin: 20px 20px 0 0;
+  padding: 0.365vw 0.729vw;
+  margin: 1.042vw 1.042vw 0 0;
   border-radius: 50px;
+  font-size: 1rem;
 }
 #main_txt .tag li:hover {
   background-color: #000;
@@ -227,48 +264,48 @@ section {
 
 /* img */
 #main_img img {
-  border: 3px solid #000;
+  border: 4px solid #000;
   border-radius: 10px;
 
   position: absolute;
 }
 #main_img .img1 {
-  width: 110px;
-  height: 236px;
+  width: 5.729vw;
+  height: 12.292vw;
   z-index: 100;
   bottom: 0;
-  right: 400px;
+  right: 20.833vw;
 }
 #main_img .img2 {
-  width: 252px;
-  height: 340px;
+  width: 13.125vw;
+  height: 17.708vw;
   border-width: 5px;
   z-index: 10;
-  bottom: 15px;
-  right: 50px;
+  bottom: 0.781vw;
+  right: 2.604vw;
 }
 #main_img .img3 {
-  width: 590px;
-  height: 370px;
+  width: 30.729vw;
+  height: 19.271vw;
   border-width: 8px;
-  top: -50px;
-  right: 120px;
+  top: -2.604vw;
+  right: 6.25vw;
 }
 
 /*****------- overview -------*****/
 #overview {
-  margin-top: 300px;
-  padding-right: 100px;
+  margin-top: 15.625vw;
+  padding-right: 5.208vw;
   display: flex;
   justify-content: space-between;
 }
 #overview h2 {
-  width: 240px;
+  width: 12.5vw;
 }
 
 /* ov txt */
 #ov_container {
-  width: 600px;
+  width: 31.25vw;
 }
 #ov_container .wrapper_s1_23 {
   display: flex;
@@ -277,70 +314,70 @@ section {
 
 /* goal */
 #ov_container .s1 {
-  padding-bottom: 50px;
+  padding-bottom: 2.604vw;
 }
-/* #ov_container .s1 .icon1,
+#ov_container .s1 .icon1,
 .icon2 {
-  padding-bottom: 30px;
-} */
+  padding-bottom: 1.563vw;
+}
 #ov_container .s1 h4 {
   font-weight: normal;
-  padding: 20px 0;
+  padding: 1.042vw 0;
 }
 #ov_container .s1 p {
-  padding: 0 30px;
+  padding: 0 1.563vw;
 }
 #s1_goal p {
-  width: 550px;
+  width: 28.646vw;
 }
 
 /* type */
 #s1_type .type_list .bf_circle1::before,
 #s1_type .type_list .bf_circle2::before {
   content: "○";
-  margin-right: 10px;
+  margin-right: 0.521vw;
 }
 .bf_circle1 {
-  padding-bottom: 20px;
+  padding-bottom: 1.042vw;
 }
 #s1_type .type_list .type_px li:nth-child(2),
 #s1_type .type_list .type_px li:nth-child(3) {
-  padding-left: 22px;
+  padding-left: 1.146vw;
 }
 
 /* did */
 #s1_did {
-  margin-right: 50px;
+  margin-right: 2.604vw;
 }
 #ov_container #s1_did .percent {
   background-color: #265d49;
   color: #fff;
   padding: 5px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   border-radius: 50px;
 }
 #ov_container #s1_did .role {
-  padding: 20px 0 0 0;
+  padding: 1.042vw 0 0 0;
 }
 #ov_container #s1_did .role::before {
   content: "○";
-  margin-right: 10px;
+  margin-right: 0.521vw;
 }
 
 /*****------- problem + solution -------*****/
 #proSol {
   padding-right: 0;
-  margin-top: 80px;
+  margin-top: 4.167vw;
 
   display: flex;
   justify-content: space-between;
 }
 #proSol h2 {
-  width: 250px;
+  width: 13.021vw;
 }
 #ps_container {
-  width: 700px;
+  width: 36.458vw;
 }
 
 #ps_container .s2_problem,
@@ -350,19 +387,19 @@ section {
 }
 #ps_container .s2_problem .prob_txt,
 #ps_container .s2_solution .solu_txt {
-  width: 440px;
-  padding-right: 30px;
+  width: 22.917vw;
+  padding-right: 1.563vw;
 }
 #ps_container .s2_problem .prob_txt p,
 #ps_container .s2_solution .solu_txt p {
-  font-size: 14px;
-  padding-left: 28px;
-  padding-bottom: 50px;
+  font-size: 0.875rem;
+  padding-left: 1.458vw;
+  padding-bottom: 2.604vw;
 }
 
 /*****------- design -------*****/
 #design {
-  margin-top: 150px;
+  margin-top: 7.813vw;
 }
 
 /* img */
@@ -374,24 +411,24 @@ section {
   box-shadow: 3px 5px 42px 22px rgba(0, 0, 0, 0.1);
 }
 #design .s3_design_top .img_box {
-  width: 800px;
-  height: 585px;
+  width: 41.667vw;
+  height: 30.469vw;
   position: relative;
 }
 #design .s3_design_top .img_box #img1 {
   z-index: 100;
   position: absolute;
   bottom: 0;
-  left: -150px;
+  left: -7.813vw;
 }
 #design .s3_design_top .img_box #img2 {
-  top: -150px;
-  left: 100px;
+  top: -7.813vw;
+  left: 5.208vw;
 }
 
 /* txt */
 .s3_design_info {
-  padding-top: 150px;
+  padding-top: 7.813vw;
   display: flex;
   justify-content: space-between;
 }
@@ -402,14 +439,14 @@ section {
   justify-content: space-between;
 }
 .keyword_list li {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 1.563vw;
   border: 2px solid #265d49;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  width: 4.167vw;
+  height: 4.167vw;
+  line-height: 4.167vw;
   border-radius: 50px;
 }
 
@@ -419,12 +456,12 @@ section {
   justify-content: space-between;
 }
 .color_list li {
-  margin-right: 30px;
+  margin-right: 1.563vw;
   background-color: #ffcb00;
-  width: 80px;
-  height: 80px;
-  line-height: 200px;
-  padding: 0 10px;
+  width: 4.167vw;
+  height: 4.167vw;
+  line-height: 10.417vw;
+  padding: 0 0.521vw;
   border-radius: 50px;
 }
 .color_list li:nth-child(2) {
@@ -441,9 +478,9 @@ section {
   justify-content: space-between;
 }
 .typo_list li {
-  width: 50px;
-  margin-right: 100px;
-  font-size: 20px;
+  width: 2.604vw;
+  margin-right: 5.208vw;
+  font-size: 1.25rem;
 }
 .typo_list li:last-child {
   font-weight: bold;
@@ -451,55 +488,57 @@ section {
 
 /*****------- publish -------*****/
 #publish {
-  margin-top: 250px;
+  margin-top: 13.021vw;
   display: flex;
   justify-content: space-between;
-  height: 440px;
+  height: 22.917vw;
 }
 .pub_txt {
-  margin-top: 50px;
-  margin-right: 200px;
+  margin-top: 2.604vw;
+  margin-right: 10.417vw;
 }
 .pub_txt li {
-  padding: 10px 0;
+  padding: 0.521vw 0;
   font-weight: bold;
 }
 .pub_txt li::before {
   content: "○";
-  margin-right: 10px;
+  margin-right: 0.521vw;
 }
 
 /*****------- review -------*****/
 #review {
-  margin-bottom: 300px;
+  margin-bottom: 15.625vw;
 }
 #review h2 {
-  width: 180px;
-  margin-bottom: 100px;
+  width: 9.375vw;
+  margin-bottom: 5.208vw;
 }
 #review_txt {
-  width: 865px;
+  width: 45.052vw;
   margin: 0 auto;
 }
 #review h3 {
-  margin-top: 50px;
+  margin-top: 2.604vw;
 }
 #review p {
-  margin-bottom: 20px;
+  margin-bottom: 1.042vw;
 }
 
 /*****------- view btn -------*****/
 .btn {
   margin: 0 auto;
-  width: 500px;
-  padding: 10px;
+  width: 26.042vw;
+  padding: 0.521vw;
   background-color: #265d49;
   border-radius: 50px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 10.417vw;
 }
 #view_btn {
-  font-size: 30px;
+  display: block;
+  width: 100%;
+  font-size: 1.875rem;
   font-weight: bold;
   color: #fff;
 }
@@ -509,39 +548,40 @@ section {
 #view_btn:hover {
   color: #265d49;
 }
+
 /********** footer ***********/
 footer {
-  width: 100%;
-  height: 550px;
+  height: 28.646vw;
   background-color: #265d49;
   color: #e39d3d;
-  margin-top: 100px;
+  margin-top: 5.208vw;
   position: relative;
 
   display: flex;
 }
 /*----------- profil -----------*/
 .contact_profil {
-  width: 500px;
+  width: 26.042vw;
   position: absolute;
   left: 10%;
   top: 20%;
 }
 .contact_profil h5 {
-  font-size: 90px;
+  font-size: 4.5vw;
   font-weight: bold;
-  width: 800px;
+  width: 41.667vw;
 }
-h5 span {
+.contact_profil h5 span {
   display: block;
-  font-size: 77px;
+  font-size: 3.5rem;
 }
 /*----------- contact -----------*/
 .contact_txt {
-  width: 510px;
-  padding-top: 64px;
-  padding-left: 18px;
+  width: 30vw;
+  padding-top: 3.333vw;
+  padding-left: 0.938vw;
   line-height: 1.9;
+  font-size: 0.875rem;
 }
 .contact_info {
   position: absolute;
@@ -549,17 +589,17 @@ h5 span {
   right: 10%;
 }
 h6 {
-  font-size: 40px;
+  font-size: 1.8rem;
   text-align: right;
-  margin-bottom: 70px;
+  margin-bottom: 3.646vw;
 }
 .contact_info p {
-  font-size: 30px;
+  font-size: 1.2rem;
   text-align: right;
 }
 .email {
   font-weight: bold;
-  margin-bottom: 35px;
+  margin-bottom: 1.823vw;
 }
 .git a {
   text-decoration: underline;
