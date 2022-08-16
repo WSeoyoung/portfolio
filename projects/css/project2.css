@@ -76,6 +76,7 @@ header {
   top: 250px;
   left: 250px;
   font-size: 1.979vw;
+  line-height: normal;
 }
 #gnb li {
   padding: 15px;
@@ -264,7 +265,7 @@ section {
 /* img */
 #main_img img {
   border: 4px solid #000;
-  border-radius: 10px;
+  border-radius: 25px;
 
   position: absolute;
 }
@@ -272,15 +273,15 @@ section {
   width: 10.417vw;
   height: 20.833vw;
   z-index: 100;
-  bottom: -2.604vw;
-  right: 13.021vw;
+  top: -2vw;
+  right: 20vw;
 }
 #main_img .img2 {
   width: 10.417vw;
   height: 20.833vw;
-  z-index: 10;
-  bottom: 0;
-  right: 5.208vw;
+  z-index: 1000;
+  bottom: -1vw;
+  right: 12vw;
 }
 
 /*****------- overview -------*****/
@@ -301,7 +302,6 @@ section {
 #ov_container .wrapper_s1_23 {
   display: flex;
   justify-content: space-between;
-  width: 40vw;
 }
 
 /* goal */
@@ -342,29 +342,30 @@ section {
 }
 
 /* did */
+/* did */
 #s1_did {
   margin-right: 2.604vw;
 }
 #ov_container #s1_did .percent {
-  width: 14vw;
-  height: 2.78vw;
+  width: 90%;
   border: 2px solid #265d49;
   border-radius: 50px;
-  position: relative;
-}
-#ov_container #s1_did .percent .percent50 {
-  width: 8vw;
-  height: 2.78vw;
-  background-color: #265d49;
   color: #fff;
-  padding: 0.37vw;
+  /* padding: 3px; */
   text-align: center;
   font-size: 1.125rem;
   border-radius: 50px;
-  position: absolute;
-  left: -2px;
-  top: -2px;
 }
+#ov_container #s1_did .percent50 {
+  width: 60%;
+  background-color: #265d49;
+  border-radius: 50px;
+  padding: 3px;
+}
+#ov_container #s1_did .role {
+  padding: 1.042vw 0 0 0;
+}
+/***********************/
 #ov_container #s1_did .role {
   padding: 1.042vw 0 0 0;
 }
@@ -431,33 +432,36 @@ section {
   height: 31.833vw;
 }
 #design .s3_design_top .img_box {
-  width: 41.667vw;
+  width: 50vw;
   height: 35vw;
   position: relative;
 }
 #design .s3_design_top .img_box #img1 {
   z-index: 100;
   position: absolute;
-  top: 80px;
-  left: -100px;
+  top: 5.5vw;
+  left: -5.208vw;
 }
 #design .s3_design_top .img_box #img2 {
-  top: 80px;
-  left: 500px;
+  position: absolute;
+  top: 5.5vw;
+  left: 14.5vw;
   /* display: none; */
 }
 #design .s3_design_top .img_box #img3 {
-  top: 50px;
+  position: absolute;
+  top: 5.5vw;
   right: 0;
   /* display: none; */
 }
 
 /* txt */
 .s3_design_info {
-  width: 52.083vw;
+  /* width: 60vw; */
   padding-top: 7.813vw;
   display: flex;
   justify-content: space-between;
+  /* padding-left: 100px; */
 }
 
 /* keyword */
@@ -504,12 +508,12 @@ section {
   font-size: 0.875rem;
 }
 .typo_list li {
-  width: 15vw;
+  /* width: 15vw; */
   margin-right: 5.208vw;
   font-size: 1.25rem;
 }
 .typo_list li:last-child {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /*****------- persona -------*****/
@@ -532,8 +536,8 @@ section {
 }
 .persona_txt {
   width: 40vw;
-
-  margin-right: 10.417vw;
+  margin-left: 2vw;
+  /* margin-right: 15vw; */
 }
 .persona_txt li {
   padding: 0.521vw 0;
