@@ -126,10 +126,10 @@ header {
   z-index: 2;
   border-radius: 50%;
   position: fixed;
-  top: 70px;
-  right: 18px;
-  width: 60px;
-  height: 60px;
+  top: 90px;
+  right: -42px;
+  width: 100px;
+  height: 100px;
   padding: 5px;
 
   transform: translate(-50%, -50%);
@@ -158,7 +158,7 @@ header {
 
 #menu_btn.on .bar1 {
   top: 50%;
-  transform: rotate(45deg) translate(0, 0);
+  transform: rotate(45deg) translate(-14px, -14px);
   background-color: #265d49;
 }
 #menu_btn.on .bar2 {

@@ -126,10 +126,10 @@ header {
   z-index: 2;
   border-radius: 50%;
   position: fixed;
-  top: 70px;
-  right: 18px;
-  width: 60px;
-  height: 60px;
+  top: 90px;
+  right: -42px;
+  width: 100px;
+  height: 100px;
   padding: 5px;
 
   transform: translate(-50%, -50%);
@@ -158,7 +158,7 @@ header {
 
 #menu_btn.on .bar1 {
   top: 50%;
-  transform: rotate(45deg) translate(0, 0);
+  transform: rotate(45deg) translate(-14px, -14px);
   background-color: #265d49;
 }
 #menu_btn.on .bar2 {
@@ -272,8 +272,8 @@ section {
   width: 5.729vw;
   height: 12.292vw;
   z-index: 100;
-  bottom: 0;
-  right: 20.833vw;
+  bottom: -12px;
+  right: 13.833vw;
 }
 #main_img .img2 {
   width: 13.125vw;
@@ -367,7 +367,7 @@ section {
 /*****------- problem + solution -------*****/
 #proSol {
   padding-right: 0;
-  margin-top: 4.167vw;
+  margin-top: 11.167vw;
 
   display: flex;
   justify-content: space-between;
@@ -398,7 +398,7 @@ section {
 
 /*****------- design -------*****/
 #design {
-  margin-top: 7.813vw;
+  margin-top: 14.813vw;
 }
 
 /* img */
@@ -487,7 +487,7 @@ section {
 
 /*****------- publish -------*****/
 #publish {
-  margin-top: 13.021vw;
+  margin-top: 18.021vw;
   display: flex;
   justify-content: space-between;
   height: 22.917vw;
@@ -508,6 +508,7 @@ section {
 /*****------- review -------*****/
 #review {
   margin-bottom: 15.625vw;
+  margin-top: 8vw;
 }
 #review h2 {
   width: 9.375vw;
@@ -522,6 +523,7 @@ section {
 }
 #review p {
   margin-bottom: 1.042vw;
+  font-size: 1.1rem;
 }
 
 /*****------- view btn -------*****/
