@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html {
+  /* position: relative; */
+  font-family: 'pretendard', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  height: 500vh;
+  line-height: 1.6;
+}
+h1, h2, h3 { 
+  font-family: 'Mouse Memoirs', sans-serif;
+  color: #184797;
+}
+#gnb {
+  font-family: 'Teko', sans-serif;
+}
+
+/*********** header *********************************/
+header { 
+  height: 7.813vw;/*150px*/
+  position: relative; 
+  top: 0;
+
+}
+
+/****** nav ******/
+#navWrap { 
+  z-index: 1000;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+  border: 3px solid #ca3235;
+  border-radius: 50px;
+  background-color: #c0dbee;
+
+  margin: 20px auto;
+
+  position: sticky;
+  top: 60px; left: 50px;
+}
+#navWrap .logo { padding: 8px 0 5px 0; margin-left: 50px;}
+#navWrap .logo  img { width: 120px;}
+#navWrap .search { margin-right: 75px; margin-top: 9px; width: 38px; height: 38px;}
+
+/****** gnb ******/
+#navWrap #gnb {
+  width: 38.021vw; /*730px*/
+  height: 2.865vw; line-height: 2.865vw; /*55px*/
+  font-size: 18px;
+  cursor: pointer;
+
+  display: flex; 
+  justify-content: space-around;
+}
+#navWrap #gnb a { 
+  width: 100%;
+  display: block; 
+  color: #ca3235; 
+  padding-top: 2px;
+  cursor: pointer;
+}
+#navWrap #gnb a:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+/*********** slide img *********************************/
+#imgWrap {
+  width: 100%; height: 46.771vw; /*898px*/
+  position: absolute;
+  top: 0; left: 0;
+}
+#slideImg1 { 
+  width: 100%; height: 46.771vw; 
+  background: url(../images/desktop_main2-1.jpg) no-repeat 50% / contain;
+}
+#slideImg2 { background: url(../images/desktop_main2-1.jpg) no-repeat 50% / contain; }
+
+/****** title ******/
+h1 {
+  /* display: block; */
+  height: 11.979vw; /*230px*/
+  padding-left: 20px;
+  position: absolute;
+  bottom: 150px;
+}
+
+/****** txt slide ******/
+#txtSlide {
+  width: 100%;
+  height: 3.125vw; /*60px*/
+  background-color: #ca3235;
+  white-space: nowrap;
+
+  font-size: 36px;
+  line-height: 58px;
+  color: #f3f1ed;
+  font-family: 'Mouse Memoirs', sans-serif;
+  overflow: hidden;
+}
+#txtSlide p {
+  animation: auto 20s linear infinite;
+}
+@keyframes auto {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+
+/*********** main *********************************/
+
+/* section 1 = video */
+#video {
+  position: relative;
+  top: 10px;
+  background-color: #c0dbee;
+  border-bottom: 3px solid #184797;
+  height: 92.708vw; /*1780px*/
+}
+#video h2 { 
+  font-size: 60px; margin: 0 auto;
+  position: absolute;
+  top: 95px; left: 28%;
+}
+
+/* tony img */
+#video #tony {
+  width: 100%;
+  margin: 50px auto 160px;
+}
+#video .tony_img { 
+  width: 25.417vw; height: 25.417vw; /*488px*/
+  display: block;
+  margin: 78px auto 55px;
+}
+#video p { color: #ca3235; text-align: center; }
+#video p span {display: block; }
+
+/* video */
+#video .videoWrap { display: flex;}
+#video #videoSize { 
+  width: 52.292vw;/*1004px*/ 
+  height: 29.271vw;/*562px*/
+  background: url(../kellogg_video.mp4);
+  border-radius: 30px;
+  margin-left: 50px;;
+
+  position: relative;
+
+}
+#video .v_cereal1 {
+  position: absolute;
+  top: -80px; left: -40px;
+}
+#video .v_cereal2 {
+  position: absolute;
+  bottom: -40px; right: -20px;
+}
+#video .v_cereal3 {
+  position: absolute;
+  bottom: -110px; right: 20px;
+  transform: rotate(5deg);
+}
+
+/* txt */
+#videoTxt {
+  width: 28.646vw; /*550px*/ 
+  height: 8.854vw; /*170px*/
+  text-align: center;
+  
+  position: absolute;
+  right: 150px; bottom: 300px;
+}
+#videoTxt .mini_title { font-size: 33px; padding-bottom: 35px;}
+#videoTxt p span {display: block;}
+
+/* section 2 = recipe */
+/* section 3 = better */
+/* section 4 = shop */
+/* section 5 = sns */
