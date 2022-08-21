@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Kellogg</title>
     <!-- minireset -->
     <link rel="stylesheet" href="../common/minireset.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="../common/android-icon-96x96.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../common/android-icon-96x96.png"
+    />
     <!-- font css -->
     <link rel="stylesheet" href="../css/font.css" />
-    <!-- 웹 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Teko:wght@600&display=swap" rel="stylesheet"/>
+
     <!-- 내가 작성한 css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
 
     <!-- jQuery 라이브러리 -->
     <script src="../common/jquery-3.6.0.min.js"></script>
@@ -27,50 +30,73 @@
   <body>
     <!------------ header ------------>
     <header>
-      <img src="./images/hd.png" alt="headerWave" class="wave"/>
-
-      <!-- nav -->
-      <div id="navWrap">
-        <a href="#" class="logo"><img src="./images/logo.png" alt="logo"></a>
-
-        <nav>
-          <ul id="gnb">
-            <li><a href="#">OUR FOOD</a></li>
-            <li><a href="#">RECIPES</a></li>
-            <li><a href="#">HEALTH &amp; NUTRITION</a></li>
-            <li><a href="#">BETTER DAYS</a></li>
-            <li><a href="#">WHO WE ARE</a></li>
-          </ul>
-        </nav>
-
-        <div class="search"><a href="#"><img src="./icons/search.png" alt="검색"></a></div>
-      </div>
+      <img src="./images/hd.png" alt="headerWave" class="wave" />
     </header>
+    <!------------ nav ------------>
+    <div id="navWrap">
+      <a href="#" class="logo"><img src="./images/logo.png" alt="logo" /></a>
 
-   <!------------ main slide ------------>   
+      <nav>
+        <ul id="gnb">
+          <li><a href="#">OUR FOOD</a></li>
+          <li><a href="#">RECIPES</a></li>
+          <li><a href="#">HEALTH &amp; NUTRITION</a></li>
+          <li><a href="#">BETTER DAYS</a></li>
+          <li><a href="#">WHO WE ARE</a></li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <a href="#"><img src="./icons/search.png" alt="검색" /></a>
+      </div>
+    </div>
+
+    <!------------ main slide ------------>
+    <main>
       <!-- img slide -->
-      <div id="imgWrap">
-        <div class="slideImg1"></div>
-        <div class="slideImg2"></div>
-        <div class="slideImg3"></div>
+      <div id="slideBanner">
+        <div class="slideList">
+          <div class="slideImg">
+            <img src="./images/desktop_main2-1.jpg" alt="bg1" />
+          </div>
+          <div class="slideImg">
+            <img src="./images/desktop_main1.jpg" alt="bg2" />
+          </div>
+          <div class="slideImg">
+            <img src="./images/desktop_main3.jpg" alt="bg3" />
+          </div>
+        </div>
       </div>
 
       <!-- title -->
-      <h1 id="headTitle"><img src="./images/slideTitle.png" alt=""></h1>
+      <!-- <h1 id="headTitle"><img src="./images/slideTitle.png" alt="" /></h1> -->
+      <h1>BE THE 1ST CHOICE OF BREAKFAST, SNACKS AND PEOPLE</h1>
 
       <!-- txt slide -->
       <div id="txtSlide">
-        <p>BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦  BETTER DAYS ◦ BETTER DAYS ◦  BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦&nbsp;
+        <p>
+          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦&nbsp;
         </p>
       </div>
 
-
-    <!------------ main contents------------>
+      <!------------ main contents------------>
 
       <!------------ section 1 = video ------------>
       <section id="video">
-        <img src="./images/videoWaveHead.png" alt="videoWaveHead" class="v_wave"/>
-        <img src="./images/video_cereal3-1.png" alt="video_cereal3-1" class="v_cereal3">
+        <img
+          src="./images/videoWaveHead.png"
+          alt="videoWaveHead"
+          class="v_wave"
+        />
+        <img
+          src="./images/video_cereal3-1.png"
+          alt="video_cereal3-1"
+          class="v_cereal3"
+        />
 
         <h2>Making Quality Products For A Healthier World</h2>
 
@@ -79,33 +105,124 @@
 
         <!-- tony img -->
         <div id="tony">
-          <img src="./images/GR.R.REAT_.png" alt="tony" class="tony_img">
-          <p>전세계 사람들에게 단지 식사가 아닌 <span>풍요로움과 만족감을 주는 올바르고 좋은 세상을 추구합니다.</span></p>
+          <img src="./images/GR.R.REAT_.png" alt="tony" class="tony_img" />
+          <p>
+            전세계 사람들에게 단지 식사가 아닌
+            <span
+              >풍요로움과 만족감을 주는 올바르고 좋은 세상을 추구합니다.</span
+            >
+          </p>
         </div>
 
         <div class="videoWrap">
           <!-- video -->
           <div id="videoSize">
             <video src="./kellogg_video.mp4" muted loop autoplay></video>
-            <img src="./images/video_cereal1-1.png" alt="video_cereal1-1" class="v_cereal1">
-            <img src="./images/video_cereal2-1.png" alt="video_cereal2-1" class="v_cereal2">
+            <img
+              src="./images/video_cereal1-1.png"
+              alt="video_cereal1-1"
+              class="v_cereal1"
+            />
+            <img
+              src="./images/video_cereal2-1.png"
+              alt="video_cereal2-1"
+              class="v_cereal2"
+            />
           </div>
 
           <!-- txt -->
           <div id="videoTxt">
             <p class="mini_title">#좋은 것만 드려요</p>
-            <p>한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로 전달되기까지 
+            <p>
+              한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로
+              전달되기까지
               <span>맛있고 건강한 시리얼 한 스푼을 위해</span>
               <span>켈로그는 항상 최선의 노력을 다하고 있습니다.</span>
             </p>
           </div>
         </div>
       </section>
-      <!------------ section 2 = recipe ------------>
-      <!------------ section 3 = better ------------>
-      <!------------ section 4 = shop ------------> 
-      <!------------ section 5 = sns ------------>
 
+      <!------------ section 2 = recipe ------------>
+      <section id="recipe">
+        <h2>Recipes For You</h2>
+
+        <div class="recipe_wrap">
+          <div class="recipe1">
+            <div class="rcp_bg">
+              <img src="./images/cont1.png" alt="cont1" />
+            </div>
+            <p>요거트 앤 베리 그래놀라</p>
+            <a href="#">BUY NOW&nbsp; | &nbsp;5,360원</a>
+          </div>
+
+          <div class="recipe2">
+            <div class="rcp_bg">
+              <img src="./images/cont2.png" alt="cont2" />
+            </div>
+            <p>프로틴 그래놀라 스무디볼</p>
+            <a href="#">BUY NOW&nbsp; | &nbsp;6,770원</a>
+          </div>
+        </div>
+
+        <p>
+          Creating better days and a place at the table for everyone through our
+          trusted food brands.
+        </p>
+      </section>
+
+      <!------------ section 3 = better ------------>
+      <section id="better">
+        <div class="pop_image">
+          <img src="./images/illust_cereal1.png" alt="pop1" class="pop1" />
+          <img src="./images/illust_cereal2.png" alt="pop2" class="pop2" />
+          <img src="./images/illust_cereal3.png" alt="pop3" class="pop3" />
+          <img src="./images/illust_cereal4.png" alt="pop4" class="pop4" />
+        </div>
+
+        <div class="pop_txt">
+          <img src="./images/illust_circlel.png" alt="circle" />
+          <p>
+            <div class="txt1">
+              <p><span>8.3µg</span>우유보다 많이 들어있는 비타민D</p>
+            </div>
+            <div class="txt2">
+              <p><span>118kcal</span>
+              1회 섭취참고량 30g 기준 열량</p>
+            </div>
+            <div class="txt3">
+              <p><span>8-10g</span>
+              당류는 1일 영양 성분 기준치의 8%</p>
+            </div>
+          </p>
+        </div>
+
+        <div class="better_banner">
+          <img src="./images/betterDay.png" alt="better" />
+          <div class="bt_txt">
+            <p class="bt_title">Better Days</p>
+            <p>더 나은 내일을 만들기 위해 110여년 동안 기울여온 켈로그의 노력</p>
+          </div>
+        </div>
+
+        <img src="./images/illust_under_cereal.png" alt="underpop">
+      </section>
+
+      <!------------ section 4 = shop ------------>
+      <section id="shop">
+        <h2>Online Shop</h2>
+        <ul>
+          <li>
+            <div class="box"><img src="./icons/logo_1.png" alt="logo1"></div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <!------------ section 5 = sns ------------>
+    </main>
     <!------------ footer ------------>
     <footer></footer>
   </body>

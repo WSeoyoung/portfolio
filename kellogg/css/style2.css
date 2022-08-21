@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+html {
+  /* position: relative; */
+  font-family: "pretendard", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  /* height: 600vh; */
+  line-height: 1.6;
+  /* position: relative; */
+}
+h1,
+h2,
+h3 {
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #184797;
+}
+#gnb {
+  font-family: "Teko", sans-serif;
+}
+body {
+  /* position: relative; */
+}
+/*********** header *********************************/
+header {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+
+/****** nav ******/
+nav {
+  height: 55px;
+  line-height: 55px;
+}
+#navWrap {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+  border: 3px solid #ca3235;
+  border-radius: 50px;
+  background-color: #c0dbee;
+  margin: 20px auto;
+
+  position: sticky;
+  top: 70px;
+  left: 50px;
+  z-index: 99999;
+}
+#navWrap .logo {
+  padding: 8px 0 5px 0;
+  margin-left: 50px;
+}
+#navWrap .logo img {
+  width: 120px;
+}
+#navWrap .search {
+  margin-right: 75px;
+  margin-top: 9px;
+  width: 38px;
+  height: 38px;
+}
+
+/****** gnb ******/
+#navWrap #gnb {
+  display: flex;
+  justify-content: space-around;
+
+  width: 730px;
+}
+#navWrap #gnb a {
+  width: 100%;
+  display: block;
+  color: #ca3235;
+  padding-top: 2px;
+  cursor: pointer;
+}
+#navWrap #gnb a:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+/*********** slide img *********************************/
+
+#slideBanner {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 44vw;
+  overflow: hidden;
+}
+.slideList {
+  position: relative;
+  width: 300vw;
+  height: 44vw;
+}
+.slideList .slideImg {
+  float: left;
+  width: 100vw;
+  height: 44vw;
+}
+.slideList .slideImg img {
+  display: block;
+}
+/****** title ******/
+h1 {
+  font-size: 5.7rem;
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+
+  text-shadow: -1px 0 #f3f1ed, 0 1px #f3f1ed, 1px 0 #f3f1ed, 0 -1px #f3f1ed;
+}
+
+/****** txt slide ******/
+#txtSlide {
+  width: 100%;
+  height: 4vw;
+  position: absolute;
+  bottom: -44px;
+  background-color: #ca3235;
+  white-space: nowrap;
+
+  font-size: 36px;
+  /* line-height: 58px; */
+  color: #f3f1ed;
+  font-family: "Mouse Memoirs", sans-serif;
+  overflow: hidden;
+}
+#txtSlide p {
+  animation: auto 20s linear infinite;
+}
+@keyframes auto {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*********** main *********************************/
+
+/* section 1 = video */
+
+#video {
+  background-color: #c0dbee;
+  border-bottom: 3px solid #184797;
+  height: 1500px;
+  position: relative;
+  top: 640px;
+  /* 이거 아래 이어지는 section들 다 포지션으로 조정해야하는것인가...?ㅜ */
+}
+#video img {
+}
+#video h2 {
+  font-size: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 75px;
+  left: 25%;
+}
+
+/* tony img */
+#video #tony {
+  width: 100%;
+  margin: 50px auto 160px;
+}
+#video .tony_img {
+  width: 25.417vw;
+  height: 25.417vw; /*488px*/
+  display: block;
+  margin: 78px auto 55px;
+}
+#video p {
+  color: #ca3235;
+  text-align: center;
+}
+#video p span {
+  display: block;
+}
+
+/* video */
+#video .videoWrap {
+  display: flex;
+}
+#video #videoSize {
+  width: 52.292vw; /*1004px*/
+  height: 29.271vw; /*562px*/
+  background: url(../kellogg_video.mp4);
+  border-radius: 30px;
+  margin-left: 50px;
+
+  position: relative;
+}
+#video .v_cereal1 {
+  position: absolute;
+  top: -80px;
+  left: -40px;
+}
+#video .v_cereal2 {
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+}
+#video .v_cereal3 {
+  position: absolute;
+  bottom: -110px;
+  right: 20px;
+  transform: rotate(5deg);
+  z-index: 99;
+}
+
+/* txt */
+#videoTxt {
+  width: 28.646vw; /*550px*/
+  height: 8.854vw; /*170px*/
+  text-align: center;
+
+  position: absolute;
+  right: 150px;
+  bottom: 300px;
+}
+#videoTxt .mini_title {
+  font-size: 33px;
+  padding-bottom: 35px;
+}
+#videoTxt p span {
+  display: block;
+}
+
+/* section 2 = recipe */
+#recipe {
+  height: 62.24vw;
+  background-color: #f3f1ed;
+  position: relative;
+  top: 640px;
+}
+#recipe h2 {
+  font-size: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 75px;
+  left: 42%;
+}
+#recipe > p {
+  font-size: 55px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: normal;
+  color: #184797;
+  text-align: center;
+  border-top: 3px solid #184797;
+  border-bottom: 3px solid #184797;
+
+  padding: 0 24px;
+  position: absolute;
+  bottom: 0;
+  left: ;
+}
+.recipe_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 85px;
+
+  position: absolute;
+  top: 200px;
+  left: 22%;
+}
+
+/* recipe 1 */
+.recipe_wrap .recipe1 {
+  border: 3px solid #184797;
+  border-radius: 25px;
+  text-align: center;
+  color: #184797;
+  margin-right: 10px;
+}
+.recipe_wrap .recipe1 p {
+  border-top: 3px solid #184797;
+  border-bottom: 3px solid #184797;
+  padding: 10px;
+}
+.recipe_wrap .recipe1 a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #184797;
+  border-radius: 0 0 20px 20px;
+}
+.recipe_wrap .recipe1 a:hover {
+  background-color: #184797;
+  color: #fff;
+}
+/* recipe 2 */
+.recipe_wrap .recipe2 {
+  border: 3px solid #184797;
+  border-radius: 25px;
+  text-align: center;
+  color: #184797;
+  margin-left: 10px;
+}
+.recipe_wrap .recipe2 p {
+  border-top: 3px solid #184797;
+  border-bottom: 3px solid #184797;
+  padding: 10px;
+}
+.recipe_wrap .recipe2 a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #184797;
+  border-radius: 0 0 20px 20px;
+}
+.recipe_wrap .recipe2 a:hover {
+  background-color: #184797;
+  color: #fff;
+}
+.recipe_wrap .rcp_bg:hover {
+  background-color: #c0dbee;
+  border-radius: 20px 20px 0 0;
+}
+
+/* section 3 = better */
+#better {
+  height: 1400px;
+  background-color: #c0dbee;
+  position: relative;
+  top: 640px;
+}
+.pop_image {
+  display: flex;
+  justify-content: space-between;
+  height: 38.542vw;
+  width: 100%;
+}
+.pop_image img {
+  display: block;
+  /* width: 40%;
+  height: 80%; */
+}
+.pop_image .pop1 {
+  position: absolute;
+}
+
+/* txt */
+.pop_txt {
+  position: absolute;
+  top: 85px;
+  left: 22%;
+
+  display: flex;
+  justify-content: center;
+}
+.pop_txt div p {
+  font-size: 14px;
+  color: #ca3235;
+  text-align: center;
+}
+.pop_txt span {
+  display: block;
+  font-size: 72px;
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #ca3235;
+  font-weight: normal;
+}
+.pop_txt .txt1 {
+  position: absolute;
+  left: 55px;
+  top: 150px;
+}
+.pop_txt .txt2 {
+  position: absolute;
+  left: 360px;
+  top: 70px;
+}
+.pop_txt .txt3 {
+  position: absolute;
+  right: 50px;
+  top: 160px;
+}
+
+/* banner */
+.better_banner {
+  width: 95%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  /* top: 50px;
+  left: 0; */
+  /* padding-bottom: 200px; */
+}
+.better_banner .bt_title {
+  font-size: 72px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: normal;
+}
+.better_banner .bt_txt {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.better_banner img {
+  width: 100%;
+  margin: 80px 35px;
+}
+
+/* under image */
+#better > img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* section 4 = shop */
+#shop {
+  background-color: #f5deb7;
+  position: relative;
+  top: ;
+}
