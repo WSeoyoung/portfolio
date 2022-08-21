@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/font.css" />
 
     <!-- 내가 작성한 css -->
-    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- jQuery 라이브러리 -->
     <script src="../common/jquery-3.6.0.min.js"></script>
@@ -90,18 +90,16 @@
         <img
           src="./images/videoWaveHead.png"
           alt="videoWaveHead"
-          class="v_wave"
-        />
-        <img
-          src="./images/video_cereal3-1.png"
-          alt="video_cereal3-1"
-          class="v_cereal3"
+          class=""
         />
 
         <h2>Making Quality Products For A Healthier World</h2>
 
         <!-- bg -->
-        <div class="bgMove"></div>
+        <div class="bg">
+          <div class="bgMove1"></div>
+          <div class="bgMove2"></div>
+        </div>
 
         <!-- tony img -->
         <div id="tony">
@@ -145,6 +143,12 @@
 
       <!------------ section 2 = recipe ------------>
       <section id="recipe">
+        <img
+        src="./images/video_cereal3-1.png"
+        alt="video_cereal3-1"
+        class="v_cereal3"
+      />
+
         <h2>Recipes For You</h2>
 
         <div class="recipe_wrap">
@@ -204,26 +208,83 @@
             <p>더 나은 내일을 만들기 위해 110여년 동안 기울여온 켈로그의 노력</p>
           </div>
         </div>
-
-        <img src="./images/illust_under_cereal.png" alt="underpop">
       </section>
 
       <!------------ section 4 = shop ------------>
       <section id="shop">
+        <img src="./images/illust_under_cereal.png" alt="underpop">
+        
         <h2>Online Shop</h2>
         <ul>
           <li>
-            <div class="box"><img src="./icons/logo_1.png" alt="logo1"></div>
+            <div class="box">
+              <a href="https://www.kurly.com/search?sword=%EC%BC%88%EB%A1%9C%EA%B7%B8" target="_blank"><img src="./icons/logo_1.png" alt="logo1" class="logo1"></a>
+            </div>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <div class="box">
+              <a href="https://pages.coupang.com/f/s2148" target="_blank"><img src="./icons/logo_2.png" alt="logo2"></a>
+            </div>
+          </li>
+          <li>
+            <div class="box" >
+              <a href="https://emart.ssg.com/search.ssg?target=all&query=%EC%BC%88%EB%A1%9C%EA%B7%B8" target="_blank"><img src="./icons/logo_3.png" alt="logo3" class="logo3"></a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="https://front.homeplus.co.kr/search?entry=direct&keyword=%EC%BC%88%EB%A1%9C%EA%B7%B8" target="_blank"><img src="./icons/logo_4.png" alt="logo4" class="logo4"></a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="https://www.lotteon.com/search/render/render.ecn?render=nqapi&collection_id=12&platform=pc&u1=P4021&u5=01&u6=4&login=Y&areaCode=null&mallId=4" target="_blank"><img src="./icons/logo_5.png" alt="logo5" class="logo5"></a>
+            </div>
+          </li>
         </ul>
       </section>
+
       <!------------ section 5 = sns ------------>
+      <section id="sns">
+        <div class="snsTitle">
+          <img src="./images/img_social-channers_title.png" alt="title">
+        </div>
+        <div class="youtube">
+          <a href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw" target="_blank">
+          <img src="./icons/youtube.png" alt="yt"></a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/kelloggs_korea/" target="_blank">
+          <img src="./icons/instagram.png" alt="ist"></a>
+        </div>
+        <div class="blog">
+          <a href="https://blog.naver.com/kelloggs_kr" target="_blank">
+          <img src="./icons/blog.png" alt="bl"></a>
+        </div>
+      </section>
+      
     </main>
     <!------------ footer ------------>
-    <footer></footer>
+    <footer>
+      <div class="topUP"><a href="#"><img src="./icons/topUP.png" alt="up"></a></div>
+
+      <div class="minitony"><img src="./images/mascot.png" alt="mascot"></div>
+
+      <div class="logo"><img src="./images/logo_white.png" alt="logoWhite"></div>
+
+      <div class="footer_txt">
+        <div class="address">
+          <p>오시는 길 | 사이트 맵 | 개인정보 보호정책 | 쿠키 기본 설정</p>
+          <p>안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)</p>
+          <p>서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)</p>
+        </div>
+
+        <div class="myInfo">
+          <p>3daking@naver.com</p>
+          <a href="https://github.com/WSeoyoung" target="_blank">https://github.com/WSeoyoung</p>
+          <a href="https://wseoyoung.github.io/portfolio/" target="_blank" class="pfBtn">내 포트폴리오 바로가기</a>
+        </div>
+    </div>
+    </footer>
   </body>
 </html>

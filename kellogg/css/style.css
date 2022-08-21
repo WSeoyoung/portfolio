@@ -1,13 +1,23 @@
 @charset "utf-8";
 
+::-webkit-scrollbar {
+  width: 0.7vw;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c0dbee;
+  border: 3px solid #ca3235;
+  border-radius: 0.521vw;
+}
+
 html {
-  /* position: relative; */
   font-family: "pretendard", sans-serif;
   font-weight: bold;
   font-size: 18px;
-  /* height: 600vh; */
   line-height: 1.6;
-  /* position: relative; */
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -18,9 +28,7 @@ h3 {
 #gnb {
   font-family: "Teko", sans-serif;
 }
-body {
-  /* position: relative; */
-}
+
 /*********** header *********************************/
 header {
   position: absolute;
@@ -44,9 +52,13 @@ nav {
   margin: 20px auto;
 
   position: sticky;
-  top: 70px;
+  top: 80px;
   left: 50px;
-  z-index: 99999;
+  z-index: 999999;
+}
+#navWrap.sticky {
+  transition: 0.4s;
+  transform: translateY(-60px);
 }
 #navWrap .logo {
   padding: 8px 0 5px 0;
@@ -142,48 +154,121 @@ h1 {
 
 /*********** main *********************************/
 
-/* section 1 = video */
+/****** section 1 = video ******/
 
 #video {
   background-color: #c0dbee;
   border-bottom: 3px solid #184797;
   height: 1500px;
   position: relative;
-  top: 640px;
+  top: 655px;
+  overflow: hidden;
   /* 이거 아래 이어지는 section들 다 포지션으로 조정해야하는것인가...?ㅜ */
 }
-#video img {
+#video .v_wave {
+  position: absolute;
+  top: 0;
+  z-index: 999999;
 }
+
 #video h2 {
   font-size: 60px;
   margin: 0 auto;
   position: absolute;
   top: 75px;
   left: 25%;
+  z-index: 99999;
 }
-
-/* tony img */
-#video #tony {
+.bg {
+  overflow: hidden;
+}
+.bgMove1 {
   width: 100%;
-  margin: 50px auto 160px;
+  height: 822px;
+
+  background: url(../images/illust_cereal2.png) 100% / contain;
+  animation: rain 20s infinite linear;
+}
+.bgMove2 {
+  width: 100%;
+  height: 822px;
+  transform: translateY(-1700px);
+
+  background: url(../images/illust_cereal2.png) 100% / contain;
+  animation: rain2 20s 10s infinite linear;
+}
+@keyframes rain {
+  0% {
+    opacity: 0;
+    transform: translateY(-600px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-300px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1600px);
+  }
+}
+@keyframes rain2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-1200px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-800px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-400px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+}
+/****** tony img ******/
+#video #tony {
+  position: absolute;
+  left: 38%;
+  top: 300px;
 }
 #video .tony_img {
   width: 25.417vw;
   height: 25.417vw; /*488px*/
   display: block;
-  margin: 78px auto 55px;
+
+  /* margin: 78px auto 55px; */
 }
 #video p {
   color: #ca3235;
   text-align: center;
+  padding-top: 50px;
 }
 #video p span {
   display: block;
 }
 
-/* video */
+/****** video ******/
 #video .videoWrap {
+  width: 100%;
   display: flex;
+  position: absolute;
+  bottom: 100px;
 }
 #video #videoSize {
   width: 52.292vw; /*1004px*/
@@ -196,7 +281,7 @@ h1 {
 }
 #video .v_cereal1 {
   position: absolute;
-  top: -80px;
+  top: -90px;
   left: -40px;
 }
 #video .v_cereal2 {
@@ -204,15 +289,8 @@ h1 {
   bottom: -40px;
   right: -20px;
 }
-#video .v_cereal3 {
-  position: absolute;
-  bottom: -110px;
-  right: 20px;
-  transform: rotate(5deg);
-  z-index: 99;
-}
 
-/* txt */
+/****** txt ******/
 #videoTxt {
   width: 28.646vw; /*550px*/
   height: 8.854vw; /*170px*/
@@ -230,12 +308,20 @@ h1 {
   display: block;
 }
 
-/* section 2 = recipe */
+/*********** section 2 = recipe ***********/
 #recipe {
   height: 62.24vw;
   background-color: #f3f1ed;
   position: relative;
-  top: 640px;
+  top: 655px;
+  z-index: 9999;
+}
+#recipe .v_cereal3 {
+  position: absolute;
+  top: -250px;
+  right: 20px;
+  transform: rotate(5deg);
+  z-index: 9999;
 }
 #recipe h2 {
   font-size: 60px;
@@ -256,7 +342,6 @@ h1 {
   padding: 0 24px;
   position: absolute;
   bottom: 0;
-  left: ;
 }
 .recipe_wrap {
   display: flex;
@@ -270,7 +355,7 @@ h1 {
   left: 22%;
 }
 
-/* recipe 1 */
+/****** recipe 1 ******/
 .recipe_wrap .recipe1 {
   border: 3px solid #184797;
   border-radius: 25px;
@@ -294,7 +379,7 @@ h1 {
   background-color: #184797;
   color: #fff;
 }
-/* recipe 2 */
+/****** recipe 2 ******/
 .recipe_wrap .recipe2 {
   border: 3px solid #184797;
   border-radius: 25px;
@@ -323,12 +408,13 @@ h1 {
   border-radius: 20px 20px 0 0;
 }
 
-/* section 3 = better */
+/*********** section 3 = better ***********/
 #better {
-  height: 1400px;
+  height: 1450px;
   background-color: #c0dbee;
   position: relative;
-  top: 640px;
+  top: 655px;
+  overflow: hidden;
 }
 .pop_image {
   display: flex;
@@ -343,12 +429,31 @@ h1 {
 }
 .pop_image .pop1 {
   position: absolute;
+  left: -150px;
+  top: -40px;
+}
+.pop_image .pop2 {
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  z-index: 999;
+}
+.pop_image .pop3 {
+  position: absolute;
+  right: 280px;
+  top: -30px;
+  z-index: 999;
+}
+.pop_image .pop4 {
+  position: absolute;
+  right: -100px;
+  top: 150px;
 }
 
-/* txt */
+/****** txt ******/
 .pop_txt {
   position: absolute;
-  top: 85px;
+  top: 150px;
   left: 22%;
 
   display: flex;
@@ -382,14 +487,15 @@ h1 {
   top: 160px;
 }
 
-/* banner */
+/*********** section 3 = banner ***********/
 .better_banner {
   width: 95%;
   color: #fff;
   text-align: center;
   position: relative;
-  /* top: 50px;
-  left: 0; */
+  top: 50px;
+  left: 0;
+  z-index: 999;
   /* padding-bottom: 200px; */
 }
 .better_banner .bt_title {
@@ -407,15 +513,166 @@ h1 {
   margin: 80px 35px;
 }
 
-/* under image */
-#better > img {
-  position: absolute;
-  bottom: 0;
-}
+/*********** section 4 = shop ***********/
 
-/* section 4 = shop */
+/****** under image ******/
 #shop {
   background-color: #f5deb7;
+  height: 40vw;
   position: relative;
-  top: ;
+  top: 655px;
+}
+#shop > img {
+  position: absolute;
+  top: -125px;
+  z-index: 999;
+}
+#shop h2 {
+  font-size: 60px;
+  margin-left: 58px;
+  padding-top: 150px;
+  margin-bottom: 90px;
+}
+
+/****** logo ******/
+#shop ul {
+  margin-left: 58px;
+  display: flex;
+}
+#shop ul li .box {
+  width: 260px;
+  height: 160px;
+  background-color: #c0dbee;
+  border-radius: 25px;
+  border: 3px solid #184797;
+  margin: 10px;
+  box-shadow: #184797 3px 2px 0;
+}
+#shop ul li .box img {
+  display: block;
+  width: 50%;
+  margin: 40px auto;
+  padding-top: 30px;
+  transition: 0.4s;
+}
+#shop ul li .box img:hover {
+  transform: scale(1.2);
+}
+#shop ul li .box .logo1 {
+  padding-top: 0;
+}
+#shop ul li .box .logo3 {
+  width: 40%;
+  padding-top: 25px;
+}
+#shop ul li .box .logo4,
+#shop ul li .box .logo5 {
+  width: 70%;
+  padding-top: 20px;
+}
+
+/*********** section 5 = sns ***********/
+#sns {
+  height: 28vw;
+  background-color: #c0dbee;
+  position: relative;
+  top: 655px;
+  display: flex;
+  justify-content: center;
+}
+#sns > div {
+  padding-top: 100px;
+  padding: 100px 30px;
+}
+#sns div img {
+  display: block;
+  width: 150px;
+  border-radius: 20px;
+  border: 3px solid #ca3235;
+}
+#sns div img:hover {
+  background-color: #f3f1ed;
+}
+
+/*********** footer ***********/
+footer {
+  height: 25vw;
+  background-color: #ca3235;
+  color: #fff;
+  padding: 0 100px;
+  position: relative;
+  top: 655px;
+  font-weight: normal;
+}
+footer > .logo {
+  margin-bottom: 50px;
+  position: absolute;
+  top: 120px;
+}
+
+.topUP {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: #f3f1ed;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -100px;
+  left: 45%;
+}
+.topUP img {
+  display: block;
+  margin: 25px auto;
+  animation: upmove 3s infinite;
+}
+@keyframes upmove {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.minitony {
+  width: 12vw;
+  position: absolute;
+  top: -210px;
+  right: 100px;
+}
+.footer_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_txt .address {
+  font-size: 14px;
+  position: absolute;
+  top: 200px;
+}
+.footer_txt .address p:first-child {
+  margin-bottom: 20px;
+}
+.footer_txt .myInfo {
+  text-align: right;
+  position: absolute;
+  top: 120px;
+  right: 100px;
+}
+.footer_txt .myInfo a {
+  display: block;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  color: #fff;
+}
+.footer_txt .myInfo .pfBtn {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 50px;
 }

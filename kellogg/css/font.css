@@ -3,7 +3,29 @@
 @font-face {
   font-family: "pretendard";
   src: url(../font/PretendardVariable.woff2);
-  font-weight: normal;
+  font-style: normal;
   font-display: swap;
   font-weight: 45 920;
+}
+@font-face {
+  font-family: "Mouse Memoirs";
+  src: url(../fonts/MouseMemoirs-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Teko";
+  src: url(../fonts/Teko-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url(../fonts/Teko-SemiBold.woff2);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
 }
