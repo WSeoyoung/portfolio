@@ -96,7 +96,7 @@ main {
   position: absolute;
   top: 20px;
   width: 100%;
-  height: 48.5vw;
+  height: 47.5vw;
   overflow: hidden;
 }
 
@@ -124,7 +124,7 @@ main {
 /****** title ******/
 h1 {
   width: 100%;
-  font-size: 5.7rem;
+  font-size:6.7vw;
   position: absolute;
   top: 28vw;
   left: 1%;
@@ -135,7 +135,7 @@ h1 {
 /****** txt slide ******/
 #txtSlide {
   width: 100%;
-  height: 4vw;
+  height: 3vw;
   position: absolute;
   bottom: 0;
   background-color: #ca3235;
@@ -166,7 +166,7 @@ h1 {
   border-bottom: 3px solid #184797;
   height: 98vw;
   position: relative;
-  top: 49.5vw;
+  top: 48.5vw;
   overflow: hidden;
 }
 #video .v_wave {
@@ -180,7 +180,7 @@ h1 {
   margin: 0 auto;
   position: absolute;
   top: 75px;
-  left: 25%;
+  left: 30vw;
   z-index: 99999;
 }
 .bg {
@@ -249,7 +249,7 @@ h1 {
 #video #tony {
   position: absolute;
   left: 38%;
-  top: 300px;
+  top: 20%;
 }
 #video .tony_img {
   width: 25.417vw;
@@ -314,10 +314,10 @@ h1 {
 
 /*********** section 2 = recipe ***********/
 #recipe {
-  height: 62.24vw;
+  height: 55vw;
   background-color: #f3f1ed;
   position: relative;
-  top: 49.5vw;
+  top: 48.5vw;
   z-index: 9999;
 }
 #recipe .v_cereal3 {
@@ -336,7 +336,7 @@ h1 {
 }
 #recipe > p {
   width: 100%;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-family: "Mouse Memoirs", sans-serif;
   font-weight: normal;
   color: #184797;
@@ -356,8 +356,8 @@ h1 {
   margin-bottom: 85px;
 
   position: absolute;
-  top: 200px;
-  left: 22%;
+  top: 12vw;
+  left: 26vw;
 }
 
 /****** recipe 1 ******/
@@ -415,10 +415,10 @@ h1 {
 
 /*********** section 3 = better ***********/
 #better {
-  height: 1450px;
+  height: 88vw;
   background-color: #c0dbee;
   position: relative;
-  top: 49.5vw;
+  top: 48.5vw;
   overflow: hidden;
 }
 .pop_image {
@@ -439,27 +439,25 @@ h1 {
 }
 .pop_image .pop2 {
   position: absolute;
-  left: 250px;
-  top: 40px;
+  left: 20vw;
   z-index: 999;
 }
 .pop_image .pop3 {
   position: absolute;
-  right: 280px;
-  top: -30px;
+  right: 25vw;
   z-index: 999;
 }
 .pop_image .pop4 {
   position: absolute;
-  right: -100px;
-  top: 150px;
+  right: -50px;
+  top: 250vw;
 }
 
 /****** txt ******/
 .pop_txt {
   position: absolute;
-  top: 150px;
-  left: 22%;
+  top: 10vw;
+  left:28vw;
 
   display: flex;
   justify-content: center;
@@ -478,18 +476,18 @@ h1 {
 }
 .pop_txt .txt1 {
   position: absolute;
-  left: 3.5vw;
-  top: 9vw;
+  left: 2.5vw;
+  top: 7vw;
 }
 .pop_txt .txt2 {
   position: absolute;
-  left: 23vw;
-  top: 4vw;
+  left: 18.5vw;
+  top: 3vw;
 }
 .pop_txt .txt3 {
   position: absolute;
-  right: 2vw;
-  top: 10vw;
+  right: 1.5vw;
+  top: 8.5vw;
 }
 
 /*********** section 3 = banner ***********/
@@ -498,7 +496,7 @@ h1 {
   color: #fff;
   text-align: center;
   position: relative;
-  top: 50px;
+  top: -5vw;
   left: 0;
   z-index: 999;
   /* padding-bottom: 200px; */
@@ -523,9 +521,9 @@ h1 {
 /****** under image ******/
 #shop {
   background-color: #f5deb7;
-  height: 43vw;
+  height: 35vw;
   position: relative;
-  top: 49.5vw;
+  top: 48.5vw;
 }
 #shop > img {
   position: absolute;
@@ -578,10 +576,10 @@ h1 {
 
 /*********** section 5 = sns ***********/
 #sns {
-  height: 28vw;
+  height: 25vw;
   background-color: #c0dbee;
   position: relative;
-  top: 49.5vw;
+  top:48.5vw;
   display: flex;
   justify-content: center;
 }
@@ -601,7 +599,7 @@ h1 {
 
 /*********** footer ***********/
 footer {
-  height: 450px;
+  height: 25vw;
   background-color: #ca3235;
   color: #fff;
   padding: 0 8vw;
@@ -610,7 +608,7 @@ footer {
   font-weight: normal;
 }
 footer > .logo {
-  margin-bottom: 6vw;
+  margin-bottom: 1vw;
   position: absolute;
   top: 8vw;
 }
@@ -657,7 +655,7 @@ footer > .logo {
 .footer_txt .address {
   font-size: 0.875rem;
   position: absolute;
-  top: 15vw;
+  top:12vw;
 }
 .footer_txt .address p:first-child {
   margin-bottom: 20px;
