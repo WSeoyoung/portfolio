@@ -336,7 +336,7 @@ h1 {
 }
 #recipe > p {
   width: 100%;
-  font-size: 3.8rem;
+  font-size: 3.125vw;
   font-family: "Mouse Memoirs", sans-serif;
   font-weight: normal;
   color: #184797;
@@ -457,7 +457,7 @@ h1 {
 .pop_txt {
   position: absolute;
   top: 10vw;
-  left:28vw;
+  left:28%;
 
   display: flex;
   justify-content: center;
