@@ -1,11 +1,11 @@
 // nav sticky
 const nav = document.querySelector("#navWrap");
-const header = document.querySelector("header");
+const main = document.querySelector("main");
 
 addEventListener("scroll", () => {
-  if (scrollY > header.offsetTop - 50) {
+  if (scrollY > main.offsetTop - 50) {
     nav.classList.add("sticky");
-  } else if (scrollY <= header.offsetTop - 50) {
+  } else if (scrollY <= main.offsetTop - 50) {
     nav.classList.remove("sticky");
   }
 });

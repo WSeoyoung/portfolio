@@ -29,14 +29,7 @@ h3 {
   font-family: "Teko", sans-serif;
 }
 
-/*********** header *********************************/
-header {
-  position: absolute;
-  top: 0;
-  z-index: 9999;
-}
-
-/****** nav ******/
+/*********** nav *********************************/
 nav {
   height: 55px;
   line-height: 55px;
@@ -93,15 +86,28 @@ nav {
   text-decoration-style: double;
 }
 
-/*********** slide img *********************************/
+/*********** main *********************************/
+main {
+  position: relative;
+  top: -121px;
+}
 
 #slideBanner {
   position: absolute;
   top: 20px;
   width: 100%;
-  height: 44vw;
+  height: 48.5vw;
   overflow: hidden;
 }
+
+/****** headwave ******/
+#slideBanner .headwave {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+
+/****** slide image ******/
 .slideList {
   position: relative;
   width: 300vw;
@@ -117,10 +123,11 @@ nav {
 }
 /****** title ******/
 h1 {
+  width: 100%;
   font-size: 5.7rem;
   position: absolute;
-  bottom: 80px;
-  left: 10px;
+  top: 28vw;
+  left: 1%;
 
   text-shadow: -1px 0 #f3f1ed, 0 1px #f3f1ed, 1px 0 #f3f1ed, 0 -1px #f3f1ed;
 }
@@ -130,7 +137,7 @@ h1 {
   width: 100%;
   height: 4vw;
   position: absolute;
-  bottom: -44px;
+  bottom: 0;
   background-color: #ca3235;
   white-space: nowrap;
 
@@ -152,18 +159,15 @@ h1 {
   }
 }
 
-/*********** main *********************************/
-
 /****** section 1 = video ******/
 
 #video {
   background-color: #c0dbee;
   border-bottom: 3px solid #184797;
-  height: 1500px;
+  height: 98vw;
   position: relative;
-  top: 655px;
+  top: 49.5vw;
   overflow: hidden;
-  /* 이거 아래 이어지는 section들 다 포지션으로 조정해야하는것인가...?ㅜ */
 }
 #video .v_wave {
   position: absolute;
@@ -313,7 +317,7 @@ h1 {
   height: 62.24vw;
   background-color: #f3f1ed;
   position: relative;
-  top: 655px;
+  top: 49.5vw;
   z-index: 9999;
 }
 #recipe .v_cereal3 {
@@ -331,7 +335,8 @@ h1 {
   left: 42%;
 }
 #recipe > p {
-  font-size: 55px;
+  width: 100%;
+  font-size: 3rem;
   font-family: "Mouse Memoirs", sans-serif;
   font-weight: normal;
   color: #184797;
@@ -413,7 +418,7 @@ h1 {
   height: 1450px;
   background-color: #c0dbee;
   position: relative;
-  top: 655px;
+  top: 49.5vw;
   overflow: hidden;
 }
 .pop_image {
@@ -460,31 +465,31 @@ h1 {
   justify-content: center;
 }
 .pop_txt div p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #ca3235;
   text-align: center;
 }
 .pop_txt span {
   display: block;
-  font-size: 72px;
+  font-size: 4rem;
   font-family: "Mouse Memoirs", sans-serif;
   color: #ca3235;
   font-weight: normal;
 }
 .pop_txt .txt1 {
   position: absolute;
-  left: 55px;
-  top: 150px;
+  left: 3.5vw;
+  top: 9vw;
 }
 .pop_txt .txt2 {
   position: absolute;
-  left: 360px;
-  top: 70px;
+  left: 23vw;
+  top: 4vw;
 }
 .pop_txt .txt3 {
   position: absolute;
-  right: 50px;
-  top: 160px;
+  right: 2vw;
+  top: 10vw;
 }
 
 /*********** section 3 = banner ***********/
@@ -499,14 +504,14 @@ h1 {
   /* padding-bottom: 200px; */
 }
 .better_banner .bt_title {
-  font-size: 72px;
+  font-size: 4rem;
   font-family: "Mouse Memoirs", sans-serif;
   font-weight: normal;
 }
 .better_banner .bt_txt {
   position: absolute;
   top: 35%;
-  left: 35%;
+  left: 38%;
 }
 .better_banner img {
   width: 100%;
@@ -518,13 +523,13 @@ h1 {
 /****** under image ******/
 #shop {
   background-color: #f5deb7;
-  height: 40vw;
+  height: 43vw;
   position: relative;
-  top: 655px;
+  top: 49.5vw;
 }
 #shop > img {
   position: absolute;
-  top: -125px;
+  top: -8vw;
   z-index: 999;
 }
 #shop h2 {
@@ -536,11 +541,11 @@ h1 {
 
 /****** logo ******/
 #shop ul {
-  margin-left: 58px;
+  margin-left: 6vw;
   display: flex;
 }
 #shop ul li .box {
-  width: 260px;
+  width: 16vw;
   height: 160px;
   background-color: #c0dbee;
   border-radius: 25px;
@@ -576,12 +581,12 @@ h1 {
   height: 28vw;
   background-color: #c0dbee;
   position: relative;
-  top: 655px;
+  top: 49.5vw;
   display: flex;
   justify-content: center;
 }
 #sns > div {
-  padding-top: 100px;
+  padding-top: 5vw;
   padding: 100px 30px;
 }
 #sns div img {
@@ -596,18 +601,18 @@ h1 {
 
 /*********** footer ***********/
 footer {
-  height: 25vw;
+  height: 450px;
   background-color: #ca3235;
   color: #fff;
-  padding: 0 100px;
+  padding: 0 8vw;
   position: relative;
-  top: 655px;
+  top: 41.5vw;
   font-weight: normal;
 }
 footer > .logo {
-  margin-bottom: 50px;
+  margin-bottom: 6vw;
   position: absolute;
-  top: 120px;
+  top: 8vw;
 }
 
 .topUP {
@@ -643,16 +648,16 @@ footer > .logo {
   width: 12vw;
   position: absolute;
   top: -210px;
-  right: 100px;
+  right: 8vw;
 }
 .footer_txt {
   display: flex;
   justify-content: space-between;
 }
 .footer_txt .address {
-  font-size: 14px;
+  font-size: 0.875rem;
   position: absolute;
-  top: 200px;
+  top: 15vw;
 }
 .footer_txt .address p:first-child {
   margin-bottom: 20px;
@@ -660,8 +665,8 @@ footer > .logo {
 .footer_txt .myInfo {
   text-align: right;
   position: absolute;
-  top: 120px;
-  right: 100px;
+  top: 12vw;
+  right: 8vw;
 }
 .footer_txt .myInfo a {
   display: block;

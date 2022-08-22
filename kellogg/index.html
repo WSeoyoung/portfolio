@@ -28,12 +28,8 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <!------------ header ------------>
-    <header>
-      <img src="./images/hd.png" alt="headerWave" class="wave" />
-    </header>
     <!------------ nav ------------>
-    <div id="navWrap">
+    <header id="navWrap">
       <a href="#" class="logo"><img src="./images/logo.png" alt="logo" /></a>
 
       <nav>
@@ -49,12 +45,14 @@
       <div class="search">
         <a href="#"><img src="./icons/search.png" alt="검색" /></a>
       </div>
-    </div>
+    </header>
 
     <!------------ main slide ------------>
     <main>
       <!-- img slide -->
       <div id="slideBanner">
+        <div class="headwave"><img src="./images/hd.png" alt="headerWave" class="wave" /></div>
+
         <div class="slideList">
           <div class="slideImg">
             <img src="./images/desktop_main2-1.jpg" alt="bg1" />
@@ -66,80 +64,80 @@
             <img src="./images/desktop_main3.jpg" alt="bg3" />
           </div>
         </div>
-      </div>
 
-      <!-- title -->
-      <!-- <h1 id="headTitle"><img src="./images/slideTitle.png" alt="" /></h1> -->
-      <h1>BE THE 1ST CHOICE OF BREAKFAST, SNACKS AND PEOPLE</h1>
+        <!-- title -->
+        <h1>BE THE 1ST CHOICE OF BREAKFAST, SNACKS AND PEOPLE</h1>
 
-      <!-- txt slide -->
-      <div id="txtSlide">
-        <p>
-          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
-          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
-          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
-          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
-          BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦&nbsp;
-        </p>
-      </div>
-
-      <!------------ main contents------------>
-
-      <!------------ section 1 = video ------------>
-      <section id="video">
-        <img
-          src="./images/videoWaveHead.png"
-          alt="videoWaveHead"
-          class=""
-        />
-
-        <h2>Making Quality Products For A Healthier World</h2>
-
-        <!-- bg -->
-        <div class="bg">
-          <div class="bgMove1"></div>
-          <div class="bgMove2"></div>
-        </div>
-
-        <!-- tony img -->
-        <div id="tony">
-          <img src="./images/GR.R.REAT_.png" alt="tony" class="tony_img" />
+        <!-- txt slide -->
+        <div id="txtSlide">
           <p>
-            전세계 사람들에게 단지 식사가 아닌
-            <span
-              >풍요로움과 만족감을 주는 올바르고 좋은 세상을 추구합니다.</span
-            >
+            BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+            BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+            BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+            BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦
+            BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦ BETTER DAYS ◦&nbsp;
           </p>
         </div>
+      </div>
 
-        <div class="videoWrap">
-          <!-- video -->
-          <div id="videoSize">
-            <video src="./kellogg_video.mp4" muted loop autoplay></video>
-            <img
-              src="./images/video_cereal1-1.png"
-              alt="video_cereal1-1"
-              class="v_cereal1"
-            />
-            <img
-              src="./images/video_cereal2-1.png"
-              alt="video_cereal2-1"
-              class="v_cereal2"
-            />
+
+
+      <!------------ main contents------------>
+        <!------------ section 1 = video ------------>
+        <section id="video">
+          <img
+            src="./images/videoWaveHead.png"
+            alt="videoWaveHead"
+            class=""
+          />
+
+          <h2>Making Quality Products For A Healthier World</h2>
+
+          <!-- bg -->
+          <div class="bg">
+            <div class="bgMove1"></div>
+            <div class="bgMove2"></div>
           </div>
 
-          <!-- txt -->
-          <div id="videoTxt">
-            <p class="mini_title">#좋은 것만 드려요</p>
+          <!-- tony img -->
+          <div id="tony">
+            <img src="./images/GR.R.REAT_.png" alt="tony" class="tony_img" />
             <p>
-              한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로
-              전달되기까지
-              <span>맛있고 건강한 시리얼 한 스푼을 위해</span>
-              <span>켈로그는 항상 최선의 노력을 다하고 있습니다.</span>
+              전세계 사람들에게 단지 식사가 아닌
+              <span
+                >풍요로움과 만족감을 주는 올바르고 좋은 세상을 추구합니다.</span
+              >
             </p>
           </div>
-        </div>
-      </section>
+
+          <div class="videoWrap">
+            <!-- video -->
+            <div id="videoSize">
+              <video src="./kellogg_video.mp4" muted loop autoplay></video>
+              <img
+                src="./images/video_cereal1-1.png"
+                alt="video_cereal1-1"
+                class="v_cereal1"
+              />
+              <img
+                src="./images/video_cereal2-1.png"
+                alt="video_cereal2-1"
+                class="v_cereal2"
+              />
+            </div>
+
+            <!-- txt -->
+            <div id="videoTxt">
+              <p class="mini_title">#좋은 것만 드려요</p>
+              <p>
+                한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로
+                전달되기까지
+                <span>맛있고 건강한 시리얼 한 스푼을 위해</span>
+                <span>켈로그는 항상 최선의 노력을 다하고 있습니다.</span>
+              </p>
+            </div>
+          </div>
+        </section>
 
       <!------------ section 2 = recipe ------------>
       <section id="recipe">
