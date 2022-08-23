@@ -172,20 +172,17 @@ header {
 /********** main contents ***********/
 h1 {
   font-size: 4.625rem;
-  background-color: rgba(227, 157, 61, 0.5);
-  height: 3.646vw;
   margin-bottom: 4.167vw;
-}
-/* .line {
-  background-color: rgba(227, 157, 61, 0.5);
   height: 3.646vw;
-} */
+  background-color: rgba(227, 157, 61, 0.5);
+}
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  background-color: rgba(227, 157, 61, 0.5);
-  height: 1.563vw;
   padding-left: 0.26vw;
+  height: 2vw;
+  width: 100%;
+  background-color: rgba(227, 157, 61, 0.5);
 }
 h3 {
   font-size: 1.25rem;
@@ -375,6 +372,14 @@ section {
 #proSol h2 {
   width: 13.021vw;
 }
+#proSol h2:last-child {
+  margin-top: 2vw;
+  width: 11vw;
+}
+.psTitle {
+  display: flex;
+  flex-direction: column;
+}
 #ps_container {
   width: 36.458vw;
 }
@@ -399,6 +404,9 @@ section {
 /*****------- design -------*****/
 #design {
   margin-top: 14.813vw;
+}
+#design h2 {
+  width: 9.5vw;
 }
 
 /* img */
@@ -491,6 +499,9 @@ section {
   display: flex;
   justify-content: space-between;
   height: 22.917vw;
+}
+#publish h2 {
+  width: 14vw;
 }
 .pub_txt {
   margin-top: 2.604vw;
