@@ -3,9 +3,9 @@ const nav = document.querySelector("#navWrap");
 const main = document.querySelector("main");
 
 addEventListener("scroll", () => {
-  if (scrollY > main.offsetTop - 50) {
+  if (scrollY > 10) {
     nav.classList.add("sticky");
-  } else if (scrollY <= main.offsetTop - 50) {
+  } else if (scrollY <= 10) {
     nav.classList.remove("sticky");
   }
 });
@@ -37,14 +37,14 @@ addEventListener("mousemove", (e) => {
   let y = e.clientY;
 
   pop1.style.top = `${x / -15}px`;
-  pop1.style.left = `${y / -20}px`;
+  pop1.style.left = `${y / -3}px`;
 
-  pop2.style.top = `${x / 40}px`;
-  pop2.style.left = `${y / 0}px`;
+  pop2.style.top = `${x / -20}px`;
+  pop2.style.left = `${y / 2}px`;
 
-  pop3.style.top = `${x / -40}px`;
-  pop2.style.right = `${y / 50}px`;
+  pop3.style.top = `${x / -20}px`;
+  pop3.style.right = `${y / 2}px`;
 
-  pop4.style.top = `${x / 10}px`;
-  pop4.style.right = `${y / -20}px`;
+  pop4.style.top = `${x / 15}px`;
+  pop4.style.right = `${y / -3}px`;
 });
