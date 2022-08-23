@@ -1,12 +1,27 @@
 // nav sticky
 const nav = document.querySelector("#navWrap");
+const logoR = document.querySelector("#logo .logo1");
+const logoW = document.querySelector("#logo .logo2");
+const gnbW = document.querySelector("#navWrap #gnb2");
+const searchR = document.querySelector("#search .search1");
+const searchW = document.querySelector("#search .search2");
 const main = document.querySelector("main");
 
 addEventListener("scroll", () => {
   if (scrollY > 10) {
     nav.classList.add("sticky");
+    logoR.classList.add("sticky");
+    logoW.classList.add("sticky");
+    searchR.classList.add("sticky");
+    searchW.classList.add("sticky");
+    gnbW.classList.add("sticky");
   } else if (scrollY <= 10) {
     nav.classList.remove("sticky");
+    logoR.classList.remove("sticky");
+    logoW.classList.remove("sticky");
+    searchR.classList.remove("sticky");
+    searchW.classList.remove("sticky");
+    gnbW.classList.remove("sticky");
   }
 });
 

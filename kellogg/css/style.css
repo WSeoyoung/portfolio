@@ -25,7 +25,7 @@ h3 {
   font-family: "Mouse Memoirs", sans-serif;
   color: #184797;
 }
-#gnb {
+ul {
   font-family: "Teko", sans-serif;
 }
 
@@ -50,41 +50,88 @@ nav {
   z-index: 999999;
   transition: 0.5s;
 }
-#navWrap.sticky {
-  position: fixed;
-  top: 25px;
-}
-#navWrap .logo {
+#navWrap #logo {
   padding: 8px 0 5px 0;
   margin-left: 50px;
+  position: relative;
 }
-#navWrap .logo img {
+#navWrap #logo img {
   width: 120px;
 }
-#navWrap .search {
+#navWrap #logo .logo2 {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+#navWrap #search {
   margin-right: 75px;
   margin-top: 9px;
   width: 38px;
   height: 38px;
+  position: relative;
+}
+#navWrap #search .search2 {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /****** gnb ******/
-#navWrap #gnb {
+#navWrap ul {
   display: flex;
   justify-content: space-around;
 
   width: 730px;
 }
-#navWrap #gnb a {
+#navWrap #gnb1 a {
   width: 100%;
   display: block;
   color: #ca3235;
   padding-top: 2px;
   cursor: pointer;
 }
-#navWrap #gnb a:hover {
+#navWrap ul a:hover {
   text-decoration: underline;
   text-decoration-style: double;
+}
+
+/****** gnb ******/
+#navWrap #gnb2 {
+  position: absolute;
+  top: 2px;
+  display: none;
+}
+#navWrap #gnb2 a {
+  color: #fff;
+}
+
+/****** sticky 들 ******/
+#navWrap.sticky {
+  position: fixed;
+  top: 25px;
+
+  border: 3px solid #f3f1ed;
+  background-color: #ca3235;
+  color: #fff;
+}
+#navWrap #logo .logo1.sticky {
+  opacity: 0.2;
+}
+#navWrap #logo .logo2.sticky {
+  display: block;
+}
+#navWrap #search .search1.sticky {
+  opacity: 0.2;
+}
+#navWrap #search .search2.sticky {
+  display: block;
+}
+#navWrap #gnb2.sticky {
+  display: block;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*********** main *********************************/
