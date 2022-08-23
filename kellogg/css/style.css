@@ -44,7 +44,7 @@ nav {
   background-color: #c0dbee;
 
   position: absolute;
-  top: 70px;
+  top: 5vw;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 999999;
@@ -469,7 +469,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 9999;
-  /* overflow: hidden; */
 }
 .pop_image img {
   display: block;
@@ -498,12 +497,12 @@ h1 {
 .better_banner {
   width: 100%;
   color: #fff;
-  margin: 0 auto;
+  margin: 0 auto 10vw;
   position: relative;
 }
 .better_banner img {
   width: 95%;
-  margin: 0 35px 200px;
+  margin: 0 35px 20px;
   position: relative;
   z-index: 9999;
 }

@@ -37,14 +37,14 @@ addEventListener("mousemove", (e) => {
   let y = e.clientY;
 
   pop1.style.top = `${x / -15}px`;
-  pop1.style.left = `${y / -3}px`;
+  pop1.style.left = `${y / -4}px`;
 
-  pop2.style.top = `${x / -20}px`;
+  pop2.style.top = `${x / 20}px`;
   pop2.style.left = `${y / 2}px`;
 
   pop3.style.top = `${x / -20}px`;
   pop3.style.right = `${y / 2}px`;
 
   pop4.style.top = `${x / 15}px`;
-  pop4.style.right = `${y / -3}px`;
+  pop4.style.right = `${y / -4}px`;
 });
