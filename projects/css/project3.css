@@ -6,9 +6,6 @@ html {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   font-size: 1rem;
-  /* width: 100%; */
-  /* width: 65%;
-  margin: 0 auto; */
 
   background-color: #f8f3e8;
   scroll-behavior: smooth; /* 부드러운 스크롤 */
