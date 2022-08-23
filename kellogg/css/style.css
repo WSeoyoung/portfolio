@@ -458,7 +458,7 @@ h1 {
   border-radius: 50%;
 }
 .pop_txt .p_txt > div > p {
-  margin-top: 3vw;
+  margin-top: 3.5vw;
 }
 /****** img ******/
 .pop_image {
@@ -497,7 +497,7 @@ h1 {
 .better_banner {
   width: 100%;
   color: #fff;
-  margin: 0 auto 10vw;
+  margin: 0 auto 15vw;
   position: relative;
 }
 .better_banner img {
