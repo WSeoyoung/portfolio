@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>Project 1 - L'OCCITANE</title>
+    <title>Project 3 - Kellogg</title>
     <!-- minireset -->
     <link rel="stylesheet" href="../common/minireset.css" />
     <!-- favicon -->
@@ -17,9 +17,9 @@
       href="../common/android-icon-96x96.png"
     />
     <!-- font css -->
-    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../kellogg/css/font.css" />
     <!-- 내가 작성한 css -->
-    <link rel="stylesheet" href="./css/project1.css" />
+    <link rel="stylesheet" href="./css/project3.css" />
     <!-- jQuery 라이브러리 -->
     <script src="../common/jquery-3.6.0.min.js"></script>
     <!-- 내가 작성한 js -->
@@ -54,25 +54,23 @@
       <div id="main_wrapper">
         <div id="main_txt">
           <div class="line">
-            <h1 id="title">L'OCCITANE</h1>
+            <h1 id="title">Kellogg</h1>
           </div>
 
-          <p>반응형 웹 사이트</p>
-          <p>2022.07.01 ~ 2022.07.28</p>
+          <p>웹사이트 리디자인</p>
+          <p>2022.08.16 ~ 2022.08.23</p>
           <p>개인 작업 (100%)</p>
           <ul class="tag">
-            <li>#Responsive</li>
+            <li>#Web</li>
             <li>#HTML5</li>
             <li>#CSS3</li>
             <li>#JavaScript</li>
-            <li>#jQuery</li>
+            <li>#Redesign</li>
           </ul>
         </div>
 
         <div id="main_img">
-          <img src="./images/pj1_mobile.png" alt="mobile" class="img1" />
-          <img src="./images/pj1_tablet.png" alt="tablet" class="img2" />
-          <img src="./images/pj1_pc.png" alt="pc" class="img3" />
+          <img src="./images/pj3_pc.png" alt="pc" class="main" />
         </div>
       </div>
     </header>
@@ -93,11 +91,10 @@
           <div id="s1_goal" class="s1">
             <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
             <h3>프로젝트 목표</h3>
-            <h4>L'OCCITANE 웹 사이트 리디자인</h4>
+            <h4>Kellogg 웹사이트 리디자인</h4>
             <p>
-              다양한 제품의 수많은 정보들이 카테고리와 이미지들로 나열된 채
-              제공되어 세심히 찾아봐야 하는 기존 웹사이트에서, 보다 간결하고
-              정리된 형태로 록시땅의 제품을 친절하게 보여주는 홈페이지로
+              주로 제품 및 홍보 이미지들의 일반적인 나열로 구성되어 있는 기존의
+              웹사이트를, 좀 더 켈로그 자체의 이미지를 드러낼 수 있는 디자인으로
               리디자인 한다.
             </p>
           </div>
@@ -107,12 +104,9 @@
               <img src="./images/ovIcon_gy.png" alt="icon2" class="icon2" />
               <h3>웹 사이트 유형</h3>
               <ul class="type_list">
-                <li class="bf_circle1">반응형 웹사이트</li>
                 <li>
                   <ul class="type_px">
                     <li class="bf_circle2">PC : 1920px</li>
-                    <li>Tablet : 1240px</li>
-                    <li>Mobile : 768px</li>
                   </ul>
                 </li>
               </ul>
@@ -139,25 +133,27 @@
             <h3>Problem</h3>
             <ul class="prob_txt">
               <li>
-                <h4>다수의 메뉴 카테고리 나열</h4>
+                <h4>면적이 큰 네비게이션</h4>
                 <p>
-                  브랜드 특성상 다수의 카테고리 형성이 불가피 할 수 있으나, 웹
-                  사이트 상단을 다 채울 만큼의 카테고리 제공은 불 필요 한 것
-                  같다.
+                  켈로그의 특징적인 모양을 사용했으나, 메뉴 내의 컨텐츠에 비해
+                  큰 면적을 차지하고 있었다.
                 </p>
               </li>
 
               <li>
-                <h4>제품의 정보가 중복 노출</h4>
+                <h4>단조로운 레이아웃 구성</h4>
                 <p>
-                  메인에 있는 제품의 정보들은 카테고리로 가면 또 볼 수 있는
-                  정보들 즉, 중복되는 정보들인 경우가 많았다.
+                  모든 페이지가 일반적인 제품 나열방식의 동일한 구성으로
+                  되어있어 다소 단조롭게 느껴진다.
                 </p>
               </li>
 
               <li>
-                <h4>이미지와 텍스트의 강약 조절</h4>
-                <p>간격이 너무 좁거나 너무 넓거나 하여 일관되지 않다.</p>
+                <h4>저화질 이미지의 다수 사용</h4>
+                <p>
+                  메인페이지에서 큰 면적을 차지하고 있는 이미지인데도 심하게
+                  깨져있는 이미지들이 많이 있었다.
+                </p>
               </li>
             </ul>
           </div>
@@ -169,20 +165,26 @@
             <h3>Solution</h3>
             <ul class="solu_txt">
               <li>
-                <h4>메뉴 정리 분류 및 중복 정보 제거</h4>
+                <h4>네비게이션의 단순화</h4>
                 <p>
-                  겹치는 키워드 별로 묶어서 카테고리 수를 줄이고, 소비자 전달
-                  중요도가 높은 정보는 메인에서, 그 외 자세한 정보는 페이지로
-                  넘어가서 확인 할 수 있도록 한다.
+                  메뉴 내용이 많지 않은 것을 감안하여, 보다 페이지 이동에 집중된
+                  간결한 구성으로 만든다.
                 </p>
               </li>
 
               <li>
-                <h4>레이아웃 수정 및 컨텐츠 위치 수정</h4>
+                <h4>다양한 레이아웃 구성</h4>
                 <p>
-                  들쑥날쑥한 화면 상의 크기 및 구조들을 효과적으로 수정하고,
-                  특히 메인에서 노출되었으면 하는 콘텐츠를 선정해 새로이
-                  배치한다.
+                  메인 페이지 내의 각 콘텐츠 별 특징에 따른 다양한 구성으로,
+                  사용자가 봤을때 보다 흥미롭게 한다.
+                </p>
+              </li>
+
+              <li>
+                <h4>좋은 퀄리티의 이미지 및 영상 사용</h4>
+                <p>
+                  선명한 이미지와 영상으로 사용자가 정확히 인지할 수 있도록
+                  한다.
                 </p>
               </li>
             </ul>
@@ -195,8 +197,8 @@
         <div class="s3_design_top">
           <h2>Design</h2>
           <div class="img_box">
-            <img src="./images/pj1_ds-pc1.png" alt="img" id="img1" />
-            <img src="./images/pj1_ds-pc2.png" alt="img" id="img2" />
+            <img src="./images/pj3_ds_pc1.png" alt="img" id="img1" />
+            <img src="./images/pj3_ds_pc2.png" alt="img" id="img2" />
           </div>
         </div>
 
@@ -204,9 +206,8 @@
           <div class="if_keyword">
             <h5>Keyword</h5>
             <ul class="keyword_list">
-              <li>#심플한</li>
-              <li>#편리한</li>
-              <li>#직관적인</li>
+              <li>#선명한</li>
+              <li>#발랄한</li>
             </ul>
           </div>
 
@@ -215,15 +216,19 @@
             <ul class="color_list">
               <li>
                 <p class="color_circle"></p>
-                #FFCB00
+                #CA3235
               </li>
               <li>
                 <p class="color_circle"></p>
-                #EFEFEF
+                #F3F1ED
               </li>
               <li>
                 <p class="color_circle"></p>
-                #01172D
+                #C0DBEE
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #184797
               </li>
             </ul>
           </div>
@@ -231,7 +236,8 @@
           <div class="if_info">
             <h5>Typography</h5>
             <ul class="typo_list">
-              <li>Pretendard Regular</li>
+              <li>MouseMemoirs Regular</li>
+              <li>Teko SemiBold</li>
               <li>Pretendard Bold</li>
             </ul>
           </div>
@@ -242,12 +248,11 @@
       <section id="publish">
         <h2>Publishing</h2>
         <ul class="pub_txt">
-          <li>미디어 쿼리를 이용한 반응형 웹 페이지 제작</li>
-          <li>flex, grid, position을 이용한 레이아웃 구성</li>
-          <li>JavaScript, jQuery를 사용한 슬라이드</li>
+          <li>JavaScript를 이용한 슬라이드 및 내비게이션 제작</li>
+          <li>Animation을 사용한 이미지 움직임 적용</li>
           <li>Mouse Event 적용</li>
-          <li>사이트 완성 후 내용 추가</li>
-          <li>사이트 완성 후 내용 추가</li>
+          <li>마우스 좌표에 따른 움직임 구현</li>
+          <li>flex, position을 이용한 레이아웃 구성</li>
         </ul>
       </section>
 
@@ -311,7 +316,7 @@
         </div>
 
         <div class="btn">
-          <a href="../Loccitane/index.html" target="_blank" id="view_btn"
+          <a href="../kellogg/index.html" target="_blank" id="view_btn"
             >View Site</a
           >
         </div>
