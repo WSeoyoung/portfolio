@@ -420,13 +420,10 @@ h2 {
   padding-top: 6vw;
   cursor: pointer;
 }
-#pjBtns li.on {
-  width: calc(70% / 5);
-  margin-left: 135px;
-  height: 5px;
-  background-color: #e39d3d;
-  transition: 0.5s;
+#pjBtns li:hover {
+  color: #fff;
 }
+
 /*----------- img -----------*/
 #pjGallery {
   overflow: hidden;
@@ -464,11 +461,14 @@ h2 {
 }
 
 #pjImg_wrap li a {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 60px;
   color: #265d49;
   font-size: 4rem;
   margin: 0 auto;
 }
 #pjImg_wrap li a:hover {
+  background-color: rgba(38, 93, 73, 0.5);
   color: #fff;
 }
 

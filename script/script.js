@@ -31,12 +31,3 @@ $("#pjBtns li").on("click", function () {
   let idx = $(this).index();
   $("#pjImg_wrap").animate({ marginLeft: `${-100 * idx}%` });
 });
-
-// const pjBtn = document.querySelectorAll("#pjBtns li");
-
-// pjBtn.forEach((pjBtn) => {
-//   pjBtn.classList.remove("on");
-//   pjBtn.addEventListener("click", () => {
-//     pjBtn.classList.add("on");
-//   });
-// });
