@@ -220,10 +220,8 @@ section {
 
 /*****------- main title -------*****/
 #main_wrapper {
-  /* width: 100%; */
   width: 67.708vw;
   height: 20.833vw;
-
   display: flex;
   justify-content: space-between;
 
@@ -238,7 +236,7 @@ section {
   margin-left: 0.521vw;
 }
 #main_txt .tag {
-  width: 25vw;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0.781vw;
@@ -257,6 +255,9 @@ section {
 }
 
 /* img */
+#main_img {
+  margin-left: 5vw;
+}
 #main_img img {
   border: 4px solid #000;
   border-radius: 25px;
@@ -283,6 +284,7 @@ section {
 #ov_container .wrapper_s1_23 {
   display: flex;
   justify-content: space-between;
+  margin-top: 3vw;
 }
 
 /* goal */
@@ -300,11 +302,21 @@ section {
 #ov_container .s1 p {
   padding: 0 1.563vw;
 }
+#ov_container .s1 ul {
+  margin-top: 2vw;
+}
+#ov_container .s1 ul .bf_circle1 {
+  font-size: 1.125rem;
+}
+#ov_container .s1 ul .bf_circle1::before {
+  content: "○";
+  margin-right: 0.521vw;
+}
 #s1_goal p {
   width: 31.25vw;
 }
 
-/* type 수정???????????????????????????????????????*/
+/* type */
 #s1_timeline {
   width: 13vw;
   margin-right: 5.208vw;
@@ -322,7 +334,6 @@ section {
   padding-left: 1.146vw;
 }
 
-/* did */
 /* did */
 #s1_did {
   margin-right: 2.604vw;
@@ -345,6 +356,7 @@ section {
 }
 #ov_container #s1_did .role {
   padding: 1.042vw 0 0 0;
+  width: 210px;
 }
 /***********************/
 #ov_container #s1_did .role {
@@ -366,7 +378,7 @@ section {
 /*****------- problem + solution -------*****/
 #proSol {
   padding-right: 0;
-  margin-top: 4.167vw;
+  margin-top: 11.167vw;
 
   display: flex;
   justify-content: space-between;
@@ -405,7 +417,7 @@ section {
 
 /*****------- design -------*****/
 #design {
-  margin-top: 7.813vw;
+  margin-top: 11.167vw;
 }
 #design h2 {
   width: 9.5vw;
@@ -498,50 +510,63 @@ section {
 /* typo */
 .typo_list {
   font-size: 0.875rem;
+  display: flex;
 }
 .typo_list li {
   /* width: 15vw; */
-  margin-right: 5.208vw;
+  margin-right: 2vw;
   font-size: 1.25rem;
 }
 .typo_list li:last-child {
   font-size: 1rem;
 }
 
-/*****------- persona -------*****/
-#persona {
+/*****------- result -------*****/
+#result {
   margin-top: 13.021vw;
   margin-bottom: 12vw;
+  width: 100%;
 }
-#persona h2 {
-  width: 10.5vw;
+#result .result_top {
+  margin: 0 auto;
+  display: flex;
 }
-.perso_wrap {
-  width: 1000px;
-  margin-top: 5vw;
-  height: 22.917vw;
+#result h2 {
+  width: 130px;
+}
+.video_wrap {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.video_wrap video {
+  margin: 0 10px;
+  border: 5px solid #000;
+  border-radius: 30px;
+  width: 15vw;
+}
+.proto_txt {
+  width: 45vw;
+  margin: 5vw 0 0 auto;
+}
+.proto_txt ul li {
+  padding-bottom: 20px;
+}
+.proto_txt ul li p {
+  font-size: 0.875rem;
+  padding-left: 1.458vw;
+  padding-top: 0.5vw;
+}
+.des_container {
   display: flex;
   justify-content: space-between;
 }
-.perso_wrap img {
-  margin-right: 80px;
-}
-.persona_txt {
-  width: 40vw;
-  margin-left: 2vw;
-  /* margin-right: 15vw; */
-}
-.persona_txt li {
-  padding: 0.521vw 0;
-  font-weight: bold;
-}
-.persona_txt li::before {
-  content: "○";
-  margin-right: 0.521vw;
+.des_container ul {
+  width: 35vw;
 }
 
 /*****------- review -------*****/
 #review {
+  margin-top: 11.167vw;
   margin-bottom: 15.625vw;
 }
 #review h2 {
@@ -552,11 +577,17 @@ section {
   width: 45.052vw;
   margin: 0 auto;
 }
+#review_txt .rv_txt1,
+.rv_txt2 {
+  padding-bottom: 1.5vw;
+}
 #review h3 {
   margin-top: 2.604vw;
 }
 #review p {
-  margin-bottom: 1.042vw;
+  margin-bottom: 1.5vw;
+  padding-top: 0.5vw;
+  padding-left: 1.458vw;
 }
 
 /*****------- view btn -------*****/
