@@ -237,7 +237,7 @@ section {
   margin-left: 0.521vw;
 }
 #main_txt .tag {
-  width: 25vw;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0.781vw;
@@ -293,7 +293,7 @@ section {
   justify-content: space-between;
 }
 #overview h2 {
-  width: 12.5vw;
+  width: 200px;
 }
 
 /* ov txt */
@@ -367,11 +367,11 @@ section {
   justify-content: space-between;
 }
 #proSol h2 {
-  width: 13.021vw;
+  width: 200px;
 }
 #proSol h2:last-child {
   margin-top: 2vw;
-  width: 11vw;
+  width: 170px;
 }
 .psTitle {
   display: flex;
@@ -403,7 +403,7 @@ section {
   margin-top: 14.813vw;
 }
 #design h2 {
-  width: 9.5vw;
+  width: 150px;
 }
 
 /* img */
@@ -498,7 +498,7 @@ section {
   height: 22.917vw;
 }
 #publish h2 {
-  width: 14vw;
+  width: 210px;
 }
 .pub_txt {
   margin-top: 2.604vw;
@@ -519,7 +519,7 @@ section {
   margin-top: 8vw;
 }
 #review h2 {
-  width: 9.375vw;
+  width: 150px;
   margin-bottom: 5.208vw;
 }
 #review_txt {
