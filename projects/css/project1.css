@@ -169,7 +169,7 @@ header {
 /********** main contents ***********/
 h1 {
   font-size: 4.625rem;
-  margin-bottom: 4.167vw;
+  margin-bottom: 80px;
   height: 3.646vw;
   background-color: rgba(227, 157, 61, 0.5);
 }
@@ -219,8 +219,7 @@ section {
 }
 /*****------- main title -------*****/
 #main_wrapper {
-  /* width: 100%; */
-  width: 67.708vw;
+  width: 1100px;
   height: 20.833vw;
 
   display: flex;
@@ -233,15 +232,15 @@ section {
 /* txt */
 #main_txt p {
   font-size: 1.125rem; /* 18px */
-  padding: 0.26vw;
-  margin-left: 0.521vw;
+  padding: 5px;
+  margin-left: 10px;
 }
 #main_txt .tag {
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0.781vw;
-  margin-top: 1.823vw;
+  margin-left: 15px;
+  margin-top: 35px;
 }
 #main_txt .tag li {
   border: 2px solid #000;
@@ -287,7 +286,7 @@ section {
 
 /*****------- overview -------*****/
 #overview {
-  margin-top: 15.625vw;
+  margin-top: 300px;
   padding-right: 5.208vw;
   display: flex;
   justify-content: space-between;

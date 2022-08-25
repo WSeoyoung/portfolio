@@ -365,7 +365,7 @@ section {
 /*****------- problem + solution -------*****/
 #proSol {
   padding-right: 0;
-  margin-top: 210px;
+  margin-top: 11.167vw;
 
   display: flex;
   justify-content: space-between;
@@ -404,7 +404,7 @@ section {
 
 /*****------- Ux vision -------*****/
 #vision {
-  margin-top: 210px;
+  margin-top: 11.167vw;
   padding-bottom: 150px;
   padding-top: 100px;
 }
@@ -424,7 +424,7 @@ section {
 
 /*****------- design -------*****/
 #design {
-  margin-top: 210px;
+  margin-top: 11.167vw;
 }
 #design h2 {
   width: 150px;
@@ -525,7 +525,7 @@ section {
 
 /*****------- result -------*****/
 #result {
-  margin-top: 380px;
+  margin-top: 20vw;
   margin-bottom: 12vw;
   width: 100%;
 }
@@ -569,8 +569,8 @@ section {
 
 /*****------- review -------*****/
 #review {
-  margin-top: 250px;
-  margin-bottom: 200px;
+  margin-top: 15vw;
+  margin-bottom: 15.625vw;
 }
 #review h2 {
   width: 150px;
