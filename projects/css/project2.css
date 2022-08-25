@@ -274,7 +274,7 @@ section {
   justify-content: space-between;
 }
 #overview h2 {
-  width: 12.5vw;
+  width: 200px;
 }
 
 /* ov txt */
@@ -354,9 +354,9 @@ section {
   border-radius: 50px;
   padding: 3px;
 }
-#ov_container #s1_did .role {
-  padding: 1.042vw 0 0 0;
-  width: 210px;
+#ov_container #s1_did .role li {
+  padding-top: 1vw;
+  width: 220px;
 }
 /***********************/
 #ov_container #s1_did .role {
@@ -384,11 +384,11 @@ section {
   justify-content: space-between;
 }
 #proSol h2 {
-  width: 13.021vw;
+  width: 200px;
 }
 #proSol h2:last-child {
   margin-top: 2vw;
-  width: 11vw;
+  width: 170px;
 }
 .psTitle {
   display: flex;
@@ -415,12 +415,36 @@ section {
   padding-bottom: 2.604vw;
 }
 
+/*****------- Ux vision -------*****/
+#vision {
+  margin-top: 11.167vw;
+}
+#vision h2 {
+  width: 200px;
+}
+
+.vision_txt {
+  padding: 200px 0 120px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.vision_txt img {
+  display: block;
+  margin-top: 2vw;
+  height: 52px;
+}
+.vision_txt > div {
+  text-align: center;
+}
+.original p span {
+  display: block;
+}
 /*****------- design -------*****/
 #design {
   margin-top: 11.167vw;
 }
 #design h2 {
-  width: 9.5vw;
+  width: 150px;
 }
 
 /* img */
@@ -450,22 +474,18 @@ section {
   position: absolute;
   top: 5.5vw;
   left: 14.5vw;
-  /* display: none; */
 }
 #design .s3_design_top .img_box #img3 {
   position: absolute;
   top: 5.5vw;
   right: 0;
-  /* display: none; */
 }
 
 /* txt */
 .s3_design_info {
-  /* width: 60vw; */
   padding-top: 7.813vw;
   display: flex;
   justify-content: space-between;
-  /* padding-left: 100px; */
 }
 
 /* keyword */
@@ -513,7 +533,6 @@ section {
   display: flex;
 }
 .typo_list li {
-  /* width: 15vw; */
   margin-right: 2vw;
   font-size: 1.25rem;
 }
@@ -523,7 +542,7 @@ section {
 
 /*****------- result -------*****/
 #result {
-  margin-top: 13.021vw;
+  margin-top: 20vw;
   margin-bottom: 12vw;
   width: 100%;
 }
@@ -566,11 +585,11 @@ section {
 
 /*****------- review -------*****/
 #review {
-  margin-top: 11.167vw;
+  margin-top: 15vw;
   margin-bottom: 15.625vw;
 }
 #review h2 {
-  width: 9.375vw;
+  width: 150px;
   margin-bottom: 5.208vw;
 }
 #review_txt {
