@@ -1,7 +1,10 @@
 @charset "utf-8";
 
 /************ pc *********************************************/
-
+h1 {
+  font-size: 5vw;
+  line-height: 1.2;
+}
 h2 {
   font-size: 4vw;
 }
@@ -18,10 +21,153 @@ h5 {
   padding-bottom: 50px;
 }
 /*********** header ***********/
+header {
+  height: 60vw;
+  background-size: 55%;
+  background-position-x: 0;
+  background-position-y: 200px;
+}
+header #bg_pattern1 {
+  width: 40%;
+  bottom: 20vw;
+  left: 0;
+}
+header #bg_pattern1-1 {
+  width: 40%;
+  height: 40vw;
+  background: url(../images/main_pattern8.png) no-repeat 0 100% / 10%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header #bg_pattern2 {
+  width: 40%;
+  bottom: 8vw;
+  left: -25vw;
+}
+header #bg_pattern2-1 {
+  height: 10vw;
+  width: 40%;
+  background: url(../images/main_pattern9.png) no-repeat 100% 100% /40%;
+  position: absolute;
+  top: 6vw;
+  right: 15vw;
+}
+header #bg_pattern3 {
+  width: 23vw;
+  height: 23vw;
+  background: url(../images/main_pattern2.png) no-repeat 50% / contain;
+
+  position: absolute;
+  bottom: 12vw;
+  right: 5vw;
+}
+header #bg_pattern4 {
+  width: 23vw;
+  height: 23vw;
+  background: url(../images/main_pattern4.png) no-repeat 50% / contain;
+
+  position: absolute;
+  top: -6vw;
+  right: 5vw;
+  z-index: 9999;
+}
+header #bg_pattern5 {
+  width: 10vw;
+  height: 10vw;
+  background: url(../images/main_pattern3.png) no-repeat 50% / contain;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
 /*********** nav ***********/
+.overlay .menu {
+  height: 490px;
+  background: url(../images/menu_bgline.png) no-repeat 50% / contain;
+}
+.overlay .menu ul li {
+  font-size: 3vw;
+  transition: 0.3s;
+}
+.overlay .menu ul li:hover {
+  color: #fff;
+  transform: translateX(-20px);
+}
 
 /*********** swiper ***********/
+.swiper_container {
+  display: block;
+  width: 100%;
+  height: 40vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.swiper_slide {
+  display: flex;
+  width: 270%;
+}
+.slide_img {
+  width: 90%;
+  overflow: hidden;
+}
+.slide_img .img1 {
+  background: url(../images/main_img1-1.png) no-repeat 50% / contain;
+}
+
+/* txt */
+.slide_title {
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+/* pagination */
+.slideshow {
+  position: relative;
+}
+.slideshow .swiper-pagination {
+  position: absolute;
+  bottom: -10vw;
+  left: 0;
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  transition: 0.3s;
+}
+
 /*********** title ***********/
+#title {
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+#title .colorBox1 {
+  width: 13vw;
+  height: 4vw;
+
+  top: 12vw;
+  right: 10vw;
+}
+#title .colorBox2 {
+  width: 13vw;
+  height: 4vw;
+
+  bottom: 0;
+  left: 4vw;
+}
+h1:nth-child(2) {
+  margin-left: 120px;
+}
+h1:nth-child(3) {
+  margin-left: 50px;
+}
 
 /*********** main ***********/
 main {
@@ -30,28 +176,20 @@ main {
 }
 /*********** intro txt ***********/
 #intro_txt h2 .colorBox1 {
-  display: block;
-  width: 150px;
-  height: 50px;
-  background-color: rgba(158, 212, 243, 0.5);
-  transform: rotate(30deg);
-  box-shadow: 15px -20px 050px #ddd;
+  width: 15vw;
+  height: 5vw;
 
   position: absolute;
-  top: 0;
-  right: 10vw;
+  top: 2vw;
+  right: 5vw;
 }
 #intro_txt h2 .colorBox2 {
-  display: block;
-  width: 150px;
-  height: 50px;
-  background-color: rgba(250, 255, 173, 0.5);
-  transform: rotate(-20deg);
-  box-shadow: -15px -20px 50px #ddd;
+  width: 15vw;
+  height: 5vw;
 
   position: absolute;
-  top: 5vw;
-  left: 2vw;
+  top: 8vw;
+  left: 0;
 }
 
 /* btn */
@@ -177,12 +315,13 @@ footer {
   height: 350px;
   display: flex;
   justify-content: space-between;
-  margin: 0 150px;
+  /* margin: 0 150px; */
 }
 
 footer .left {
   position: absolute;
-  left: 0;
+  left: 150px;
+  width: 30%;
 }
 footer .left img {
   width: 30%;
@@ -195,7 +334,8 @@ footer .left p span {
 footer .right {
   text-align: right;
   position: absolute;
-  right: 0;
+  right: 150px;
+  width: 30%;
 }
 footer .right .pf_btn {
   position: absolute;
@@ -213,7 +353,7 @@ footer .right .pf_btn a:hover {
   height: 350px;
 
   bottom: 0;
-  left: -200px;
+  left: 0;
 }
 .foot_bg_pattern2 {
   width: 200px;
@@ -227,6 +367,6 @@ footer .right .pf_btn a:hover {
   height: 200px;
   background: url(../images/main_pattern8.png) no-repeat 50% / contain;
   position: absolute;
-  top: 0;
-  right: 200px;
+  bottom: 0;
+  right: 400px;
 }

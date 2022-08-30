@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../common/swiper-bundle.min.css" />
     <!-- 내가 작성한 style / min-width 작성시 작은값 먼저 작성 -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" media="(min-width:1020px)" href="./css/pc.css" />
+    <link rel="stylesheet" media="(min-width:768px)" href="./css/pc.css" />
 
     <!-- jQuery 라이브러리 -->
     <script src="../common/jquery-3.6.0.min.js"></script>
@@ -40,57 +40,88 @@
           <div class="logo">
             <a href="#"><img src="./icons/logoB.png" alt="logo" /></a>
           </div>
+          
+          <div class="menu_btn">
+            <a href="#" class="btn_open">
+              <img src="./icons/toggleMenu_btn.png" alt="">
+            </a>
+          </div>
 
-          <ul id="gnb">
-            <li><a href="#">DDP 안내</a></li>
-            <li><a href="#">프로그램</a></li>
-            <li><a href="#">공간안내</a></li>
-            <li><a href="#">고객지원</a></li>
-          </ul>
+          <div class="overlay">
+            <a href="#" class="btn_close">
+              <img src="./icons/toggleClose_btn.png" alt="">
+            </a>
 
-          <div class="toggle_btn">
-            <div></div>
+
+            <div class="menu">
+              <ul id="gnb">
+                <li><a href="#">DDP 안내</a></li>
+                <li><a href="#">프로그램</a></li>
+                <li><a href="#">공간안내</a></li>
+                <li><a href="#">고객지원</a></li>
+              </ul>
+            </div>
           </div>
       </nav>
 
+      <!-- pattern -->
       <div id="bg_pattern1"></div>
+      <div id="bg_pattern1-1"></div>
       <div id="bg_pattern2"></div>
+      <div id="bg_pattern2-1"></div>
+      <div id="bg_pattern3"></div>
+      <div id="bg_pattern4"></div>
+      <div id="bg_pattern5"></div>
 
       <!-- main img -->
-      <div class="swiper_container">
-        <ul class="swiper_img">
-          <li class="swiper-slide" id="bg1">
-            <p>
-              내일을 위한 디자인의 가능성을 살펴보는 DDP 디자인 박물관 첫 기획
-              전시
-            </p>
-            <p class="swiper_title">시작된 미래</p>
-          </li>
+      <div class="swiper_container slideshow">
+        <div class="swiper_wrapper">
+          <ul class="swiper_slide">
 
-          <li class="swiper-slide" id="bg2">
-            <p>
-              몽환적인 이야기와 기괴한 캐릭터로 사랑을 받은 영화 감독 "팀 버튼"
-            </p>
-            <p class="swiper_title">팀 버튼 특별전</p>
-          </li>
+            <li class="slide_img img1">
+              <img src="./images/main_img1-1.png" alt="img1">
+              <div class="slide_txt">
+                <p>
+                  내일을 위한 디자인의 가능성을 살펴보는 DDP 디자인 박물관 첫 기획
+                  전시
+                </p>
+                <p class="slide_title">시작된 미래</p>
+              </div>
+            </li>
 
-          <li class="swiper-slide" id="bg3">
-            <p>
-              서울디자인재단과 함께 디지털 디자인의 미래와 가능성에 도전하세요
-            </p>
-            <p class="swiper_title">
-              DDP-NTF 콜렉팅 Vol.1 : NTF 디자이너 공모전
-            </p>
-          </li>
-        </ul>
+            <li class="slide_img img2">
+              <img src="./images/main_img2-1.png" alt="img2">
+              <div class="slide_txt">
+                <p>
+                  몽환적인 이야기와 기괴한 캐릭터로 사랑을 받은 영화 감독 "팀 버튼"
+                </p>
+                <p class="slide_title">팀 버튼 특별전</p>
+              </div>
+            </li>
 
-        <!-- 좌 우 클릭 버튼 -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+            <li class="slide_img img3">
+              <img src="./images/main_img3-1.png" alt="img3">
+              <div class="slide_txt">
+                <p>
+                  서울디자인재단과 함께 디지털 디자인의 미래와 가능성에 도전하세요
+                </p>
+                <p class="slide_title">
+                  DDP-NTF 콜렉팅 Vol.1 : NTF 디자이너 공모전
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         <!-- 하단 pagination -->
-        <div class="swiper-pagination my_page"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
+        <!-- 좌 우 클릭 버튼 -->
+        <div class="swiper_navigation">
+          <div class="swiper-button-next"><span class="fas fa-chevron-left"></span></div>
+          <div class="swiper-button-prev"><span class="fas fa-chevron-right"></span></div>
+        </div>
 
       <!-- title -->
       <div id="title">

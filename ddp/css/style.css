@@ -31,6 +31,7 @@ h1 {
   font-size: 12vw;
   font-family: "Orbitron", sans-serif;
   padding: 0 55px;
+  line-height: 1.2;
 }
 h2 {
   font-size: 4.5vw;
@@ -68,7 +69,7 @@ header {
   position: relative;
   height: 120vw;
   background: url(../images/main_pattern1.png) no-repeat bottom / contain;
-  background-position-y: 80%;
+  background-position-y: 90%;
   margin-bottom: 40px;
   overflow: hidden;
 }
@@ -91,79 +92,65 @@ header #bg_pattern2 {
 /*********** nav ***********/
 nav {
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-
+  height: 75px;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999;
+
+  z-index: 9999;
 }
 nav .logo img {
-  width: 70%;
-  z-index: 99999;
+  height: 43px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999;
 }
-nav .toggle_btn::before {
-  content: "";
-  display: block;
+nav.shadow {
+  background-color: #fff;
+  transition: 0.5s;
+  box-shadow: -15px -20px 50px #8a8d8f;
+}
+
+/* btn */
+.menu_btn {
+  position: fixed;
+  top: 20px;
+  right: 15px;
   width: 60px;
-  height: 28px;
-  background: url(../icons/toggleMenu_btn.png) no-repeat 50% / contain;
-  position: absolute;
-  top: 25px;
-  right: 10px;
-  z-index: 99999;
+  height: 50px;
+  cursor: pointer;
 }
-nav #gnb {
-  background-color: #9ed4f3;
+.overlay .btn_close {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
+/* gnb menu bg */
+.overlay {
+  display: none;
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 9999;
-
+  z-index: 999;
+  overflow: auto;
   width: 100%;
   height: 100%;
-  text-align: center;
-  font-size: 8vw;
-  padding-top: 150px;
-  opacity: 0;
-  display: none;
+  background: #9ed4f3;
 }
-nav #gnb li a {
+.overlay.open {
   display: block;
-  padding: 30px;
 }
-
-/* pc
-nav #gnb li a:hover {
-  color: #fff;
-  transform: translateX(10px);
-  transition: 0.3s;
-} */
-
-/* .active지금 심각하게 해결 안되는 중
-
-nav .toggle_btn.active {
-  height: 60px;
-  background: url(../icons/toggleClose_Wbtn.png) no-repeat 50% / contain;
+.overlay .menu {
+  margin: 150px auto;
+  background: url(../images/menu_bgline.png) no-repeat 50% / cover;
 }
-nav .logo.active img {
-  b
+.overlay .menu ul {
+  width: 100%;
+  text-align: center;
 }
-nav .toggle_btn.active::before {
-  opacity: 0;
+.overlay .menu ul li {
+  padding: 20px 0;
+  font-size: 20px;
 }
-nav #gnb.active {
-  opacity: 1;
-} */
-
-/* pc 
-nav #gnb li a:hover {
-  color: #fff;
-} */
 
 /*********** swiper ***********/
 .swiper_container {
@@ -172,7 +159,7 @@ nav #gnb li a:hover {
 
 /*********** title ***********/
 #title {
-  padding-top: 150px;
+  padding-top: 200px;
   position: relative;
   padding-left: 5vw;
 }
@@ -184,29 +171,52 @@ h1:nth-child(3) {
 }
 #title .colorBox1 {
   display: block;
-  width: 150px;
-  height: 40px;
+  width: 30vw;
+  height: 8vw;
   background-color: rgba(158, 212, 243, 0.5);
   transform: rotate(-30deg);
-  /* box-shadow: 15px 20px 30px #ddd; */
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
-  top: 35vw;
+  top: 45vw;
   right: 10vw;
+
+  animation: move1 3s;
+}
+@keyframes move1 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
 }
 #title .colorBox2 {
   display: block;
-  width: 150px;
-  height: 40px;
+  width: 30vw;
+  height: 8vw;
   background-color: rgba(250, 255, 173, 0.5);
   transform: rotate(20deg);
-  /* box-shadow: -15px 20px 30px #ddd; */
+  box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
-  bottom: 12vw;
+  bottom: 2vw;
   left: 5vw;
-}
 
+  animation: move2 3s;
+}
+@keyframes move2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(20deg);
+  }
+}
 /*********** main ***********/
 main {
   position: relative;
@@ -215,8 +225,13 @@ main {
 /*********** topUP ***********/
 #topUp {
   position: fixed;
-  bottom: 100px;
+  bottom: 120px;
   right: 20px;
+  z-index: 99;
+}
+#topUp .btn {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #topUp img {
   width: 80%;
@@ -229,27 +244,51 @@ main {
 }
 #intro_txt h2 .colorBox1 {
   display: block;
-  width: 100px;
-  height: 30px;
+  width: 20vw;
+  height: 8vw;
   background-color: rgba(158, 212, 243, 0.5);
   transform: rotate(30deg);
-  /* box-shadow: 15px 20px 30px #ddd; */
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
   top: 0;
   right: 10vw;
+
+  animation: move3 3s;
+}
+@keyframes move3 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
 }
 #intro_txt h2 .colorBox2 {
   display: block;
-  width: 100px;
-  height: 30px;
+  width: 20vw;
+  height: 8vw;
   background-color: rgba(250, 255, 173, 0.5);
   transform: rotate(-20deg);
-  /* box-shadow: -15px 20px 30px #ddd; */
+  box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
   top: 5vw;
   left: 2vw;
+
+  animation: move4 3s;
+}
+@keyframes move4 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
 }
 
 /* btn */
@@ -275,10 +314,6 @@ main {
   bottom: 0;
   transition: 0.4s;
 }
-/* pc ver
-.about_more_btn:hover a::after {
-  width: 65%;
-} */
 
 /*********** program ***********/
 #program {
@@ -336,7 +371,7 @@ main {
   display: flex;
 }
 .info_text p {
-  font-size: 16px;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 .time .icon_time span {
@@ -357,7 +392,7 @@ main {
 .recruit span {
   display: block;
   color: #8a8d8f;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
   padding-right: 20px;
   padding-top: 10px;
