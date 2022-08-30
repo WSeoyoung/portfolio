@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/************ pc *********************************************/
+
+h2 {
+  font-size: 4vw;
+}
+h3 {
+  font-size: 2vw;
+  margin: 0 auto;
+}
+h4 {
+  font-size: 1.5vw;
+  margin-bottom: 30px;
+}
+h5 {
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+/*********** header ***********/
+/*********** nav ***********/
+
+/*********** swiper ***********/
+/*********** title ***********/
+
+/*********** main ***********/
+main {
+  margin: 0 auto;
+  width: 85%;
+}
+/*********** intro txt ***********/
+#intro_txt h2 .colorBox1 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: rgba(158, 212, 243, 0.5);
+  transform: rotate(30deg);
+  box-shadow: 15px -20px 050px #ddd;
+
+  position: absolute;
+  top: 0;
+  right: 10vw;
+}
+#intro_txt h2 .colorBox2 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: rgba(250, 255, 173, 0.5);
+  transform: rotate(-20deg);
+  box-shadow: -15px -20px 50px #ddd;
+
+  position: absolute;
+  top: 5vw;
+  left: 2vw;
+}
+
+/* btn */
+.about_more_btn a::after {
+  content: "";
+  width: 0;
+}
+.about_more_btn:hover a::after {
+  width: 65%;
+}
+
+/*********** program ***********/
+#program ul {
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+}
+#program ul li {
+  margin-bottom: 80px;
+}
+#program ul .date {
+  font-size: 14px;
+  color: #8a8d8f;
+  padding: 30px 0 10px 0;
+}
+
+#program ul h4 span {
+  display: inline;
+}
+#program ul li:nth-child(2) span {
+  display: block;
+}
+#program ul li:nth-child(3) span {
+  display: block;
+}
+#program ul li:nth-child(9) {
+  display: block;
+}
+
+/* btn */
+#program .morePro_btn {
+  width: 188px;
+  height: 188px;
+  margin: 0 auto;
+  background-color: #9ed4f3;
+  border-radius: 50%;
+}
+#program .morePro_btn a {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+/*********** information ***********/
+#information {
+  width: 95%;
+  margin-top: 200px;
+}
+.info_text_wrap {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.info_text {
+  width: 380px;
+  border: 3px solid #9ed4f3;
+  padding: 40px;
+}
+.info_text p {
+  font-size: 14px;
+}
+.info_text .icontxt {
+  flex-direction: column;
+}
+.time .icon_time span {
+  width: 100%;
+  padding-left: 50px;
+  font-size: 13px;
+}
+.time .icon_time {
+  padding-bottom: 50px;
+}
+.icontxt .icon_time::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../icons/ico_running_time01.png) no-repeat 50% / contain;
+  padding-right: 50px;
+}
+.icontxt .icon_holiday::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../icons/ico_running_time02.png) no-repeat 50% / contain;
+  padding-right: 50px;
+}
+.icontxt .icon_holiday span {
+  padding-left: 55px;
+}
+
+.notice p:last-child {
+  display: block;
+}
+.notice p {
+  padding: 20px 0;
+}
+
+.recruit p:last-child {
+  display: block;
+}
+.recruit span {
+  padding-right: 10px;
+}
+
+/*********** footer ***********/
+footer {
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+footer .left {
+  position: absolute;
+  left: 0;
+}
+footer .left img {
+  width: 30%;
+  margin-bottom: 40px;
+}
+footer .left p span {
+  display: inline;
+}
+
+footer .right {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+footer .right .pf_btn {
+  position: absolute;
+  right: 0;
+}
+
+footer .right .pf_btn a:hover {
+  background-color: #8a8d8f;
+  color: #fff;
+}
+
+/* pattern */
+.foot_bg_pattern1 {
+  width: 350px;
+  height: 350px;
+
+  bottom: 0;
+  left: -200px;
+}
+.foot_bg_pattern2 {
+  width: 200px;
+  height: 60px;
+
+  top: 0;
+  right: -30px;
+}
+.foot_bg_pattern3 {
+  width: 80px;
+  height: 200px;
+  background: url(../images/main_pattern8.png) no-repeat 50% / contain;
+  position: absolute;
+  top: 0;
+  right: 200px;
+}
