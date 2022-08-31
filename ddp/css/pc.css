@@ -333,12 +333,13 @@ ul li {
 .info_text_wrap {
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .info_text {
   width: 380px;
   border: 3px solid #9ed4f3;
   padding: 40px;
+  margin: 0 10px;
 }
 .info_text p {
   font-size: 14px;
