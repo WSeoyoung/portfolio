@@ -32,7 +32,7 @@ header #bg_pattern0 {
   width: 60%;
   background: url(../images/main_pattern1.png) no-repeat top / contain;
   position: absolute;
-  top: 450px;
+  top: 30vw;
   left: 0;
   z-index: 99999;
 }
@@ -122,6 +122,7 @@ header #bg_pattern5 {
   width: 100vw;
 }
 .slideFrame {
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -148,8 +149,8 @@ header #bg_pattern5 {
   font-size: 18px;
   color: #fff;
   position: absolute;
-  bottom: 15vw;
-  left: 20vw;
+  bottom: 16vw;
+  left: 23vw;
 }
 .slide_txt span {
   display: block;
