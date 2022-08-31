@@ -9,16 +9,20 @@ $(".btn_open").click((e) => {
   e.preventDefault();
   $(".overlay").fadeToggle(200);
   $(this).addClass("open");
+  $(".logo img").addClass("open");
 });
 
 $(".btn_close").click((e) => {
   e.preventDefault();
   $(".overlay").fadeToggle(200);
   $(this).removeClass("open");
+  $(".logo img").removeClass("open");
 });
 
-// nav scroll shadow
+// nav scroll shadow + logo black
 const nav = document.querySelector("nav");
+const logoB = document.querySelector(".logo img");
+const logoW = document.querySelector(".logoW img");
 
 addEventListener("scroll", () => {
   if (scrollY > 10) {
@@ -39,3 +43,20 @@ addEventListener("scroll", () => {
 //     $(menu).removeClass("open");
 //   });
 // });
+
+// swiper
+let swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

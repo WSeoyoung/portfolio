@@ -10,7 +10,7 @@ html {
   line-height: 1.6;
   color: #000;
   scroll-behavior: smooth;
-  min-width: 419px;
+  min-width: 412px;
 }
 a {
   color: inherit;
@@ -67,18 +67,24 @@ h5::after {
 /*********** header ***********/
 header {
   position: relative;
-  height: 120vw;
-  background: url(../images/main_pattern1.png) no-repeat bottom / contain;
-  background-position-y: 90%;
   margin-bottom: 40px;
   overflow: hidden;
+}
+header #bg_pattern0 {
+  height: 120vw;
+  width: 100%;
+  background: url(../images/main_pattern1.png) no-repeat top / contain;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  /* z-index: 99999; */
 }
 header #bg_pattern1 {
   height: 40vw;
   width: 100%;
   background: url(../images/main_pattern8.png) no-repeat 0 100% / 10%;
   position: absolute;
-  bottom: 0;
+  bottom: 40vw;
   left: 0;
 }
 header #bg_pattern2 {
@@ -86,7 +92,7 @@ header #bg_pattern2 {
   width: 100%;
   background: url(../images/main_pattern9.png) no-repeat 100% 100% /40%;
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   right: -50px;
 }
 /*********** nav ***********/
@@ -95,15 +101,27 @@ nav {
   height: 75px;
   position: fixed;
 
-  z-index: 9999;
+  z-index: 999999;
 }
 nav .logo img {
   height: 43px;
   position: fixed;
   top: 15px;
-  left: 15px;
-  z-index: 9999;
+  left: 15.5px;
+  z-index: 999999;
 }
+nav .logoW img {
+  height: 43px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 999999;
+}
+
+nav .logo img.open {
+  display: none;
+}
+
 nav.shadow {
   background-color: #fff;
   transition: 0.5s;
@@ -130,7 +148,7 @@ nav.shadow {
   display: none;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 99999;
   overflow: auto;
   width: 100%;
   height: 100%;
@@ -148,12 +166,13 @@ nav.shadow {
   text-align: center;
 }
 .overlay .menu ul li {
+  color: #fff;
   padding: 20px 0;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /*********** swiper ***********/
-.swiper_container {
+.swiper {
   display: none;
 }
 
@@ -161,7 +180,9 @@ nav.shadow {
 #title {
   padding-top: 200px;
   position: relative;
+  top: -200px;
   padding-left: 5vw;
+  /* z-index: 99999; */
 }
 h1:nth-child(2) {
   margin-left: 60px;
@@ -217,37 +238,19 @@ h1:nth-child(3) {
     transform: rotate(20deg);
   }
 }
-/*********** main ***********/
-main {
-  position: relative;
-}
-
-/*********** topUP ***********/
-#topUp {
-  position: fixed;
-  bottom: 120px;
-  right: 20px;
-  z-index: 99;
-}
-#topUp .btn {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-#topUp img {
-  width: 80%;
-}
 
 /*********** intro txt ***********/
 #intro_txt {
-  padding: 10px;
+  padding: 0 10px;
   margin-bottom: 50px;
+  position: relative;
 }
 #intro_txt h2 .colorBox1 {
   display: block;
   width: 20vw;
   height: 8vw;
   background-color: rgba(158, 212, 243, 0.5);
-  transform: rotate(30deg);
+  transform: rotate(-30deg);
   box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
@@ -263,7 +266,7 @@ main {
   }
   100% {
     opacity: 1;
-    transform: rotate(30deg);
+    transform: rotate(-30deg);
   }
 }
 #intro_txt h2 .colorBox2 {
@@ -271,7 +274,7 @@ main {
   width: 20vw;
   height: 8vw;
   background-color: rgba(250, 255, 173, 0.5);
-  transform: rotate(-20deg);
+  transform: rotate(20deg);
   box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.3);
 
   position: absolute;
@@ -287,13 +290,14 @@ main {
   }
   100% {
     opacity: 1;
-    transform: rotate(-20deg);
+    transform: rotate(20deg);
   }
 }
 
 /* btn */
 .about_more_btn {
-  margin-left: 5px;
+  margin-top: 30px;
+  margin-left: 6vw;
   position: relative;
   width: 150px;
 }
@@ -313,6 +317,26 @@ main {
   left: 12px;
   bottom: 0;
   transition: 0.4s;
+}
+
+/*********** main ***********/
+main {
+  position: relative;
+}
+
+/*********** topUP ***********/
+#topUp {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 99999;
+}
+#topUp .btn {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#topUp img {
+  width: 80%;
 }
 
 /*********** program ***********/
@@ -408,6 +432,7 @@ footer {
   color: #8a8d8f;
   position: relative;
   overflow: hidden;
+  z-index: 9999;
 }
 footer .left img {
   width: 20%;
@@ -449,6 +474,7 @@ footer .right .pf_btn a {
   position: absolute;
   bottom: 0;
   left: -20px;
+  pointer-events: none;
 }
 .foot_bg_pattern2 {
   width: 200px;

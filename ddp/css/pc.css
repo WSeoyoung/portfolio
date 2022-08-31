@@ -2,11 +2,13 @@
 
 /************ pc *********************************************/
 h1 {
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 1.2;
+  width: 30vw;
 }
 h2 {
   font-size: 4vw;
+  width: 85vw;
 }
 h3 {
   font-size: 2vw;
@@ -22,36 +24,46 @@ h5 {
 }
 /*********** header ***********/
 header {
-  height: 60vw;
-  background-size: 55%;
-  background-position-x: 0;
-  background-position-y: 200px;
+  height: 90vw;
+  /* overflow: hidden; */
+}
+header #bg_pattern0 {
+  height: 120vw;
+  width: 60%;
+  background: url(../images/main_pattern1.png) no-repeat top / contain;
+  position: absolute;
+  top: 450px;
+  left: 0;
+  z-index: 99999;
 }
 header #bg_pattern1 {
   width: 40%;
-  bottom: 20vw;
+  bottom: 30vw;
   left: 0;
+  z-index: 9999;
 }
 header #bg_pattern1-1 {
   width: 40%;
   height: 40vw;
   background: url(../images/main_pattern8.png) no-repeat 0 100% / 10%;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 5vw;
+  right: -10vw;
 }
 header #bg_pattern2 {
   width: 40%;
-  bottom: 8vw;
-  left: -25vw;
+  bottom: 35vw;
+  right: 20vw;
+  z-index: 9999;
 }
 header #bg_pattern2-1 {
   height: 10vw;
   width: 40%;
   background: url(../images/main_pattern9.png) no-repeat 100% 100% /40%;
   position: absolute;
-  top: 6vw;
-  right: 15vw;
+  top: 10vw;
+  right: -5vw;
+  z-index: 99999;
 }
 header #bg_pattern3 {
   width: 23vw;
@@ -59,108 +71,148 @@ header #bg_pattern3 {
   background: url(../images/main_pattern2.png) no-repeat 50% / contain;
 
   position: absolute;
-  bottom: 12vw;
-  right: 5vw;
+  bottom: 31vw;
+  right: -30px;
+  z-index: 99999;
 }
 header #bg_pattern4 {
-  width: 23vw;
-  height: 23vw;
+  width: 20vw;
+  height: 20vw;
   background: url(../images/main_pattern4.png) no-repeat 50% / contain;
 
   position: absolute;
-  top: -6vw;
+  top: -7vw;
   right: 5vw;
-  z-index: 9999;
+  z-index: 99999;
 }
 header #bg_pattern5 {
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   background: url(../images/main_pattern3.png) no-repeat 50% / contain;
 
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 
 /*********** nav ***********/
 .overlay .menu {
-  height: 490px;
+  /* height: 490px; */
   background: url(../images/menu_bgline.png) no-repeat 50% / contain;
 }
 .overlay .menu ul li {
+  margin: 0 auto;
+  width: 20%;
   font-size: 3vw;
   transition: 0.3s;
 }
 .overlay .menu ul li:hover {
-  color: #fff;
+  color: #000;
   transform: translateX(-20px);
 }
 
 /*********** swiper ***********/
-.swiper_container {
+.swiper {
   display: block;
-  width: 100%;
-  height: 40vw;
-
-  position: absolute;
+  position: relative;
   top: 0;
+}
+.swiper-wrapper {
+  width: 100vw;
+}
+.slideFrame {
+  position: absolute;
   left: 0;
+  top: 0;
+  z-index: 9999;
 }
-.swiper_slide {
-  display: flex;
-  width: 270%;
-}
-.slide_img {
-  width: 90%;
+.swiper-slide {
+  width: 50vw;
+  height: 40.5vw;
+  background: no-repeat 50% / 80%;
   overflow: hidden;
 }
-.slide_img .img1 {
-  background: url(../images/main_img1-1.png) no-repeat 50% / contain;
+.bg1 {
+  background: url(../images/main_img1-1.png);
+}
+.bg2 {
+  background: url(../images/main_img2-1.png);
+}
+.bg3 {
+  background: url(../images/main_img3-1.png);
 }
 
-/* txt */
-.slide_title {
-  font-size: 20px;
-  /* font-weight: bold; */
-}
-
-/* pagination */
-.slideshow {
-  position: relative;
-}
-.slideshow .swiper-pagination {
+/* slide txt */
+.slide_txt {
+  font-size: 18px;
+  color: #fff;
   position: absolute;
-  bottom: -10vw;
+  bottom: 15vw;
+  left: 20vw;
+}
+.slide_txt span {
+  display: block;
+}
+.slide_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* controls */
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+
+  --swiper-navigation-size: 25px;
+  --swiper-navigation-color: #000;
+}
+
+.swiper-pagination {
+  font-family: "Orbitron", sans-serif;
+  width: 100px;
+  position: absolute;
+  bottom: 9vw;
+  left: 2vw;
+  font-size: 20px;
+  z-index: 99999;
+}
+
+.swiper-navigation {
+  position: absolute;
+  top: -10vw;
   left: 0;
-  width: 100%;
-  height: 10vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
-  transition: 0.3s;
+  z-index: 99999;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  left: 150px;
 }
 
 /*********** title ***********/
 #title {
-  width: 50%;
+  width: 40vw;
   position: absolute;
-  right: 0;
+  right: 2vw;
+  top: 8vw;
+  z-index: 9999;
 }
 #title .colorBox1 {
-  width: 13vw;
-  height: 4vw;
+  width: 12.5vw;
+  height: 3.5vw;
 
   top: 12vw;
-  right: 10vw;
+  right: 5vw;
 }
 #title .colorBox2 {
-  width: 13vw;
-  height: 4vw;
+  width: 12.5vw;
+  height: 3.5vw;
 
   bottom: 0;
-  left: 4vw;
+  left: 5vw;
 }
 h1:nth-child(2) {
   margin-left: 120px;
@@ -169,36 +221,39 @@ h1:nth-child(3) {
   margin-left: 50px;
 }
 
-/*********** main ***********/
-main {
-  margin: 0 auto;
-  width: 85%;
-}
 /*********** intro txt ***********/
+#intro_txt {
+  margin: 22vw auto 0;
+  position: relative;
+  z-index: 99999;
+}
 #intro_txt h2 .colorBox1 {
   width: 15vw;
-  height: 5vw;
+  height: 4vw;
 
   position: absolute;
   top: 2vw;
-  right: 5vw;
+  right: 30vw;
 }
 #intro_txt h2 .colorBox2 {
   width: 15vw;
-  height: 5vw;
+  height: 4vw;
 
   position: absolute;
-  top: 8vw;
-  left: 0;
+  top: 10vw;
+  left: 5vw;
 }
 
 /* btn */
 .about_more_btn a::after {
   content: "";
-  width: 0;
-}
-.about_more_btn:hover a::after {
   width: 65%;
+}
+
+/*********** main ***********/
+main {
+  margin: 0 auto;
+  width: 85%;
 }
 
 /*********** program ***********/
@@ -206,7 +261,7 @@ main {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
 }
-#program ul li {
+ul li {
   margin-bottom: 80px;
 }
 #program ul .date {
@@ -228,6 +283,14 @@ main {
   display: block;
 }
 
+#program .bg {
+  overflow: hidden;
+}
+#program .bg img:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
 /* btn */
 #program .morePro_btn {
   width: 188px;
@@ -236,15 +299,30 @@ main {
   background-color: #9ed4f3;
   border-radius: 50%;
 }
+#program .morePro_btn:hover {
+  border: 3px solid #9ed4f3;
+  background-color: #fff;
+}
+#program .morePro_btn:hover a {
+  transition: 0.3s;
+  transform: translateY(-10px);
+}
+#program .morePro_btn:hover img {
+  transition: 0.3s;
+  transform: translateY(10px);
+}
 #program .morePro_btn a {
   display: block;
   margin: 0 auto;
   width: 150px;
-  height: 150px;
   text-align: center;
-  line-height: 150px;
   font-size: 16px;
-  padding-top: 20px;
+  padding-top: 50px;
+}
+#program .morePro_btn img {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
 }
 
 /*********** information ***********/
