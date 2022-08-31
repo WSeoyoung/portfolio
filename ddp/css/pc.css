@@ -128,7 +128,7 @@ header #bg_pattern5 {
   top: 0;
   z-index: 9999;
 }
-.slideFrame img {
+.slideFrame > img {
   width: 100%;
 }
 .swiper-slide {
