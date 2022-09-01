@@ -175,6 +175,9 @@ nav.shadow {
 .swiper {
   display: none;
 }
+.controls {
+  display: none;
+}
 
 /*********** title ***********/
 #title {

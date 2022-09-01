@@ -160,6 +160,7 @@ header #bg_pattern5 {
 
 /* controls */
 .controls {
+  display: block;
   position: absolute;
   top: 50%;
   left: 100px;
