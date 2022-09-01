@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Project 4 - DDP</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="../common/minireset.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../common/android-icon-96x96.png"
+    />
+    <!-- font css -->
+    <link rel="stylesheet" href="../css/font.css" />
+    <!-- 내가 작성한 css -->
+    <link rel="stylesheet" href="./css/project4.css" />
+    <!-- jQuery 라이브러리 -->
+    <script src="../common/jquery-3.6.0.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script defer src="./project_script.js"></script>
+  </head>
+  <body>
+    <!------------ header ------------>
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../common/pf_logo.png" alt="로고"
+        /></a>
+      </div>
+
+      <nav id="menu">
+        <div class="menuOverlay">
+          <a href="#" id="menu_btn">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </a>
+
+          <ul id="gnb" class="drop">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#project">PROJECT</a></li>
+            <li><a href="../index.html#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main_wrapper">
+        <div id="main_txt">
+          <div class="line">
+            <h1 id="title">DDP</h1>
+          </div>
+
+          <p>반응형 웹 사이트</p>
+          <p>2022.08.25 ~ 2022.09.01</p>
+          <p>개인 작업 (100%)</p>
+          <ul class="tag">
+            <li>#Responsive</li>
+            <li>#HTML5</li>
+            <li>#CSS3</li>
+            <li>#JavaScript</li>
+            <li>#jQuery</li>
+          </ul>
+        </div>
+
+        <div id="main_img">
+          <img src="./images/pj4_mobile.png" alt="mobile" class="img1" />
+          <img src="./images/pj4_pc.png" alt="pc" class="img2" />
+        </div>
+      </div>
+    </header>
+
+    <!------------main contents ------------>
+    <main>
+      <!-- topUp btn -->
+      <a href="#" class="topUP">
+        <img src="../common/topUP.png" alt="맨위로" />
+      </a>
+
+      <!-- overview -->
+      <section id="overview">
+        <h2>Overview</h2>
+
+        <div id="ov_container">
+          <!-- 목표 -->
+          <div id="s1_goal" class="s1">
+            <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+            <h3>프로젝트 목표</h3>
+            <h4>DDP 웹 사이트 리디자인</h4>
+            <p>
+              전체적인 디자인보다 정보제공에 초점이 맞춰진 기본형 구조의 기존
+              사이트를, 디자인적인 요소들을 추가로 더해 DDP의 특징을 더 잘 보여
+              줄 수 있도록 리디자인 한다.
+            </p>
+          </div>
+          <div class="wrapper_s1_23">
+            <!-- 유형 -->
+            <div id="s1_type" class="s1">
+              <img src="./images/ovIcon_gy.png" alt="icon2" class="icon2" />
+              <h3>웹 사이트 유형</h3>
+              <ul class="type_list">
+                <li class="bf_circle1">반응형 웹사이트</li>
+                <li>
+                  <ul class="type_px">
+                    <li class="bf_circle2">PC : 1920px</li>
+                    <li>Mobile : 768px</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- 기여도 -->
+            <div id="s1_did" class="s1">
+              <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+              <h3>프로젝트 기여도</h3>
+              <p class="percent">100%</p>
+              <p class="role">Role : 리디자인 & 퍼블리싱</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- problem & solution-->
+      <section id="proSol">
+        <div class="psTitle">
+          <h2>Problem &</h2>
+          <h2>Solution</h2>
+        </div>
+
+        <!-- problem -->
+        <div id="ps_container">
+          <img src="./images/ovIcon_yg.png" alt="icon1" class="icon1" />
+
+          <div class="s2_problem">
+            <h3>Problem</h3>
+            <ul class="prob_txt">
+              <li>
+                <h4>브랜드 이미지와 맞지 않는 메인 화면</h4>
+                <p>
+                  디자인 트렌드와 각종 문화예술 행사를 진행하는 DDP의 이미지와
+                  기본형 배너와 정보 나열의 기존 웹사이트는 다소 어울리지 않는
+                  느낌을 준다.
+                </p>
+              </li>
+
+              <li>
+                <h4>프로그램</h4>
+                <p>다수의 프로그램을 보여줄 때, 작은 이미지와</p>
+              </li>
+
+              <li>
+                <h4>하단 각종 정보 정리</h4>
+                <p>소식, 공지사항, 운영시간 등의 정보들이 산개해있다.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- solution -->
+          <img src="./images/ovIcon_gy.png" alt="icon2" class="icon2" />
+
+          <div class="s2_solution">
+            <h3>Solution</h3>
+            <ul class="solu_txt">
+              <li>
+                <h4>곡선요소의 디자인 추가</h4>
+                <p>
+                  겹치는 키워드 별로 묶어서 카테고리 수를 줄이고, 소비자 전달
+                  중요도가 높은 정보는 메인에서, 그 외 자세한 정보는 페이지로
+                  넘어가서 확인 할 수 있도록 한다.
+                </p>
+              </li>
+
+              <li>
+                <h4>레이아웃 수정 및 컨텐츠 위치 수정</h4>
+                <p>
+                  들쑥날쑥한 화면 상의 크기 및 구조들을 효과적으로 수정하고,
+                  특히 메인에서 노출되었으면 하는 콘텐츠를 선정해 새로이
+                  배치한다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design -->
+      <section id="design">
+        <div class="s3_design_top">
+          <h2>Design</h2>
+          <div class="img_box">
+            <img src="./images/pj4_ds_pc1.png" alt="img" id="img1" />
+            <img src="./images/pj4_ds_pc2.png" alt="img" id="img2" />
+          </div>
+        </div>
+
+        <div class="s3_design_info">
+          <div class="if_keyword">
+            <h5>Keyword</h5>
+            <ul class="keyword_list">
+              <li>#심플한</li>
+              <li>#직관적인</li>
+            </ul>
+          </div>
+
+          <div class="if_color">
+            <h5>Color</h5>
+            <ul class="color_list">
+              <li>
+                <p class="color_circle"></p>
+                #9ED4F3
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #FAFFAD
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #F6D769
+              </li>
+              <li>
+                <p class="color_circle"></p>
+                #418FDE
+              </li>
+            </ul>
+          </div>
+
+          <div class="if_info">
+            <h5>Typography</h5>
+            <ul class="typo_list">
+              <li>Orbiton <span>Black</span></li>
+              <li>GmarketSans <span>Light / Medium</span></li>
+              <li>Pretendard <span>Reguler / Bold</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publishing -->
+      <section id="publish">
+        <h2>Publishing</h2>
+        <ul class="pub_txt">
+          <li>미디어 쿼리를 이용한 반응형 웹 페이지 제작</li>
+          <li>swiper를 사용한 슬라이드</li>
+          <li>JavaScript, jQuery를 이용한 scroll 무브먼트 적용</li>
+          <li>flex, grid, position을 이용한 레이아웃 구성</li>
+          <li>Mouse Event 적용</li>
+          <li>css animation 적용</li>
+        </ul>
+      </section>
+
+      <!-- Review -->
+      <section id="review">
+        <h2>Review</h2>
+
+        <div id="review_txt">
+          <div class="rv_txt1">
+            <h3>#어려웠던 부분</h3>
+            <p>
+              반응형 웹사이트였기 때무에 화면 크기에 따라 레이아웃 배치가
+              바뀌어야 했는데, 처음이나 그런지 배치 구조 설정에서 다수의
+              시행착오를 겪었다.
+            </p>
+            <p>
+              제일 어려웠던 건 어디가 잘못 되었는지 찾지 못했던 것이었다.<br />예를
+              들면, flex와 grid를 쓰는 경우 이미지와 텍스트들의 위치가 원하는
+              대로 되지 않아, 적용이 안 된 코드가 어떤 부분인지 개발자 도구를
+              통해 찾아보거나 그래도 안되면 구조에서부터 다시 시작 해야했다.
+            </p>
+          </div>
+
+          <div class="rv_txt2">
+            <h3>#노력한 부분</h3>
+            <p>
+              우선 처음 이 사이트를 리디자인 할 때, 각종 효과보다는 구조를
+              생각한대로 제작하고 유동적인 반응형 또한 제대로 구현하는 것에
+              집중하여 작업할 수 있도록 목표를 세웠다.
+            </p>
+            <p>
+              다만 작업하면서 생기는 오류들을 수정해나갈 때마다 더 엉망이
+              되어가는 기분이었지만, 천천히 하더라도 될 때까지 끝까지 해보려고
+              노력했다. 결론적으로 다소 시간은 좀 많이 걸렸지만, 원하는
+              이미지대로 웹 사이트를 구현할 수 있었다.
+            </p>
+          </div>
+
+          <div class="rv_txt3">
+            <h3>#총평</h3>
+            <p>
+              본격적으로 디자인과 퍼블리싱을 한 첫 프로젝트여서 그런지 더
+              헤멨고, 여러 번 새로 다시 하면 할 수록 더 헷갈리고 어렵다는 생각이
+              들었다. 하지만 여러 번 하다보니 반응형에 대해서 좀 더 이해할 수
+              있었던 것 같다.
+            </p>
+            <p>
+              또한 이번 프로젝트를 하면서 제품 브랜드의 웹사이트는 어떻게
+              구성해야 소비자가 보다 한눈에 쉽게 인지할 수 있을 것인지 고민해
+              볼수 있어서 좋았다. 특히 록시땅은 브랜드 특성상 정말 많은 콘텐츠가
+              있는 사이트 였는데, 기존의 웹 사이트를 살피면서도 사용자 입장에서
+              어떤 부분이 개선되면 좋을 지 계속 생각하면서 리디자인 했던 것
+              같다.
+            </p>
+            <p>
+              카테고리를 나누는 방식이나 메인페이지에서 주로 보여줘야 할 부분
+              들, 불편하다고 느낀 부분들은 다른 브랜드를 서치해 참고하거나
+              적용해보곤 했던 과정들이 좋은 경험이었다고 생각한다.
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="../ddp/index.html" target="_blank" id="view_btn"
+            >View Site</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!------------ contact ------------>
+    <footer id="contact">
+      <div class="contact_profil">
+        <h5><span>원서영</span>WON Seoyoung</h5>
+
+        <ul class="contact_txt">
+          <li>○ École supérieure d’Art et de Design - LeMans DNA Art 졸업</li>
+          <li>○ 2022 반응형 UI/UX 웹 퍼블리셔 전문가 양성 교육과정 이수</li>
+        </ul>
+      </div>
+
+      <div class="contact_info">
+        <h6>Contact</h6>
+        <p class="email">3daking&#64;naver.com</p>
+        <p class="git">
+          <a href="https://github.com/WSeoyoung" target="_blank"
+            >깃허브 바로가기</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -76,7 +76,7 @@ addEventListener("scroll", () => {
 const subscribe = document.querySelector(".subscribe");
 const infoWrap = document.querySelector(".info_text_wrap");
 
-let height = infoWrap.offsetTop + 1000;
+let height = infoWrap.offsetTop + 800;
 // console.log(height);
 
 addEventListener("scroll", () => {
