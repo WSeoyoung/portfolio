@@ -451,7 +451,7 @@ section {
   width: 4.167vw;
   height: 4.167vw;
   line-height: 10.417vw;
-  padding: 0 0.521v;
+  /* padding: 0 0.521vw; */
   border-radius: 50px;
   text-align: center;
 }

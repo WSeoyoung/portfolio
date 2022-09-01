@@ -28,7 +28,6 @@ main {
 }
 /********** header ***********/
 header {
-  /* width: 100%; */
   height: 31.25vw;
   position: relative;
 }
@@ -220,7 +219,7 @@ section {
 
 /*****------- main title -------*****/
 #main_wrapper {
-  width: 1200px;
+  width: 550px;
   height: 20.833vw;
 
   display: flex;
@@ -270,10 +269,11 @@ section {
   left: 33vw;
 }
 #main_img .img2 {
-  width: 35.729vw;
+  width: 100%;
+  /* width: 35.729vw; */
   border-width: 8px;
   top: -2.604vw;
-  right: 6.25vw;
+  /* right: 6.25vw; */
 }
 
 /*****------- overview -------*****/
@@ -311,9 +311,9 @@ section {
 #ov_container .s1 p {
   padding: 0 1.563vw;
 }
-#s1_goal p {
+/* #s1_goal p {
   width: 28.646vw;
-}
+} */
 
 /* type */
 #s1_type .type_list .bf_circle1::before,
@@ -324,9 +324,8 @@ section {
 .bf_circle1 {
   padding-bottom: 1.042vw;
 }
-#s1_type .type_list .type_px li:nth-child(2),
-#s1_type .type_list .type_px li:nth-child(3) {
-  padding-left: 1.146vw;
+#s1_type .type_list .type_px li:nth-child(2) {
+  padding-left: 1.4vw;
 }
 
 /* did */
@@ -446,25 +445,28 @@ section {
 }
 
 /* color */
+.if_color {
+  margin: 0 3vw;
+}
 .color_list {
   display: flex;
   justify-content: space-between;
 }
 .color_list li {
   margin-right: 1.563vw;
-  background-color: #ffcb00;
+  background-color: #9ed4f3;
   width: 4.167vw;
   height: 4.167vw;
   line-height: 10.417vw;
-  padding: 0 0.521vw;
+  /* padding: 0 0.521vw; */
   border-radius: 50px;
+  text-align: center;
 }
 .color_list li:nth-child(2) {
-  border: 2px solid #fff;
-  background-color: #efefef;
+  background-color: #faffad;
 }
 .color_list li:nth-child(3) {
-  background-color: #01172d;
+  background-color: #418fde;
 }
 
 /* typo */
@@ -473,12 +475,23 @@ section {
   justify-content: space-between;
 }
 .typo_list li {
-  width: 2.604vw;
+  /* width: 5vw; */
   margin-right: 5.208vw;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
-.typo_list li:last-child {
+.typo_list li span {
+  /* display: block; */
+  font-size: 1rem;
+}
+.typo_list li .bold {
   font-weight: bold;
+}
+.typo_list li:nth-child(1) {
+  font-family: "Orbitron";
+  font-weight: 900;
+}
+.typo_list li:nth-child(2) {
+  font-family: "GmarketSansLight";
 }
 
 /*****------- publish -------*****/
