@@ -118,9 +118,6 @@ header #bg_pattern5 {
   position: relative;
   top: 0;
 }
-.swiper-wrapper {
-  width: 100vw;
-}
 .slideFrame {
   width: 100%;
   position: absolute;
@@ -132,19 +129,17 @@ header #bg_pattern5 {
   width: 100%;
 }
 .swiper-slide {
-  width: 50vw;
   height: 40.5vw;
-  background: no-repeat 50% / 80%;
   overflow: hidden;
 }
 .bg1 {
-  background: url(../images/main_img1-1.png);
+  background: url(../images/main_img1-1.png) no-repeat 50% / cover;
 }
 .bg2 {
-  background: url(../images/main_img2-1.png);
+  background: url(../images/main_img2-1.png) no-repeat 50% / cover;
 }
 .bg3 {
-  background: url(../images/main_img3-1.png);
+  background: url(../images/main_img3-1.png) no-repeat 50% / cover;
 }
 
 /* slide txt */
