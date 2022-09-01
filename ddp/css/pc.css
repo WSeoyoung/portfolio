@@ -112,6 +112,19 @@ header #bg_pattern5 {
   transform: translateX(-20px);
 }
 
+/*********** subscribe ***********/
+.subscribe {
+  width: 100px;
+  height: 250px;
+}
+.subscribe a {
+  font-size: 16px;
+  padding-top: 90px;
+}
+.subscribe.on2 {
+  right: 0;
+}
+
 /*********** swiper ***********/
 .swiper {
   display: block;
@@ -197,7 +210,7 @@ header #bg_pattern5 {
   width: 40vw;
   position: absolute;
   right: 2vw;
-  top: 8vw;
+  top: 11vw;
   z-index: 9999;
 }
 #title .colorBox1 {
@@ -299,36 +312,21 @@ ul li {
   transform: scale(1.1);
 }
 
+#program ul li:last-child {
+  display: block;
+}
+
 /* btn */
 #program .morePro_btn {
   width: 188px;
   height: 188px;
-  margin: 0 auto;
-  background-color: #9ed4f3;
-  border-radius: 50%;
-}
-#program .morePro_btn:hover {
-  border: 3px solid #9ed4f3;
-  background-color: #fff;
-}
-#program .morePro_btn:hover a {
-  transition: 0.3s;
-  transform: translateY(-10px);
-}
-#program .morePro_btn:hover img {
-  transition: 0.3s;
-  transform: translateY(10px);
 }
 #program .morePro_btn a {
-  display: block;
-  margin: 0 auto;
   width: 150px;
-  text-align: center;
   font-size: 16px;
   padding-top: 50px;
 }
 #program .morePro_btn img {
-  display: block;
   width: 50px;
   margin: 0 auto;
 }

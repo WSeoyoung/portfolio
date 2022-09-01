@@ -1,10 +1,10 @@
-// hamburger menu
+// hamburger menu /////////////////////////
 $(".menu_btn").on("click", function (e) {
   e.preventDefault();
   $(this).toggleClass("on");
 });
 
-// mobile nav
+// mobile nav /////////////////////////
 $(".btn_open").click((e) => {
   e.preventDefault();
   $(".overlay").fadeToggle(200);
@@ -19,7 +19,7 @@ $(".btn_close").click((e) => {
   $(".logo img").removeClass("open");
 });
 
-// nav scroll shadow + logo black
+// nav scroll shadow + logo black /////////////////////////
 const nav = document.querySelector("nav");
 const logoB = document.querySelector(".logo img");
 const logoW = document.querySelector(".logoW img");
@@ -44,7 +44,7 @@ addEventListener("scroll", () => {
 //   });
 // });
 
-// swiper
+// swiper /////////////////////////
 let swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 2500,
@@ -61,7 +61,7 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-// intro txt 스크롤시 나타남
+// intro txt 스크롤시 나타남 /////////////////////////
 const introTxt = document.querySelector("#intro_txt");
 
 addEventListener("scroll", () => {
@@ -70,4 +70,27 @@ addEventListener("scroll", () => {
   } else {
     introTxt.classList.remove("show");
   }
+});
+
+// subscribe /////////////////////////
+const subscribe = document.querySelector(".subscribe");
+const infoWrap = document.querySelector(".info_text_wrap");
+
+let height = infoWrap.offsetTop + 1000;
+// console.log(height);
+
+addEventListener("scroll", () => {
+  // console.log(scrollY);
+  if (scrollY >= height) {
+    subscribe.classList.add("on");
+  } else if (scrollY < height) {
+    subscribe.classList.remove("on");
+  }
+});
+
+// hide more program /////////////////////////
+$(".morePro_btn").click((e) => {
+  e.preventDefault();
+  $(".hidePro").slideDown(200);
+  $(".hidePro").addClass("more");
 });

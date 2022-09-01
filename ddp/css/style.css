@@ -171,6 +171,31 @@ nav.shadow {
   font-size: 30px;
 }
 
+/*********** subscribe ***********/
+.subscribe {
+  width: 70px;
+  height: 200px;
+  background: url(../images/subs_btn.png) no-repeat 50% / contain;
+  position: fixed;
+  top: 80px;
+  right: -200px;
+  transition: 0.3s;
+  z-index: 999999;
+}
+.subscribe a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  display: block;
+  padding-top: 70px;
+}
+.subscribe a span {
+  display: block;
+}
+.subscribe.on {
+  right: 0;
+}
+
 /*********** swiper ***********/
 .swiper {
   display: none;
@@ -367,8 +392,20 @@ main {
   display: none;
 }
 
+/* hidePro */
+.hidePro {
+  display: none;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+}
+
+.hidePro.more {
+  display: block;
+}
+
 /* btn */
 #program .morePro_btn {
+  cursor: pointer;
   width: 110px;
   height: 110px;
   margin: 0 auto;
@@ -384,6 +421,25 @@ main {
   line-height: 80px;
   font-size: 10px;
   padding-top: 15px;
+}
+#program .morePro_btn img {
+  display: block;
+  opacity: 0;
+  width: 30px;
+  margin: -40px auto;
+}
+#program .morePro_btn:hover {
+  border: 3px solid #9ed4f3;
+  background-color: #fff;
+}
+#program .morePro_btn:hover a {
+  transition: 0.3s;
+  transform: translateY(-10px);
+}
+#program .morePro_btn:hover img {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translateY(10px);
 }
 
 /*********** information ***********/
