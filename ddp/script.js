@@ -60,3 +60,14 @@ let swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// intro txt 스크롤시 나타남
+const introTxt = document.querySelector("#intro_txt");
+
+addEventListener("scroll", () => {
+  if (scrollY > 400) {
+    introTxt.classList.add("show");
+  } else {
+    introTxt.classList.remove("show");
+  }
+});

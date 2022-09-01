@@ -223,9 +223,17 @@ h1:nth-child(3) {
 
 /*********** intro txt ***********/
 #intro_txt {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translate(0, 100px);
+
   margin: 22vw auto 0;
   position: relative;
   z-index: 99999;
+}
+#intro_txt.show {
+  opacity: 1;
+  transform: translate(0, -50px);
 }
 #intro_txt h2 .colorBox1 {
   width: 15vw;

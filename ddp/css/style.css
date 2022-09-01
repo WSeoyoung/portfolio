@@ -260,7 +260,7 @@ h1:nth-child(3) {
   top: 0;
   right: 10vw;
 
-  animation: move3 3s;
+  animation: move3 5s;
 }
 @keyframes move3 {
   0% {
@@ -284,12 +284,12 @@ h1:nth-child(3) {
   top: 5vw;
   left: 2vw;
 
-  animation: move4 3s;
+  animation: move4 5s;
 }
 @keyframes move4 {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-60px);
   }
   100% {
     opacity: 1;
