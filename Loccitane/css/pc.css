@@ -220,13 +220,13 @@ main #main_limited .limited_txt .lmt_txt {
 }
 main #main_limited .limited_img .lmt_1 img {
   position: absolute;
-  left: 8%;
+  left: 20%;
   top: 0;
   margin-left: 10px;
 }
 main #main_limited .limited_img .lmt_1_txt {
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 20px;
 }
 main #main_limited .limited_img .lmt_1_txt h4 {
