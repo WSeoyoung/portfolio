@@ -25,6 +25,11 @@ header {
   background: url(../images/m_main_final.png) no-repeat 50% / cover;
 }
 
+nav.style {
+  background-color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
 /******** mobile nav ********/
 header #mob_nav {
   display: flex;
@@ -33,6 +38,7 @@ header #mob_nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 header nav h1 {
   width: 189px;
@@ -71,7 +77,7 @@ header #pc_nav {
   right: 0;
   transition: 0.3s;
   transform: translateX(300px);
-  z-index: 1;
+  z-index: 100;
 }
 /*********** X 표시 **********/
 #pc_nav #toggle_btn {
@@ -122,14 +128,14 @@ header #pc_nav #gnb li {
 
 /******** img slide ********/
 header #slide_txt {
-  height: 560px;
+  height: 460px;
   position: absolute;
-  bottom: 0;
-  left: 2%;
+  top: 40%;
+  left: 5%;
 }
 header #slide_txt h2 {
-  width: 370px;
-  font-size: 2.8rem;
+  width: 340px;
+  font-size: 2.4rem;
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
@@ -317,7 +323,7 @@ main #main_best .best_4 {
 
 /*********** main video ***********/
 main #main_video {
-  height: 120vw;
+  height: 140vw;
   margin: 0 auto;
   padding-top: 50px;
 }
