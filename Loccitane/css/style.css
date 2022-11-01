@@ -244,11 +244,22 @@ main #main_limited .limited_img .lmt_1_txt .btn {
 
   margin-top: 30px;
 }
+main #main_limited .limited_wrap .limited_txt .lmt_txt .lmt_txt_title:hover {
+  border-bottom: 2px solid #ffcb00;
+}
+main #main_limited .limited_wrap .limited_txt .lmt_txt .lmt_txt_title {
+  padding-bottom: 15px;
+}
+main
+  #main_limited
+  .limited_wrap
+  .limited_txt
+  .lmt_txt
+  .lmt_txt_title:hover
+  .lmtnum {
+  color: #ffcb00;
+}
 
-/* main #main_limited .limited_img .lmt_2,
-main #main_limited .limited_img .lmt_3 {
-  display: none;
-} */
 /* ************************************************************ */
 main #main_limited .limited_txt {
   padding: 20px;
@@ -260,10 +271,10 @@ main #main_limited .limited_txt .carousel {
   background: url(../icons/line-angle-down.svg) no-repeat 50% / contain;
   cursor: pointer;
 }
-/* main #main_limited .limited_txt .lmt_txt .lmt_txt_title .carousel.active {
-  /* ???????? *
-  background: url(../icons/line-angle-up.svg) no-repeat 50% / contain;
-} */
+main #main_limited .limited_txt .carousel:hover {
+  transform: rotate(180deg);
+}
+
 main #main_limited .limited_txt .lmt_txt .lmt_txt_title {
   font-size: 18px;
   display: flex;
@@ -277,23 +288,27 @@ main #main_limited .limited_txt .lmt_txt {
   /* 여기 */
   padding-bottom: 50px;
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main #main_limited .limited_txt span {
   padding-right: 10px;
 }
 main #main_limited .limited_txt p {
-  padding: 20px;
+  padding: 10px 20px;
   line-height: 30px;
 }
-/*
-main #main_limited .limited_txt .lmt_txt p {
-   display: none; 
+main #main_limited .limited_txt .lmt_txt:first-child {
+  height: 150px;
 }
-/* main #main_limited .limited_txt .lmt_txt:active p {
+main #main_limited .limited_txt .lmt_txt .lmtTxt1 {
   display: block;
-} */
+  background-color: #fff;
+}
+main #main_limited .limited_txt .lmt_txt .lmtTxt2,
+main #main_limited .limited_txt .lmt_txt .lmtTxt3 {
+  display: none;
+}
 
 /*********** main best ***********/
 main #main_best .best {

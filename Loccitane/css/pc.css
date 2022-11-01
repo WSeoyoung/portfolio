@@ -241,6 +241,9 @@ main #main_limited .limited_img .lmt_1_txt .btn:hover {
   border: 1px solid #01172d;
   font-weight: bold;
 }
+main #main_limited .limited_txt .lmt_txt:first-child {
+  height: 200px;
+}
 /*********** main best ***********/
 main #main_best .best img {
   width: 90%;
